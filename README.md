@@ -4,6 +4,8 @@ My personal PPA repository for the **armhf** packages hosted here:
 
 * TrueCrypt 7.1a-15 - [truecrypt-cli_7.1a-15_armhf.deb](https://github.com/stefansundin/truecrypt.deb)
 * HD-Idle v1.16 - [hd-idle_1.16_armhf.deb](https://github.com/adelolmo/hd-idle)
+* Linux-IGD v1.0 - [linux-igd_1.0+cvs20070630-5+deb9u1_armhf.deb](https://packages.debian.org/stretch/linux-igd)
+* libupnp6 v1.6.19 - [libupnp6_1.6.19+git20160116-1.2+deb9u1_armhf.deb](https://packages.debian.org/stretch/libupnp6)
 
 My personal PPA repository for the **amd64** packages hosted here:
 
