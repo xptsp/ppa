@@ -17,6 +17,7 @@ My personal PPA repository for the **amd64** packages hosted here:
 These packages listed below are listed as **all** (as opposed to **armhf** or **arm64**).  They may *(or may not)* work on any platform:
 
 * WhatsApp webapp v1.0 - [whatsapp-webapp_1.0_all.deb](https://www.thefanclub.co.za/how-to/whatsapp-webapp-ubuntu)
+* MultiWAN package v1.0 by sbuzonas - [multiwan_1.0_all.deb](https://github.com/sbuzonas/multiwan)
 
 # How To Use
 

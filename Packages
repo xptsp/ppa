@@ -85,6 +85,23 @@ Description: Linux UPnP Internet Gateway Device
  UPnP aware clients, such as MSN Messenger or games consoles, to work
  properly from behind a NAT firewall.
 
+Package: multiwan
+Version: 1.0
+Architecture: all
+Maintainer: Steve Buzonas <steve@fancyguy.com>
+Installed-Size: 33
+Depends: bash (>= 2.05a-11), iputils-ping, iproute, lsb-base (>= 3.0-6)
+Filename: ./debian/multiwan_1.0_all.deb
+Size: 7104
+MD5sum: b059c41070d5b3d80392ca2477ceab44
+SHA1: 21536fee89d1877816339c62d32960064b926964
+SHA256: c5af427f0878038682bbaefb112c06f8dedd4866262fd882c1c5a95636f7f5d7
+Section: net
+Priority: optional
+Homepage: http://stevebuzonas.com/multiwan
+Description: script provides link status checking and failover route switching
+ depending on current link state.
+
 Package: truecrypt-cli
 Source: truecrypt
 Version: 7.1a-15
