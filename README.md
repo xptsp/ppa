@@ -6,6 +6,16 @@ My personal PPA repository for the **armhf** packages hosted here:
 * HD-Idle v1.16 - [hd-idle_1.16_armhf.deb](https://github.com/adelolmo/hd-idle)
 * Linux-IGD v1.0 - [linux-igd_1.0+cvs20070630-5+deb9u1_armhf.deb](https://packages.debian.org/stretch/linux-igd)
 * libupnp6 v1.6.19 - [libupnp6_1.6.19+git20160116-1.2+deb9u1_armhf.deb](https://packages.debian.org/stretch/libupnp6)
+* Python wpactrl v1.0.11-1 - [python-wpactrl_1.0.11-1_armhf.deb](https://github.com/rbrunt/Pi_wps/tree/master/depends/python-wpactrl)
+* Python3 Adafruit-BBIO v1.2.0-1 - [python3-adafruit-bbio_1.2.0-1~w2d0_armhf.deb](https://github.com/eayoungs/Adafruit_BBIO)
+* Python3 Adafruit-BBIO debug symbols v1.2.0-1 - [python3-adafruit-bbio-dbgsym_1.2.0-1~w2d0_armhf.deb](#)
+* Python3 Adafruit-GPIO v1.0.3-1 - [python3-adafruit-gpio_1.0.3-1~w2d0_all.deb](https://github.com/adafruit/Adafruit_Python_GPIO)
+* Python3 Adafruit-PureIO v1.1.8-1 - [python3-adafruit-pureio_1.1.8-1~w2d0_all.deb](https://github.com/adafruit/Adafruit_Python_PureIO)
+* Python3 Adafruit-SSD1306 v1.6.2-1 - [python3-adafruit-ssd1306_1.6.2-1~w2d0_all.deb](https://github.com/adafruit/Adafruit_Python_SSD1306)
+* Python3 psutil v5.8.0-1 library - [python3-psutil_5.8.0-1~w2d0_armhf.deb](#)
+* Python3 psutil v5.8.0-1 debug symbols - [Python3 python3-psutil-dbgsym_5.8.0-1~w2d0_armhf.deb](#)
+* Python3 spidev v3.5-1 - [python3-spidev_3.5-1~w2d0_armhf.deb](#)
+* Python3 spidev v3.5-1 debug symbols - [python3-spidev-dbgsym_3.5-1~w2d0_armhf.deb](#)
 
 My personal PPA repository for the **amd64** packages hosted here:
 
