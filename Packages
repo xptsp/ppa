@@ -102,6 +102,21 @@ Homepage: http://stevebuzonas.com/multiwan
 Description: script provides link status checking and failover route switching
  depending on current link state.
 
+Package: python-wpactrl
+Version: 1.0.11-1
+Architecture: armhf
+Maintainer: root@bpiwrt
+Installed-Size: 68
+Provides: python-wpactrl
+Filename: ./debian/python-wpactrl_1.0.11-1_armhf.deb
+Size: 7904
+MD5sum: b930aa3ce251ef4d8d27ca7fd08108b1
+SHA1: 8b46146fde332f0dbaf0a77b8d764886f9951093
+SHA256: 58c3529f91e4be8f8589df3f1c927bbe856800ba0776da504f8278fe9a0678b0
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.3
+
 Package: python3-adafruit-bbio
 Version: 0:1.2.0-1~w2d0
 Architecture: armhf
