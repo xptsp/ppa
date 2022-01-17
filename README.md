@@ -6,7 +6,6 @@ My personal PPA repository for the **armhf** packages hosted here:
 * HD-Idle v1.16 - [hd-idle_1.16_armhf.deb](https://github.com/adelolmo/hd-idle)
 * Linux-IGD v1.0 - [linux-igd_1.0+cvs20070630-5+deb9u1_armhf.deb](https://packages.debian.org/stretch/linux-igd)
 * libupnp6 v1.6.19 - [libupnp6_1.6.19+git20160116-1.2+deb9u1_armhf.deb](https://packages.debian.org/stretch/libupnp6)
-* Python wpactrl v1.0.11-1 - [python-wpactrl_1.0.11-1_armhf.deb](https://github.com/rbrunt/Pi_wps/tree/master/depends/python-wpactrl)
 * Python3 Adafruit-BBIO v1.2.0-1 - [python3-adafruit-bbio_1.2.0-1~w2d0_armhf.deb](https://github.com/eayoungs/Adafruit_BBIO)
 * Python3 Adafruit-BBIO debug symbols v1.2.0-1 - [python3-adafruit-bbio-dbgsym_1.2.0-1~w2d0_armhf.deb](#)
 * Python3 Adafruit-GPIO v1.0.3-1 - [python3-adafruit-gpio_1.0.3-1~w2d0_all.deb](https://github.com/adafruit/Adafruit_Python_GPIO)
@@ -27,7 +26,6 @@ My personal PPA repository for the **amd64** packages hosted here:
 These packages listed below are listed as **all** (as opposed to **armhf** or **arm64**).  They may *(or may not)* work on any platform:
 
 * WhatsApp webapp v1.0 - [whatsapp-webapp_1.0_all.deb](https://www.thefanclub.co.za/how-to/whatsapp-webapp-ubuntu)
-* MultiWAN package v1.0 by sbuzonas - [multiwan_1.0_all.deb](https://github.com/sbuzonas/multiwan)
 
 # How To Use
 

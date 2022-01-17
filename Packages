@@ -85,38 +85,6 @@ Description: Linux UPnP Internet Gateway Device
  UPnP aware clients, such as MSN Messenger or games consoles, to work
  properly from behind a NAT firewall.
 
-Package: multiwan
-Version: 1.0
-Architecture: all
-Maintainer: Steve Buzonas <steve@fancyguy.com>
-Installed-Size: 33
-Depends: bash (>= 2.05a-11), iputils-ping, iproute, lsb-base (>= 3.0-6)
-Filename: ./debian/multiwan_1.0_all.deb
-Size: 7104
-MD5sum: b059c41070d5b3d80392ca2477ceab44
-SHA1: 21536fee89d1877816339c62d32960064b926964
-SHA256: c5af427f0878038682bbaefb112c06f8dedd4866262fd882c1c5a95636f7f5d7
-Section: net
-Priority: optional
-Homepage: http://stevebuzonas.com/multiwan
-Description: script provides link status checking and failover route switching
- depending on current link state.
-
-Package: python-wpactrl
-Version: 1.0.11-1
-Architecture: armhf
-Maintainer: root@bpiwrt
-Installed-Size: 68
-Provides: python-wpactrl
-Filename: ./debian/python-wpactrl_1.0.11-1_armhf.deb
-Size: 7904
-MD5sum: b930aa3ce251ef4d8d27ca7fd08108b1
-SHA1: 8b46146fde332f0dbaf0a77b8d764886f9951093
-SHA256: 58c3529f91e4be8f8589df3f1c927bbe856800ba0776da504f8278fe9a0678b0
-Section: checkinstall
-Priority: extra
-Description: Package created with checkinstall 1.6.3
-
 Package: python3-adafruit-bbio
 Version: 0:1.2.0-1~w2d0
 Architecture: armhf
