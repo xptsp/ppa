@@ -367,6 +367,27 @@ Description: USB device sharing system over IP network
  This package provides the server component 'usbipd' and the client tool
  'usbip'.
 
+Package: vnstat
+Version: 1.18-2
+Architecture: armhf
+Maintainer: Christian Göttsche <cgzones@googlemail.com>
+Installed-Size: 224
+Depends: libc6 (>= 2.7), adduser, lsb-base
+Suggests: vnstati
+Filename: ./debian/vnstat_1.18-2_armhf.deb
+Size: 85156
+MD5sum: 3a3dd6ed886b5fc4269031def75dddec
+SHA1: ff166dd4842b35a78b7b8c6ef265e202688a9a40
+SHA256: 089797e0d8526c18038cfd30ce4e59138a86a77238ca6347a80da5cbde94c958
+Section: net
+Priority: optional
+Homepage: https://humdi.net/vnstat/
+Description: console-based network traffic monitor
+ vnStat is a network traffic monitor for Linux. It keeps a log of
+ daily network traffic for the selected interface(s). vnStat is not
+ a packet sniffer. The traffic information is analyzed from the /proc
+ filesystem, so vnStat can be used without root permissions.
+
 Package: whatsapp-webapp
 Version: 1.0
 Architecture: all
