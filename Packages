@@ -48,7 +48,7 @@ Installed-Size: 270
 Depends: libc6 (>= 2.15)
 Conflicts: libupnp0, libupnp2, libupnp3, libupnp4 (<< 1.8.0~svn20090313)
 Replaces: libupnp0, libupnp2, libupnp3
-Filename: ./python-3.7/libupnp6_1.6.19+git20160116-1.2+deb9u1_armhf.deb
+Filename: ./other/libupnp6_1.6.19+git20160116-1.2+deb9u1_armhf.deb
 Size: 149036
 MD5sum: 87a660c1739b4c503075bbd7f0c38608
 SHA1: 749804f612a1a39ea8cd082cf9866c33a701a774
@@ -71,7 +71,7 @@ Architecture: armhf
 Maintainer: Debian QA Group <packages@qa.debian.org>
 Installed-Size: 102
 Depends: iptables, lsb-base, libc6 (>= 2.8), libupnp6 (>= 1:1.6.6)
-Filename: ./python-3.7/linux-igd_1.0+cvs20070630-5+deb9u1_armhf.deb
+Filename: ./other/linux-igd_1.0+cvs20070630-5+deb9u1_armhf.deb
 Size: 32704
 MD5sum: a56b20249b1002bff5037eaae364d8b1
 SHA1: 04fdaef2170f47a5d34cb834e2366221fc728138
