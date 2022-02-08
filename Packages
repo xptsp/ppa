@@ -3,7 +3,7 @@ Version: 1.16
 Architecture: armhf
 Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
 Installed-Size: 2368
-Filename: ./buster/hd-idle_1.16_armhf.deb
+Filename: ./python-3.7/hd-idle_1.16_armhf.deb
 Size: 1132240
 MD5sum: debf9c5a74f6e91f5e517ba50c6dd29e
 SHA1: 1af2fc817eed9fdfb08e08c8a916c5bacf78cf47
@@ -48,7 +48,7 @@ Installed-Size: 270
 Depends: libc6 (>= 2.15)
 Conflicts: libupnp0, libupnp2, libupnp3, libupnp4 (<< 1.8.0~svn20090313)
 Replaces: libupnp0, libupnp2, libupnp3
-Filename: ./buster/libupnp6_1.6.19+git20160116-1.2+deb9u1_armhf.deb
+Filename: ./python-3.7/libupnp6_1.6.19+git20160116-1.2+deb9u1_armhf.deb
 Size: 149036
 MD5sum: 87a660c1739b4c503075bbd7f0c38608
 SHA1: 749804f612a1a39ea8cd082cf9866c33a701a774
@@ -71,7 +71,7 @@ Architecture: armhf
 Maintainer: Debian QA Group <packages@qa.debian.org>
 Installed-Size: 102
 Depends: iptables, lsb-base, libc6 (>= 2.8), libupnp6 (>= 1:1.6.6)
-Filename: ./buster/linux-igd_1.0+cvs20070630-5+deb9u1_armhf.deb
+Filename: ./python-3.7/linux-igd_1.0+cvs20070630-5+deb9u1_armhf.deb
 Size: 32704
 MD5sum: a56b20249b1002bff5037eaae364d8b1
 SHA1: 04fdaef2170f47a5d34cb834e2366221fc728138
@@ -91,7 +91,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 236
 Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any
-Filename: ./bullseye/python3-adafruit-bbio_1.2.0-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-adafruit-bbio_1.2.0-1~w2d0_armhf.deb
 Size: 53556
 MD5sum: d375e42cf29355b7e5909cff10772443
 SHA1: b8e4c106670c37fdfce47c94208fe5f09b592b04
@@ -108,7 +108,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 233
 Depends: python3 (<< 3.8), python3 (>= 3.7~), python3:any
-Filename: ./buster/python3-adafruit-bbio_1.2.0-1~w2d0_armhf.deb
+Filename: ./python-3.7/python3-adafruit-bbio_1.2.0-1~w2d0_armhf.deb
 Size: 53840
 MD5sum: dc14fece4051daba77ed280692b4a4b2
 SHA1: 2ea9d64ee15f65f2232732cceabb95f45acc00a0
@@ -127,7 +127,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 173
 Depends: python3-adafruit-bbio (= 0:1.2.0-1~w2d0)
-Filename: ./bullseye/python3-adafruit-bbio-dbgsym_1.2.0-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-adafruit-bbio-dbgsym_1.2.0-1~w2d0_armhf.deb
 Size: 123936
 MD5sum: b45092de9c6320e0c31b8afaa988a442
 SHA1: 4a1ce0f1a50af840b61bc7aa116360fab600f1b1
@@ -145,7 +145,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 254
 Depends: python3-adafruit-bbio (= 0:1.2.0-1~w2d0)
-Filename: ./buster/python3-adafruit-bbio-dbgsym_1.2.0-1~w2d0_armhf.deb
+Filename: ./python-3.7/python3-adafruit-bbio-dbgsym_1.2.0-1~w2d0_armhf.deb
 Size: 200128
 MD5sum: fd144f0e78be237549b6521f2e327ae8
 SHA1: cb0ecab8bd60e86b33a27dedbbc81c4e3ac218fa
@@ -161,7 +161,7 @@ Architecture: all
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 154
 Depends: python3-adafruit-pureio, python3-spidev, python3:any
-Filename: ./bullseye/python3-adafruit-gpio_1.0.3-1~w2d0_all.deb
+Filename: ./python-3.9/python3-adafruit-gpio_1.0.3-1~w2d0_all.deb
 Size: 22780
 MD5sum: bf6ddb6b942d2074762a01a7f94ac7ff
 SHA1: 14051ff1eadfe7c170985f0fe86ee303dc8a474f
@@ -178,7 +178,7 @@ Architecture: all
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 154
 Depends: python3-adafruit-pureio, python3-spidev, python3:any
-Filename: ./buster/python3-adafruit-gpio_1.0.3-1~w2d0_all.deb
+Filename: ./python-3.7/python3-adafruit-gpio_1.0.3-1~w2d0_all.deb
 Size: 22772
 MD5sum: c4f8f7ab2fdbb70dfb731710b6490ff1
 SHA1: c717f069559058bf1c72da4995ef2f79adeb6dfd
@@ -195,7 +195,7 @@ Architecture: all
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 53
 Depends: python3 (>= 3.4~), python3:any
-Filename: ./buster/python3-adafruit-pureio_1.1.8-1~w2d0_all.deb
+Filename: ./python-3.7/python3-adafruit-pureio_1.1.8-1~w2d0_all.deb
 Size: 10300
 MD5sum: f2574659a0dfe1c2bfda9c74d68b863e
 SHA1: 17dc861791e2de57b5e7982134d4ade2e842be58
@@ -212,7 +212,7 @@ Architecture: all
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 53
 Depends: python3 (>= 3.4~), python3:any
-Filename: ./bullseye/python3-adafruit-pureio_1.1.9-1~w2d0_all.deb
+Filename: ./python-3.9/python3-adafruit-pureio_1.1.9-1~w2d0_all.deb
 Size: 10316
 MD5sum: c8eaae0858514a07ea65ef867af65046
 SHA1: 84d2e8ff15851abb1b6defba71aa117f40f6a572
@@ -229,7 +229,7 @@ Architecture: all
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 36
 Depends: python3-adafruit-gpio (>= 0.6.5), python3:any
-Filename: ./bullseye/python3-adafruit-ssd1306_1.6.2-1~w2d0_all.deb
+Filename: ./python-3.9/python3-adafruit-ssd1306_1.6.2-1~w2d0_all.deb
 Size: 6312
 MD5sum: e523aa0f4f66b98ea4f022c78b52df5e
 SHA1: 79ff68e0b29afaf2aeff811a5f054055636bb275
@@ -246,7 +246,7 @@ Architecture: all
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 36
 Depends: python3-adafruit-gpio (>= 0.6.5), python3:any
-Filename: ./buster/python3-adafruit-ssd1306_1.6.2-1~w2d0_all.deb
+Filename: ./python-3.7/python3-adafruit-ssd1306_1.6.2-1~w2d0_all.deb
 Size: 6312
 MD5sum: 9ea6bfc18b08b8d9b37a0c5170e55e49
 SHA1: 142239c9d67dfc6ba9a8608615b2c28846807f4d
@@ -263,7 +263,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 31
 Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any
-Filename: ./bullseye/python3-nflog_0.1.2-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-nflog_0.1.2-1~w2d0_armhf.deb
 Size: 6620
 MD5sum: eb5768487aeb002ddd253db726825ff6
 SHA1: ccfd6dedbdd856db662b34675e16a3582233e784
@@ -282,7 +282,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 25
 Depends: python3-nflog (= 0:0.1.2-1~w2d0)
-Filename: ./bullseye/python3-nflog-dbgsym_0.1.2-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-nflog-dbgsym_0.1.2-1~w2d0_armhf.deb
 Size: 11396
 MD5sum: 7602e98f0347ca9a514c7769e3eb5872
 SHA1: b46d1e42d900e9f68c0e9efa20ebbeca8205b948
@@ -298,7 +298,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 869
 Depends: python3 (<< 3.8), python3 (>= 3.7~), python3:any
-Filename: ./buster/python3-psutil_5.8.0-1~w2d0_armhf.deb
+Filename: ./python-3.7/python3-psutil_5.8.0-1~w2d0_armhf.deb
 Size: 150980
 MD5sum: bceea6baa95e2803b733c8d266d8667e
 SHA1: 66c1f7074aedd5a23a31724d9c17cfc34a549a07
@@ -315,7 +315,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 881
 Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any
-Filename: ./bullseye/python3-psutil_5.9.0-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-psutil_5.9.0-1~w2d0_armhf.deb
 Size: 152796
 MD5sum: 664bc5f2afead86ec997b0a5a8e191af
 SHA1: d9cc6a21869c6f4b54f52bc685a3e43f676c8850
@@ -334,7 +334,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 93
 Depends: python3-psutil (= 0:5.8.0-1~w2d0)
-Filename: ./buster/python3-psutil-dbgsym_5.8.0-1~w2d0_armhf.deb
+Filename: ./python-3.7/python3-psutil-dbgsym_5.8.0-1~w2d0_armhf.deb
 Size: 70900
 MD5sum: 89f7324443a3a0e7ae369445454b51e6
 SHA1: f4a4adacaf450d5dc7504132bdf6b78712d66c58
@@ -352,7 +352,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 73
 Depends: python3-psutil (= 0:5.9.0-1~w2d0)
-Filename: ./bullseye/python3-psutil-dbgsym_5.9.0-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-psutil-dbgsym_5.9.0-1~w2d0_armhf.deb
 Size: 52068
 MD5sum: f37e87a796b77dce47d099b0bc2b87bc
 SHA1: 1ea9def67200dbafdbadbe10a729c59be38607fe
@@ -368,7 +368,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 43
 Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any
-Filename: ./bullseye/python3-spidev_3.5-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-spidev_3.5-1~w2d0_armhf.deb
 Size: 11856
 MD5sum: 95ad7acfc01d075afc27ba3d8e78287d
 SHA1: f9ef81a1a2dbf4a855956beefdd323f716338b38
@@ -385,7 +385,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 40
 Depends: python3 (<< 3.8), python3 (>= 3.7~), python3:any
-Filename: ./buster/python3-spidev_3.5-1~w2d0_armhf.deb
+Filename: ./python-3.7/python3-spidev_3.5-1~w2d0_armhf.deb
 Size: 11616
 MD5sum: c5e3972c4e490a0bec915d1a51e7b48a
 SHA1: eb89c326cbcdc3f2ee40654ec7c74a12290c721f
@@ -404,7 +404,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 41
 Depends: python3-spidev (= 0:3.5-1~w2d0)
-Filename: ./bullseye/python3-spidev-dbgsym_3.5-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-spidev-dbgsym_3.5-1~w2d0_armhf.deb
 Size: 26680
 MD5sum: 8a6f6a833267bd74539d8776e7d235f8
 SHA1: 2cb68da882ce5407b8ec8cfa2b305fc96157ebe2
@@ -422,7 +422,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 45
 Depends: python3-spidev (= 0:3.5-1~w2d0)
-Filename: ./buster/python3-spidev-dbgsym_3.5-1~w2d0_armhf.deb
+Filename: ./python-3.7/python3-spidev-dbgsym_3.5-1~w2d0_armhf.deb
 Size: 30216
 MD5sum: 491985b269f9592eacd6d93e3013b6e6
 SHA1: 7b8ac2467a8b2fd847d6d09dab718b48da187c13
@@ -438,7 +438,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 49
 Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any
-Filename: ./bullseye/python3-wpactrl_0.0.0-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-wpactrl_0.0.0-1~w2d0_armhf.deb
 Size: 13280
 MD5sum: 5c4a728f2ad4b4f7ccf18a5e7301ea2d
 SHA1: 48a0cc2564c107afe4f49769c12c8f8df67277a3
@@ -456,7 +456,7 @@ Architecture: armhf
 Maintainer: wheel2deb <wheel2deb@upciti.com>
 Installed-Size: 28
 Depends: python3-wpactrl (= 0:0.0.0-1~w2d0)
-Filename: ./bullseye/python3-wpactrl-dbgsym_0.0.0-1~w2d0_armhf.deb
+Filename: ./python-3.9/python3-wpactrl-dbgsym_0.0.0-1~w2d0_armhf.deb
 Size: 14592
 MD5sum: 22d4b49f496a36d8ff667ad2772505dc
 SHA1: 943868898d57176ebbede7e0e3577f0a607e90c6
@@ -510,7 +510,7 @@ Installed-Size: 1416
 Depends: libc6 (>= 2.4), libfuse2 (>= 2.8), libgcc1 (>= 1:3.5), libstdc++6 (>= 5.2), dmsetup
 Suggests: sudo, bash-completion, opensc
 Conflicts: truecrypt
-Filename: ./buster/truecrypt-cli_7.1a-15_armhf.deb
+Filename: ./python-3.7/truecrypt-cli_7.1a-15_armhf.deb
 Size: 522938
 MD5sum: 1ae1322da4559d6df116bc483f05153c
 SHA1: 4a8f1d9592955176a2021598c49ef1602af9781f
@@ -599,7 +599,7 @@ Maintainer: Christian Göttsche <cgzones@googlemail.com>
 Installed-Size: 224
 Depends: libc6 (>= 2.7), adduser, lsb-base
 Suggests: vnstati
-Filename: ./buster/vnstat_1.18-2_armhf.deb
+Filename: ./python-3.7/vnstat_1.18-2_armhf.deb
 Size: 85156
 MD5sum: 3a3dd6ed886b5fc4269031def75dddec
 SHA1: ff166dd4842b35a78b7b8c6ef265e202688a9a40
