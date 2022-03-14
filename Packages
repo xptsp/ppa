@@ -85,6 +85,42 @@ Description: Linux UPnP Internet Gateway Device
  UPnP aware clients, such as MSN Messenger or games consoles, to work
  properly from behind a NAT firewall.
 
+Package: mousepad
+Version: 0.4.1-2
+Architecture: amd64
+Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+Installed-Size: 1516
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libglib2.0-0 (>= 2.41.1), libgtk-3-0 (>= 3.16.2), libgtksourceview-3.0-1 (>= 2.91.4), libpango-1.0-0 (>= 1.14.0)
+Filename: ./other/mousepad_0.4.1-2_amd64.deb
+Size: 333760
+MD5sum: 6dbb8ae5c1b1a4cf71826e2c8f6d52b6
+SHA1: e671e9a56c44a6700760d49d0c39c3a580a2f7dc
+SHA256: cfade80bc03c79cff2564f3eda815eba3a82f6ca37636058a8fb4c1e882cb484
+Section: xfce
+Priority: optional
+Description: simple Xfce oriented text editor
+ Mousepad is a graphical text editor for Xfce based on Leafpad.
+ .
+ The initial reason for Mousepad was to provide printing support, which would
+ have been difficult for Leafpad for various reasons.
+ .
+ Although some features are under development, currently Mousepad has the
+ following features:
+   * Complete support for UTF-8 text
+   * Cut/Copy/Paste and Select All text
+   * Search and Replace
+   * Font selection
+   * Word Wrap
+   * Character coding selection
+   * Auto character coding detection (UTF-8 and some code-sets)
+   * Manual code-set setting
+   * Infinite Undo/Redo by word
+   * Auto Indent
+   * Multi-line Indent
+   * Display line numbers
+   * Drag and Drop
+   * Printing
+
 Package: python3-adafruit-bbio
 Version: 0:1.2.0-1~w2d0
 Architecture: armhf
