@@ -126,12 +126,12 @@ Version: 2.0
 Architecture: all
 Maintainer: Steve Buzonas <steve@fancyguy.com>
 Installed-Size: 33
-Depends: bash (>= 2.05a-11), iputils-ping, iproute2, lsb-base (>= 3.0-6)
+Depends: bash (>= 2.05a-11), iputils-ping, iproute, lsb-base (>= 3.0-6)
 Filename: ./other/multiwan_2.0_all.deb
 Size: 7856
-MD5sum: c435b6265c2b58f8779e4143a9138581
-SHA1: b3862ce6b8d5e44229ecee5a9274e05d3fc97556
-SHA256: b5b655281bf7150d21b968f59258df331a98821be83107736a065f077fc491cb
+MD5sum: f91872c92a4fce1536e00a85d59255ba
+SHA1: 971a484efd6bc74c6a8ebe98346bd758be281a38
+SHA256: 683e552ea65db8c4461767a34d2dbe2b8e9fde9eaba510a7bfac165574d2daf6
 Section: net
 Priority: optional
 Homepage: http://stevebuzonas.com/multiwan
