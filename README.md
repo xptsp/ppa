@@ -30,7 +30,7 @@ These packages listed below are listed as **all** (as opposed to **armhf** or **
 # How To Use
 
 ```bash
-curl -SsL https://xptsp.github.io/ppa/KEY.gpg | sudo apt-key add -
+curl -SsL https://xptsp.github.io/ppa/KEY.gpg | gpg --dearmor > /usr/share/keyrings/xptsp.gpg
 sudo curl -SsL -o /etc/apt/sources.list.d/bpiwrt_repo.list https://xptsp.github.io/ppa/ppa.list
 sudo apt update
 ```
