@@ -4,6 +4,7 @@ My personal PPA repository for the **armhf** packages hosted here:
 
 * TrueCrypt 7.1a-15 - [truecrypt-cli_7.1a-15_armhf.deb](https://github.com/stefansundin/truecrypt.deb)
 * HD-Idle v1.16 - [hd-idle_1.16_armhf.deb](https://github.com/adelolmo/hd-idle)
+* Vnstat v1.18-2 - [vnstat_1.18-2_armhf.deb](https://github.com/vergoh/vnstat/releases/tag/v1.18)
 
 My personal PPA repository for the **amd64** packages hosted here:
 
