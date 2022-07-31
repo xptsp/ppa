@@ -5,6 +5,13 @@ My personal PPA repository for the **armhf** packages hosted here:
 * TrueCrypt 7.1a-15 - [truecrypt-cli_7.1a-15_armhf.deb](https://github.com/stefansundin/truecrypt.deb)
 * HD-Idle v1.16 - [hd-idle_1.16_armhf.deb](https://github.com/adelolmo/hd-idle)
 * Vnstat v1.18-2 - [vnstat_1.18-2_armhf.deb](https://github.com/vergoh/vnstat/releases/tag/v1.18)
+* libmnl0 v1.0.5-1~git12024b1 - [commit 12024b1](https://git.netfilter.org/libmnl/commit/?id=12024b1c2e5bb1acc8f21d78504f7a473fbf5429)
+* libmnl-dev v1.0.5-1~git12024b1 - [commit 12024b1](https://git.netfilter.org/libmnl/commit/?id=12024b1c2e5bb1acc8f21d78504f7a473fbf5429)
+* libnftnl11 v1.2.2-1~git84d12cf [commit 84d12cf](http://git.netfilter.org/libnftnl/commit/?id=84d12cfacf8ddd857a09435f3d982ab6250d250c)  
+* libnftnl-dev v1.2.2-1~git84d12cf [commit 84d12cf](http://git.netfilter.org/libnftnl/commit/?id=84d12cfacf8ddd857a09435f3d982ab6250d250c)  
+* nftables v1.0.4-1~git446e76d - [commit 446e76d](http://git.netfilter.org/nftables/commit/?id=446e76dbde713327358f17a8af6ce86b8541c836)
+* libnftables1 v1.0.4-1~git446e76d - [commit 446e76d](http://git.netfilter.org/nftables/commit/?id=446e76dbde713327358f17a8af6ce86b8541c836)
+* libnftables-dev v1.0.4-1~git446e76d - [commit 446e76d](http://git.netfilter.org/nftables/commit/?id=446e76dbde713327358f17a8af6ce86b8541c836)
 
 My personal PPA repository for the **amd64** packages hosted here:
 
