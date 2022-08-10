@@ -1,13 +1,13 @@
 Package: hd-idle
-Version: 1.16
+Version: 1.17
 Architecture: armhf
 Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
-Installed-Size: 2368
-Filename: ./armhf/hd-idle_1.16_armhf.deb
-Size: 1132240
-MD5sum: debf9c5a74f6e91f5e517ba50c6dd29e
-SHA1: 1af2fc817eed9fdfb08e08c8a916c5bacf78cf47
-SHA256: 37e50dae2a6173551d854a6b66778fc3bd4729b1c0ab756eb75661c29384a61f
+Installed-Size: 2398
+Filename: ./armhf/hd-idle_1.17_armhf.deb
+Size: 1182560
+MD5sum: 6d4be65b120d9771c1ea235c41035525
+SHA1: fdeed23436e90304f7404272db8ff89c88d6178d
+SHA256: c2b4683668e716570a2369540da2e9209e7086233fa957fe5e3fdf7cda7b10eb
 Section: admin
 Priority: optional
 Homepage: https://github.com/adelolmo/hd-idle
@@ -41,16 +41,16 @@ Description: intel-nuc-led driver in DKMS format.
 
 Package: libmnl-dev
 Source: libmnl
-Version: 1.0.5-1~git20220629.12024b1
+Version: 1.0.5-1~git20220808.a92ea99
 Architecture: armhf
 Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
 Installed-Size: 80
-Depends: libmnl0 (= 1.0.5-1~git20220629.12024b1)
-Filename: ./armhf/libmnl-dev_1.0.5-1~git20220629.12024b1_armhf.deb
-Size: 12896
-MD5sum: 13059d3dfa713945592259080e38a624
-SHA1: 0118f5dd961b5a9e3dc584d8a17b3b37ad73c2e6
-SHA256: b72f7f5208d159cad87c1e9814593238caae7ebc9df6ce527d3777fb50bec4c0
+Depends: libmnl0 (= 1.0.5-1~git20220808.a92ea99)
+Filename: ./armhf/libmnl-dev_1.0.5-1~git20220808.a92ea99_armhf.deb
+Size: 12904
+MD5sum: 0030a7c21a0ada090d68ab13d84b9768
+SHA1: da4001074936887c7afaec4b0a297f588d96fadc
+SHA256: de3d985400e7f5b26a9eefc12e2f5e6d0e5fbca0879efc434c56c8afd6e55865
 Section: libdevel
 Priority: optional
 Multi-Arch: same
@@ -86,16 +86,16 @@ Description: minimalistic Netlink communication library (devel)
 
 Package: libmnl0
 Source: libmnl
-Version: 1.0.5-1~git20220629.12024b1
+Version: 1.0.5-1~git20220808.a92ea99
 Architecture: armhf
 Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
 Installed-Size: usr
 Depends: libc6 (>= 2.4)
-Filename: ./armhf/libmnl0_1.0.5-1~git20220629.12024b1_armhf.deb
-Size: 30112
-MD5sum: 966d35b32a7828db6332a8a9fc4670e1
-SHA1: 2647e74db1131567e362fe4abfef5cf85b4c0fa7
-SHA256: 7980c5cbb7c4e89fd052c8fba08c87ca96a3801b0b21647517bc0d47e51961ae
+Filename: ./armhf/libmnl0_1.0.5-1~git20220808.a92ea99_armhf.deb
+Size: 30084
+MD5sum: 97e1f5db9d8bbff08df1600f7d89c40f
+SHA1: c0e3e04062b48b5f41ca27893d783b3ffc827fac
+SHA256: 5841491a6be1c11c98176f20a32e86740bbfe53c700fb77ea698011b7c8b4828
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -128,18 +128,48 @@ Description: minimalistic Netlink communication library
  This package contains the shared libraries needed to run programs that use
  the minimalistic Netlink communication library.
 
-Package: libnftables1
+Package: libnftables-dev
 Source: nftables
-Version: 1.0.4-1~git20220801.76fae8f
+Version: 1.0.5-1~git20220809.1324867
 Architecture: armhf
 Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
-Installed-Size: 2996
-Depends: libc6 (>= 2.28), libgmp10, libjansson4 (>= 2.3), libmnl0 (>= 1.0.5-1~git20220629.12024b1), libnftnl11 (>= 1.2.2-1~git20220615.84d12cf), libxtables12 (>= 1.6.1)
-Filename: ./armhf/libnftables1_1.0.4-1~git20220801.76fae8f_armhf.deb
-Size: 933956
-MD5sum: 01124d3dec458734b1cab4ab6628b2e6
-SHA1: e3c54382afd6ddc351e0ae0b0b84146d3f21a2a0
-SHA256: c8459f61444165932d911dea7978b82e9a6b63f0faaf696057171f5ffccf29ad
+Installed-Size: 64
+Depends: libnftables1 (= 1.0.5-1~git20220809.1324867)
+Filename: ./armhf/libnftables-dev_1.0.5-1~git20220809.1324867_armhf.deb
+Size: 8992
+MD5sum: b3ac6735255a5473614d108d98ce6bdb
+SHA1: 0b1d284914520aa79f34154a7f897912ea7e3e80
+SHA256: c8f823a03eed516f3e7e77e6cf33c89a88303118c7a9765cdbc7761e75575d1e
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.netfilter.org/
+Description: Development files for libnftables
+ This library provides high level semantics to interact with the nftables
+ framework by Netfilter project.
+ .
+ nftables replaces the old popular iptables, ip6tables, arptables and ebtables.
+ .
+ Netfilter software and nftables in particular are used in applications such
+ as Internet connection sharing, firewalls, IP accounting, transparent
+ proxying, advanced routing and traffic control.
+ .
+ A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
+ .
+ This package provides development files and static libraries.
+
+Package: libnftables1
+Source: nftables
+Version: 1.0.5-1~git20220809.1324867
+Architecture: armhf
+Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
+Installed-Size: 3000
+Depends: libc6 (>= 2.28), libgmp10, libjansson4 (>= 2.3), libmnl0 (>= 1.0.5-1~git20220808.a92ea99), libnftnl11 (>= 1.2.3-1~git20220809.817c8b6), libxtables12 (>= 1.6.1)
+Filename: ./armhf/libnftables1_1.0.5-1~git20220809.1324867_armhf.deb
+Size: 936656
+MD5sum: c619fdbaa08cc6445e24ea0754098194
+SHA1: 8c729eb0af61efaa523ebb4eec1db7fb7de6bd37
+SHA256: fe0a54cf1fc71a18f755eece9f6f59046f22ff247635834e8791e2c1e65c88ae
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -160,17 +190,17 @@ Description: Netfilter nftables high level userspace API library
 
 Package: libnftnl-dev
 Source: libnftnl
-Version: 1.2.2-1~git20220615.84d12cf
+Version: 1.2.3-1~git20220809.817c8b6
 Architecture: armhf
 Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
 Installed-Size: 284
-Depends: libnftnl11 (= 1.2.2-1~git20220615.84d12cf), pkg-config
+Depends: libnftnl11 (= 1.2.3-1~git20220809.817c8b6), pkg-config
 Suggests: libnftnl-dev-doc
-Filename: ./armhf/libnftnl-dev_1.2.2-1~git20220615.84d12cf_armhf.deb
-Size: 18440
-MD5sum: 5828340bdb749edc7011c83b30b0f35d
-SHA1: 76022c4c9ee15d0b709d5bd7d5398e4d56c56dfd
-SHA256: 898bb08969cf0b4e1b163573abf03ec9e5dbbc63d8739ab60afbeaa1c87e6f20
+Filename: ./armhf/libnftnl-dev_1.2.3-1~git20220809.817c8b6_armhf.deb
+Size: 18412
+MD5sum: 892118279a4f3cdb064720d80338d9cd
+SHA1: 06f2a7b6c6b86d60da8facf6e98d860fa68f614e
+SHA256: 86b878bc27f551e28e4574f920dab8fca2c594dbaf9d00fc5f2fade909a66dac
 Section: libdevel
 Priority: optional
 Multi-Arch: same
@@ -186,16 +216,16 @@ Description: Development files for libnftnl
 
 Package: libnftnl11
 Source: libnftnl
-Version: 1.2.2-1~git20220615.84d12cf
+Version: 1.2.3-1~git20220809.817c8b6
 Architecture: armhf
 Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
 Installed-Size: 924
-Depends: libc6 (>= 2.4), libmnl0 (>= 1.0.5-1~git20220629.12024b1)
-Filename: ./armhf/libnftnl11_1.2.2-1~git20220615.84d12cf_armhf.deb
-Size: 239792
-MD5sum: 26a35e0eae94a3e38f6633f1b213f42a
-SHA1: f3592da2cf40c9a8376e117b80dea7663084ee53
-SHA256: b62231631377bfda72e075c34804e209c10520ac5fe14724fcc1ba25a340d871
+Depends: libc6 (>= 2.4), libmnl0 (>= 1.0.5-1~git20220808.a92ea99)
+Filename: ./armhf/libnftnl11_1.2.3-1~git20220809.817c8b6_armhf.deb
+Size: 240060
+MD5sum: 234e7b274d286c621be2e535a81ff644
+SHA1: 3e7f7ce614a28ed3eca8c7602c856a93cd1be3f4
+SHA256: 529da5421784caba1c4184b614610f5181a011ea3d2231e4c7b8f017e6d73b06
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -287,18 +317,18 @@ Description: UPnP and NAT-PMP daemon for gateway routers - nftables backend
  This package provides miniupnpd with nftables backend.
 
 Package: nftables
-Version: 1.0.4-1~git20220801.76fae8f
+Version: 1.0.5-1~git20220809.1324867
 Architecture: armhf
 Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
 Installed-Size: 252
 Pre-Depends: dpkg (>= 1.15.7.2)
-Depends: libnftables1 (= 1.0.4-1~git20220801.76fae8f), libc6 (>= 2.4), libedit2 (>= 3.1-20130611-0)
+Depends: libnftables1 (= 1.0.5-1~git20220809.1324867), libc6 (>= 2.4), libedit2 (>= 3.1-20130611-0)
 Suggests: firewalld
-Filename: ./armhf/nftables_1.0.4-1~git20220801.76fae8f_armhf.deb
-Size: 64412
-MD5sum: 9ed4d89f072335bd725e3ca47b0eead5
-SHA1: c3d19dcb2406d6ac4afe8a99a83810a694474b41
-SHA256: 2bbef52126d4497bdd027604a58b4b03a5f4a9112538991915ef925190688f45
+Filename: ./armhf/nftables_1.0.5-1~git20220809.1324867_armhf.deb
+Size: 64416
+MD5sum: ae95b46d25703334bac626f280f96129
+SHA1: 067f9c7ef4339bcfc1743fcd7193a78defccb0a9
+SHA256: bb074ed9f58cdc76d5e4b0d0177402c3d7dd1aba4c11682214ecf0abff3398b9
 Section: net
 Priority: important
 Homepage: https://www.netfilter.org/
