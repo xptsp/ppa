@@ -1,0 +1,380 @@
+Package: hd-idle
+Version: 1.16
+Architecture: armhf
+Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
+Installed-Size: 2368
+Filename: ./armhf/hd-idle_1.16_armhf.deb
+Size: 1132240
+MD5sum: debf9c5a74f6e91f5e517ba50c6dd29e
+SHA1: 1af2fc817eed9fdfb08e08c8a916c5bacf78cf47
+SHA256: 37e50dae2a6173551d854a6b66778fc3bd4729b1c0ab756eb75661c29384a61f
+Section: admin
+Priority: optional
+Homepage: https://github.com/adelolmo/hd-idle
+Description: Spin down idle hard disks
+ hd-idle is a utility program for spinning-down external disks after a period
+ of idle time. Since most external IDE disk enclosures don't support setting
+ the IDE idle timer, a program like hd-idle is required to spin down idle disks
+ automatically.
+ .
+ A word of caution: hard disks don't like spinning up too often. Laptop disks
+ are more robust in this respect than desktop disks but if you set your disks
+ to spin down after a few seconds you may damage the disk over time due to the
+ stress the spin-up causes on the spindle motor and bearings. It seems that
+ manufacturers recommend a minimum idle time of 3-5 minutes, the default in
+ hd-idle is 10 minutes.
+
+Package: intel-nuc-led-dkms
+Version: 2.0
+Architecture: all
+Maintainer: Dynamic Kernel Modules Support Team <pkg-dkms-maint@lists.alioth.debian.org>
+Installed-Size: 100
+Depends: dkms (>= 1.95)
+Filename: ./amd64/intel-nuc-led-dkms_2.0_all.deb
+Size: 25424
+MD5sum: 5dc97af36a54363009710af702a4ada5
+SHA1: ddf72714a5213ca9df005b85e33bd605fef44bb6
+SHA256: 9d16495a9fc391989f2527fcec1ae73c1295b5765c30a999e9d62233fccaf518
+Section: misc
+Priority: optional
+Description: intel-nuc-led driver in DKMS format.
+
+Package: libmnl-dev
+Source: libmnl
+Version: 1.0.5-1~git20220629.12024b1
+Architecture: armhf
+Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
+Installed-Size: 80
+Depends: libmnl0 (= 1.0.5-1~git20220629.12024b1)
+Filename: ./armhf/libmnl-dev_1.0.5-1~git20220629.12024b1_armhf.deb
+Size: 12896
+MD5sum: 13059d3dfa713945592259080e38a624
+SHA1: 0118f5dd961b5a9e3dc584d8a17b3b37ad73c2e6
+SHA256: b72f7f5208d159cad87c1e9814593238caae7ebc9df6ce527d3777fb50bec4c0
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://netfilter.org/projects/libmnl/
+Description: minimalistic Netlink communication library (devel)
+ libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel.
+ .
+ The main features of this library are:
+ .
+ Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building,
+ validating, parsing and sequence tracking, easier.
+ .
+ Easy to re-use: you can use the library to build your own abstraction
+ layer on top of this library.
+ .
+ Decoupling: the interdependency of the main bricks that compose the
+ library is reduced, i.e. the library provides many helpers, but the
+ programmer is not forced to use them.
+ .
+ This package contains the development libraries and header files you need
+ to develop your programs using the minimalistic Netlink communication
+ library.
+
+Package: libmnl0
+Source: libmnl
+Version: 1.0.5-1~git20220629.12024b1
+Architecture: armhf
+Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
+Installed-Size: usr
+Depends: libc6 (>= 2.4)
+Filename: ./armhf/libmnl0_1.0.5-1~git20220629.12024b1_armhf.deb
+Size: 30112
+MD5sum: 966d35b32a7828db6332a8a9fc4670e1
+SHA1: 2647e74db1131567e362fe4abfef5cf85b4c0fa7
+SHA256: 7980c5cbb7c4e89fd052c8fba08c87ca96a3801b0b21647517bc0d47e51961ae
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://netfilter.org/projects/libmnl/
+Description: minimalistic Netlink communication library
+ libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel.
+ .
+ The main features of this library are:
+ .
+ Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building,
+ validating, parsing and sequence tracking, easier.
+ .
+ Easy to re-use: you can use the library to build your own abstraction
+ layer on top of this library.
+ .
+ Decoupling: the interdependency of the main bricks that compose the
+ library is reduced, i.e. the library provides many helpers, but the
+ programmer is not forced to use them.
+ .
+ This package contains the shared libraries needed to run programs that use
+ the minimalistic Netlink communication library.
+
+Package: libnftnl-dev
+Source: libnftnl
+Version: 1.2.2-1~git20220615.84d12cf
+Architecture: armhf
+Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
+Installed-Size: 284
+Depends: libnftnl11 (= 1.2.2-1~git20220615.84d12cf), pkg-config
+Suggests: libnftnl-dev-doc
+Filename: ./armhf/libnftnl-dev_1.2.2-1~git20220615.84d12cf_armhf.deb
+Size: 18440
+MD5sum: 5828340bdb749edc7011c83b30b0f35d
+SHA1: 76022c4c9ee15d0b709d5bd7d5398e4d56c56dfd
+SHA256: 898bb08969cf0b4e1b163573abf03ec9e5dbbc63d8739ab60afbeaa1c87e6f20
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://git.netfilter.org/libnftnl
+Description: Development files for libnftnl
+ libnftnl is the low-level library for Netfilter 4th generation
+ framework nftables.
+ .
+ Is the user-space library for low-level interaction with
+ nftables Netlink's API over libmnl.
+ .
+ This package provides development files and static libraries.
+
+Package: libnftnl11
+Source: libnftnl
+Version: 1.2.2-1~git20220615.84d12cf
+Architecture: armhf
+Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
+Installed-Size: 924
+Depends: libc6 (>= 2.4), libmnl0 (>= 1.0.5-1~git20220629.12024b1)
+Filename: ./armhf/libnftnl11_1.2.2-1~git20220615.84d12cf_armhf.deb
+Size: 239792
+MD5sum: 26a35e0eae94a3e38f6633f1b213f42a
+SHA1: f3592da2cf40c9a8376e117b80dea7663084ee53
+SHA256: b62231631377bfda72e075c34804e209c10520ac5fe14724fcc1ba25a340d871
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://git.netfilter.org/libnftnl
+Description: Netfilter nftables userspace API library
+ libnftnl is the low-level library for Netfilter 4th generation
+ framework nftables.
+ .
+ Is the user-space library for low-level interaction with
+ nftables Netlink's API over libmnl.
+
+Package: python3-nflog
+Version: 0:0.1.2-1~w2d0
+Architecture: armhf
+Maintainer: wheel2deb <wheel2deb@upciti.com>
+Installed-Size: 31
+Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any
+Filename: ./python-3.9/python3-nflog_0.1.2-1~w2d0_armhf.deb
+Size: 6620
+MD5sum: eb5768487aeb002ddd253db726825ff6
+SHA1: ccfd6dedbdd856db662b34675e16a3582233e784
+SHA256: 46de272f5645140225e999d375061192e4903bb3a8a05cd52b0f93815eb5035c
+Section: python
+Priority: optional
+Homepage: https://github.com/luttermann/python-nflog
+Description: Python interface to NetFilter-log on Linux
+ This package was generated by wheel2deb v0.5.8
+
+Package: python3-nflog-dbgsym
+Source: python3-nflog
+Version: 0:0.1.2-1~w2d0
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: wheel2deb <wheel2deb@upciti.com>
+Installed-Size: 25
+Depends: python3-nflog (= 0:0.1.2-1~w2d0)
+Filename: ./python-3.9/python3-nflog-dbgsym_0.1.2-1~w2d0_armhf.deb
+Size: 11396
+MD5sum: 7602e98f0347ca9a514c7769e3eb5872
+SHA1: b46d1e42d900e9f68c0e9efa20ebbeca8205b948
+SHA256: fbcea70e3147f2b64857f217807a85329f49a5060cd0e1eba873e540b9595004
+Section: debug
+Priority: optional
+Description: debug symbols for python3-nflog
+Build-Ids: dcba4abaeddeb2442be97ee09426464985932c30
+
+Package: python3-wpactrl
+Version: 0:0.0.0-1~w2d0
+Architecture: armhf
+Maintainer: wheel2deb <wheel2deb@upciti.com>
+Installed-Size: 49
+Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any
+Filename: ./python-3.9/python3-wpactrl_0.0.0-1~w2d0_armhf.deb
+Size: 13280
+MD5sum: 5c4a728f2ad4b4f7ccf18a5e7301ea2d
+SHA1: 48a0cc2564c107afe4f49769c12c8f8df67277a3
+SHA256: c45cfb59317b4af1cd907eef26b445f4fdc15f2089bda8aedc6bac7d2845cde0
+Section: python
+Priority: optional
+Description: Python bindings for wpa_supplicant/hostapd ctrl socket.
+ This package was generated by wheel2deb v0.5.8
+
+Package: python3-wpactrl-dbgsym
+Source: python3-wpactrl
+Version: 0:0.0.0-1~w2d0
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: wheel2deb <wheel2deb@upciti.com>
+Installed-Size: 28
+Depends: python3-wpactrl (= 0:0.0.0-1~w2d0)
+Filename: ./python-3.9/python3-wpactrl-dbgsym_0.0.0-1~w2d0_armhf.deb
+Size: 14592
+MD5sum: 22d4b49f496a36d8ff667ad2772505dc
+SHA1: 943868898d57176ebbede7e0e3577f0a607e90c6
+SHA256: d0dd953c35ee7a45c77f48639416b3894721f52afcd3d0207893caefddb4c0fb
+Section: debug
+Priority: optional
+Description: debug symbols for python3-wpactrl
+Build-Ids: 0de1d4cd698941cd91f4cfe0147b43034488cffe
+
+Package: truecrypt-cli
+Source: truecrypt
+Version: 7.1a-15
+Architecture: amd64
+Maintainer: Stefan Sundin <stefan@stefansundin.com>
+Installed-Size: 2031
+Depends: libc6 (>= 2.14), libfuse2 (>= 2.8), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), dmsetup
+Suggests: sudo, bash-completion, opensc
+Conflicts: truecrypt
+Filename: ./amd64/truecrypt-cli_7.1a-15_amd64.deb
+Size: 590420
+MD5sum: 4e8e1d04e279e8d2c2c0c24bfde5902a
+SHA1: 94aa8cf2696c0283b81cffed55c6d0ba498c4671
+SHA256: 6361867681e6865481ce0d0d7cac0beb4980c05b636b8d6f630eb4166cab3e08
+Section: utils
+Priority: extra
+Homepage: https://launchpad.net/~stefansundin/+archive/ubuntu/truecrypt
+Description: Free open-source disk encryption software (command-line version)
+ TrueCrypt is a software system for establishing and maintaining an
+ on-the-fly-encrypted volume (data storage device). On-the-fly encryption
+ means that data are automatically encrypted or decrypted right before they
+ are loaded or saved, without any user intervention. No data stored on an
+ encrypted volume can be read (decrypted) without using the correct
+ password/keyfile(s) or correct encryption keys. Entire file systems can be
+ encrypted.
+ .
+ This package includes the following patches:
+ 1) A bash completion script is included.
+ 2) A mount external helper is included (can be used with fstab).
+ .
+ To automatically grant TrueCrypt root privileges to mount volumes, run:
+ sudo visudo -f /etc/sudoers.d/truecrypt
+ And put the following in the file:
+ your_username ALL=(ALL) NOPASSWD:/usr/bin/truecrypt
+
+Package: truecrypt-cli
+Source: truecrypt
+Version: 7.1a-15
+Architecture: armhf
+Maintainer: Stefan Sundin <stefan@stefansundin.com>
+Installed-Size: 1416
+Depends: libc6 (>= 2.4), libfuse2 (>= 2.8), libgcc1 (>= 1:3.5), libstdc++6 (>= 5.2), dmsetup
+Suggests: sudo, bash-completion, opensc
+Conflicts: truecrypt
+Filename: ./armhf/truecrypt-cli_7.1a-15_armhf.deb
+Size: 522938
+MD5sum: 1ae1322da4559d6df116bc483f05153c
+SHA1: 4a8f1d9592955176a2021598c49ef1602af9781f
+SHA256: d8f5feeb2be494e05673e6ddca1cff1c6359c0bddae21ecf4c5a1a4413d10c4c
+Section: utils
+Priority: extra
+Homepage: https://launchpad.net/~stefansundin/+archive/ubuntu/truecrypt
+Description: Free open-source disk encryption software (command-line version)
+ TrueCrypt is a software system for establishing and maintaining an
+ on-the-fly-encrypted volume (data storage device). On-the-fly encryption
+ means that data are automatically encrypted or decrypted right before they
+ are loaded or saved, without any user intervention. No data stored on an
+ encrypted volume can be read (decrypted) without using the correct
+ password/keyfile(s) or correct encryption keys. Entire file systems can be
+ encrypted.
+ .
+ This package includes the following patches:
+ 1) A bash completion script is included.
+ 2) A mount external helper is included (can be used with fstab).
+ .
+ To automatically grant TrueCrypt root privileges to mount volumes, run:
+ sudo visudo -f /etc/sudoers.d/truecrypt
+ And put the following in the file:
+ your_username ALL=(ALL) NOPASSWD:/usr/bin/truecrypt
+
+Package: vnstat
+Version: 1.18-2
+Architecture: armhf
+Maintainer: Christian Göttsche <cgzones@googlemail.com>
+Installed-Size: 224
+Depends: libc6 (>= 2.7), adduser, lsb-base
+Suggests: vnstati
+Filename: ./armhf/vnstat_1.18-2_armhf.deb
+Size: 85156
+MD5sum: 3a3dd6ed886b5fc4269031def75dddec
+SHA1: ff166dd4842b35a78b7b8c6ef265e202688a9a40
+SHA256: 089797e0d8526c18038cfd30ce4e59138a86a77238ca6347a80da5cbde94c958
+Section: net
+Priority: optional
+Homepage: https://humdi.net/vnstat/
+Description: console-based network traffic monitor
+ vnStat is a network traffic monitor for Linux. It keeps a log of
+ daily network traffic for the selected interface(s). vnStat is not
+ a packet sniffer. The traffic information is analyzed from the /proc
+ filesystem, so vnStat can be used without root permissions.
+
+Package: whatsapp-webapp
+Version: 1.0
+Architecture: all
+Maintainer: Christiaan Diedericks <info@thefanclub.co.za>
+Installed-Size: 781
+Depends: google-chrome-stable | google-chrome | google-chrome-unstable
+Filename: ./amd64/whatsapp-webapp_1.0_all.deb
+Size: 559404
+MD5sum: 5fed9e9d36d75c65efa6b3d96f44aaa8
+SHA1: 95d43cbdc8beaddfe0b2748ec470ac5e34c5971c
+SHA256: 304038090c170065de64884921b9286907d9b17e68b95f59dfcb4005e4cf4595
+Section: utility
+Priority: optional
+Homepage: http://www.thefanclub.co.za
+Description: WhatsApp Web Application
+ Launch icon for WhatsApp Web Application.
+
+Package: xfce4-weather-plugin
+Version: 0.10.2-1~mx17
+Architecture: amd64
+Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+Installed-Size: 5031
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.42), libgtk-3-0 (>= 3.22), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsoup2.4-1 (>= 2.41.90), libxfce4panel-2.0-4 (>= 4.11.0), libxfce4ui-2-0 (>= 4.11.0), libxfce4util7 (>= 4.9.0), libxml2 (>= 2.7.4)
+Filename: ./amd64/xfce4-weather-plugin_0.10.2-1~mx17_amd64.deb
+Size: 2548694
+MD5sum: a79243fe883fac516c1b8f451f5b6663
+SHA1: cda1d6642f2d7af9735081c5706790dcc445de1a
+SHA256: 151958ac4f1db1f38e29711ee185d682f8c9bdcaed584ee2cf1aabc3978c9b37
+Section: xfce
+Priority: optional
+Homepage: https://goodies.xfce.org/
+Description: weather information plugin for the Xfce4 panel
+ The weather plugin displays information about the current weather according
+ your timezone and settings. It allows one to search weather location code in
+ the same plugin and displays weather status in little icons.
+ .
+ Features include:
+  - Temperature, atmospheric pressure and state.
+  - Wind speed, gust, and direction.
+  - Humidity, Visibility, Dew-point, UV Index.
+
