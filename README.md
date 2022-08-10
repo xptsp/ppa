@@ -14,6 +14,11 @@ My personal PPA repository for the **armhf** packages hosted here:
 | [nftables1](http://git.netfilter.org/nftables/commit/?id=132486709b1194c9f4ff721db8d5873838965548) | 1.0.5 | [nftables_1.0.5-1~git20220809.1324867_armhf.deb](./armhf/nftables_1.0.5-1~git20220809.1324867_armhf.deb) | ae95b46d25703334bac626f280f96129 |  
 | [libnftables1](http://git.netfilter.org/nftables/commit/?id=132486709b1194c9f4ff721db8d5873838965548) | 1.0.5 | [libnftables1_1.0.5-1~git20220809.1324867_armhf.deb](./armhf/libnftables1_1.0.5-1~git20220809.1324867_armhf.deb) | c619fdbaa08cc6445e24ea0754098194 |
 | [libnftables-dev](http://git.netfilter.org/nftables/commit/?id=132486709b1194c9f4ff721db8d5873838965548) | 1.0.5 | [libnftables-dev_1.0.5-1~git20220809.1324867_armhf.deb](./armhf/libnftables-dev_1.0.5-1~git20220809.1324867_armhf.deb) | b3ac6735255a5473614d108d98ce6bdb |
+| [miniupnpd](https://github.com/miniupnp/miniupnp/tree/0cc037f8b0d563334bace7af4e00e9041cfa97e6) | 2.3.0 | [miniupnpd_2.3.0-1~git20220602.0cc037f_all.deb](./armhf/miniupnpd_2.3.0-1~git20220602.0cc037f_all.deb) | 3e3ba6aef509c11e3280776acfb893cd |
+| [miniupnpd-iptables](https://github.com/miniupnp/miniupnp/tree/0cc037f8b0d563334bace7af4e00e9041cfa97e6) | 2.3.0 | [miniupnpd-iptables_2.3.0-1~git20220602.0cc037f_armhf.deb](./armhf/miniupnpd-iptables_2.3.0-1~git20220602.0cc037f_armhf.deb) | f9249a8ee438585704a15c83dbd81539 |  
+| [miniupnpd-nftables](https://github.com/miniupnp/miniupnp/tree/0cc037f8b0d563334bace7af4e00e9041cfa97e6) | 2.3.0 | [miniupnpd-nftables_2.3.0-1~git20220602.0cc037f_armhf.deb](./armhf/miniupnpd-nftables_2.3.0-1~git20220602.0cc037f_armhf.deb) | ebe48e7add1edc4a4c0514e63265abc5 |  
+
+----
 
 My personal PPA repository for the **amd64** packages hosted here:
 
@@ -23,19 +28,25 @@ My personal PPA repository for the **amd64** packages hosted here:
 | [truecrypt-cli](https://github.com/stefansundin/truecrypt.deb) | 7.1a-15 | [truecrypt-cli_7.1a-15_amd64.deb](./amd64/truecrypt-cli_7.1a-15_amd64.deb) | 4e8e1d04e279e8d2c2c0c24bfde5902a |
 | [xfce4-weather-plugin](https://mxrepo.com/mx/repo/pool/main/x/xfce4-weather-plugin/) | 0.10.2-1~mx17 | [xfce4-weather-plugin_0.10.2-1~mx17_amd64.deb](./amd64/xfce4-weather-plugin_0.10.2-1~mx17_amd64.deb) | a79243fe883fac516c1b8f451f5b6663 |  
 
+----
+
 These packages listed below are listed as **all** (as opposed to **armhf** or **arm64**).  They may *(or may not)* work on any platform:
 
 | Package | Version | Download | MD5 Hash |
 |---------|---------|----------|----------|
 | WhatsApp Web App | 1.0 | [whatsapp-webapp_1.0_all.deb](./amd64/whatsapp-webapp_1.0_all.deb) | 5fed9e9d36d75c65efa6b3d96f44aaa8 | 
 
+----
+
 # How To Use
 
 ```bash
-curl -s --compressed https://xptsp.github.io/ppa/KEY.gpg" | sudo apt-key add -
+curl -s --compressed https://xptsp.github.io/ppa/KEY.gpg | sudo apt-key add -
 sudo curl -SsL -o /etc/apt/sources.list.d/bpiwrt_repo.list https://xptsp.github.io/ppa/ppa.list
 sudo apt update
 ```
+
+----
 
 # Sources
 
