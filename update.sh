@@ -2,6 +2,12 @@
 
 export KEYNAME=43975081+xptsp@users.noreply.github.com
 
+# Abort if not in the chroot environment!
+if ! ischroot; then
+	echo "NOTICE: You need to be in the chroot environment to update the PPA!  Aborting!"
+	exit 1
+fi
+
 # Packages & Packages.gz
 dpkg-scanpackages --multiversion . > Packages
 gzip -k -f Packages
