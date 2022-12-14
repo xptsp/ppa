@@ -1,1 +1,1 @@
-deb https://xptsp.github.io/ppa ./
+deb [signed-by=/usr/share/keyrings/xptsp.gpg] https://xptsp.github.io/ppa ./
