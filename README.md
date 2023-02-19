@@ -14,6 +14,9 @@ My personal PPA repository for the **armhf** packages hosted here:
 | [nftables1](http://git.netfilter.org/nftables/commit/?id=132486709b1194c9f4ff721db8d5873838965548) | 1.0.5 | [nftables_1.0.5-1~git20220809.1324867_armhf.deb](https://github.com/xptsp/ppa/raw/main/armhf/nftables_1.0.5-1~git20220809.1324867_armhf.deb) | ae95b46d25703334bac626f280f96129 |  
 | [libnftables1](http://git.netfilter.org/nftables/commit/?id=132486709b1194c9f4ff721db8d5873838965548) | 1.0.5 | [libnftables1_1.0.5-1~git20220809.1324867_armhf.deb](https://github.com/xptsp/ppa/raw/main/armhf/libnftables1_1.0.5-1~git20220809.1324867_armhf.deb) | c619fdbaa08cc6445e24ea0754098194 |
 | [libnftables-dev](http://git.netfilter.org/nftables/commit/?id=132486709b1194c9f4ff721db8d5873838965548) | 1.0.5 | [libnftables-dev_1.0.5-1~git20220809.1324867_armhf.deb](https://github.com/xptsp/ppa/raw/main/armhf/libnftables-dev_1.0.5-1~git20220809.1324867_armhf.deb) | b3ac6735255a5473614d108d98ce6bdb |
+| [miniupnpd](https://github.com/miniupnp/miniupnp/tree/0cc037f8b0d563334bace7af4e00e9041cfa97e6) | 2.3.0 | [miniupnpd_2.3.0-1~git20220602.0cc037f_all.deb](https://github.com/xptsp/ppa/raw/main/armhf/miniupnpd_2.3.0-1~git20220602.0cc037f_all.deb) | 3e3ba6aef509c11e3280776acfb893cd |
+| [miniupnpd-iptables](https://github.com/miniupnp/miniupnp/tree/0cc037f8b0d563334bace7af4e00e9041cfa97e6) | 2.3.0 | [miniupnpd-iptables_2.3.0-1~git20220602.0cc037f_armhf.deb](https://github.com/xptsp/ppa/raw/main/armhf/miniupnpd-iptables_2.3.0-1~git20220602.0cc037f_armhf.deb) | f9249a8ee438585704a15c83dbd81539 |  
+| [miniupnpd-nftables](https://github.com/miniupnp/miniupnp/tree/0cc037f8b0d563334bace7af4e00e9041cfa97e6) | 2.3.0 | [miniupnpd-nftables_2.3.0-1~git20220602.0cc037f_armhf.deb](https://github.com/xptsp/ppa/raw/main/armhf/miniupnpd-nftables_2.3.0-1~git20220602.0cc037f_armhf.deb) | ebe48e7add1edc4a4c0514e63265abc5 |  
 
 ----
 
