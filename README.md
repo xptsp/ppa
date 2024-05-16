@@ -27,7 +27,7 @@ My personal PPA repository for the **amd64** packages hosted here:
 | [intel-nuc-led-dkms](https://github.com/xptsp/intel_nuc_led) | 2.0 | [intel-nuc-led-dkms_2.0_all.deb](https://github.com/xptsp/ppa/raw/main/amd64/intel-nuc-led-dkms_2.0_all.deb) | 5dc97af36a54363009710af702a4ada5 |
 | [truecrypt-cli](https://github.com/stefansundin/truecrypt.deb) | 7.1a-15 | [truecrypt-cli_7.1a-15_amd64.deb](https://github.com/xptsp/ppa/raw/main/amd64/truecrypt-cli_7.1a-15_amd64.deb) | 4e8e1d04e279e8d2c2c0c24bfde5902a |
 | [xfce4-weather-plugin](https://mxrepo.com/mx/repo/pool/main/x/xfce4-weather-plugin/) | 0.10.2-1~mx17 | [xfce4-weather-plugin_0.10.2-1~mx17_amd64.deb](https://github.com/xptsp/ppa/raw/main/amd64/xfce4-weather-plugin_0.10.2-1~mx17_amd64.deb) | a79243fe883fac516c1b8f451f5b6663 |  
-
+| [usign](https://github.com/xypron/usign) | 1.1.6 | [usign_20160822-e1ccc2a_amd64.deb](https://github.com/xptsp/ppa/raw/main/amd64/usign_20160822-e1ccc2a_amd64.deb) | 2326289c71993a21797f4a2888f92ea2 | 
 ----
 
 These packages listed below are listed as **all** (as opposed to **armhf** or **arm64**).  They may *(or may not)* work on any platform:
@@ -41,10 +41,12 @@ These packages listed below are listed as **all** (as opposed to **armhf** or **
 # How To Use
 
 ```bash
-+curl -SsL https://xptsp.github.io/ppa/KEY.gpg | sudo gpg --dearmor > /usr/share/keyrings/xptsp.gpg
-sudo curl -SsL -o /etc/apt/sources.list.d/bpiwrt_repo.list https://xptsp.github.io/ppa/ppa.list
+curl -s --compressed "https://xptsp.github.io/ppa/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/xptsp_ppa.gpg >/dev/null
+sudo curl -s --compressed -o /etc/apt/sources.list.d/xptsp_ppa.list "https://xptsp.github.io/ppa/ppa.list"
 sudo apt update
 ```
+
+**NOTE:** Effective May 16, 2024, the private/public key has been changed because the private key was lost.  Please execute the instructions again to use the PPA on your system.  You may have to delete **/etc/apt/sources.list.d/bpiwrt_repo.list** for this to succeed. 
 
 ----
 

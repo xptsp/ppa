@@ -10,8 +10,3 @@ gzip -k -f Packages
 apt-ftparchive release . > Release
 gpg --default-key "${KEYNAME}" -abs -o - Release > Release.gpg
 gpg --default-key "${KEYNAME}" --clearsign -o - Release > InRelease
-
-# Commit the changes and pull to GitHub.com:
-git add -A
-git commit -m "Update"
-git push
