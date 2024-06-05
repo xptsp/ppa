@@ -39,6 +39,19 @@ Section: misc
 Priority: optional
 Description: intel-nuc-led driver in DKMS format.
 
+Package: joycond
+Version: 0.4-0
+Architecture: amd64
+Maintainer: Daniel J. Ogorchock
+Depends: libevdev2, libudev1
+Filename: ./amd64/joycond_0.4-0_amd64.deb
+Size: 79290
+MD5sum: 87687aaf3d09cfae221d2298cee5e488
+SHA1: 97fdde691a222f3ce6f28ab899007fda60cf0501
+SHA256: 08487ffc83d19877a9d51ddd0d06cfc41706428bfb8ffa51aa65a397d29dd2dd
+Priority: optional
+Description: Pairs joy-cons together into a virtual controller
+
 Package: libmnl-dev
 Source: libmnl
 Version: 1.0.5-1~git20220808.a92ea99

@@ -28,6 +28,7 @@ My personal PPA repository for the **amd64** packages hosted here:
 | [truecrypt-cli](https://github.com/stefansundin/truecrypt.deb) | 7.1a-15 | [truecrypt-cli_7.1a-15_amd64.deb](https://github.com/xptsp/ppa/raw/main/amd64/truecrypt-cli_7.1a-15_amd64.deb) | 4e8e1d04e279e8d2c2c0c24bfde5902a |
 | [xfce4-weather-plugin](https://mxrepo.com/mx/repo/pool/main/x/xfce4-weather-plugin/) | 0.10.2-1~mx17 | [xfce4-weather-plugin_0.10.2-1~mx17_amd64.deb](https://github.com/xptsp/ppa/raw/main/amd64/xfce4-weather-plugin_0.10.2-1~mx17_amd64.deb) | a79243fe883fac516c1b8f451f5b6663 |  
 | [usign](https://github.com/xypron/usign) | 1.1.6 | [usign_20160822-e1ccc2a_amd64.deb](https://github.com/xptsp/ppa/raw/main/amd64/usign_20160822-e1ccc2a_amd64.deb) | 2326289c71993a21797f4a2888f92ea2 | 
+| [joycond](https://github.com/DanielOgorchock/joycond) | 0.4.0-0 | [joycond_0.4-0_amd64.deb](https://github.com/xptsp/ppa/raw/main/amd64/joycond_0.4-0_amd64.deb) | 87687aaf3d09cfae221d2298cee5e488 |
 ----
 
 These packages listed below are listed as **all** (as opposed to **armhf** or **arm64**).  They may *(or may not)* work on any platform:
