@@ -1,3 +1,22 @@
+Package: chrome-gnome-shell
+Source: gnome-browser-connector
+Version: 42.1-4
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 8
+Depends: gnome-browser-connector
+Filename: ./amd64/chrome-gnome-shell_42.1-4_all.deb
+Size: 1340
+MD5sum: 6c300b720bf756e3c5a3eeb68f2cbd83
+SHA1: 594a7dc3240935060d89cf93894cf0df75112a66
+SHA256: 5770454b83659723a805cf20f3e667b485e275722e1b8650367911e3972c4d19
+Section: oldlibs
+Priority: optional
+Homepage: https://wiki.gnome.org/Projects/GnomeShellIntegration
+Description: GNOME Shell integration for browsers - transitional package
+ This empty transitional package is here to ensure smooth upgrades.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
 Package: gnome-browser-connector
 Version: 42.1-4
 Architecture: all
@@ -480,6 +499,26 @@ Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  boot animation while the boot process happens in the background.
  .
  This package contains the Kodi Animated Logo theme.
+
+Package: transmission-remote-gtk
+Version: 1.5.1-1
+Architecture: amd64
+Maintainer: Benjamin Barenblat <bbaren@debian.org>
+Installed-Size: 754
+Depends: libc6 (>= 2.29), libcurl4 (>= 7.16.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgeoip1 (>= 1.6.12), libglib2.0-0 (>= 2.44), libgtk-3-0 (>= 3.21.5), libjson-glib-1.0-0 (>= 1.5.2), libpango-1.0-0 (>= 1.14.0), libproxy1v5 (>= 0.4.17)
+Filename: ./amd64/transmission-remote-gtk_1.5.1-1_amd64.deb
+Size: 190360
+MD5sum: 449fdb3cb47759d7bc7a97d922d3ee6c
+SHA1: 6f36a8589c4e1a48ef324065801a82d576f472fa
+SHA256: fa9915cf0723feeb0bc7be8fb9202d0432536c143536365a84b8603c619c726d
+Section: net
+Priority: optional
+Homepage: https://github.com/transmission-remote-gtk/transmission-remote-gtk
+Description: GTK+ interface for the Transmission BitTorrent daemon
+ transmission-remote-gtk is a GTK+ interface for controlling the
+ Transmission BitTorrent daemon.  It is a full featured client,
+ providing the ability to upload, queue, and delete torrent files,
+ monitor downloads, and adjust speed limits.
 
 Package: truecrypt-cli
 Source: truecrypt
