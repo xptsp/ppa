@@ -549,6 +549,20 @@ Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  .
  This package contains the Kodi Animated Logo theme.
 
+Package: reddragon-motd
+Version: 1.0.1
+Architecture: all
+Maintainer: Douglas Orend
+Installed-Size: 40
+Depends: toilet
+Filename: ./amd64/reddragon-motd_1.0-1_all.deb
+Size: 2464
+MD5sum: bc76219d7dddb8693f5c1411493aaa47
+SHA1: c42020f1fd1602479db511bc307598b7c6493afe
+SHA256: bc3f0051d261ef82c096c9f6f4761309afbd1b2f871da47f1d7a529955c31a0f
+Priority: optional
+Description: Customizes the MOTD message
+
 Package: scrcpy
 Version: 3.1-5689
 Architecture: amd64
