@@ -528,6 +528,29 @@ Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  .
  This package contains the Kodi Animated Logo theme.
 
+Package: plymouth-theme-reddragon
+Source: xubuntu-artwork
+Version: 22.04.1
+Architecture: all
+Maintainer: Douglas Orend
+Installed-Size: 964
+Depends: plymouth, plymouth-label
+Breaks: plymouth (<< 0.9.2-3ubuntu1~)
+Provides: plymouth-theme
+Filename: ./amd64/plymouth-theme-reddragon_1.0-1_all.deb
+Size: 891620
+MD5sum: 99e48a76691b91733c7aec868fe52f7d
+SHA1: 37131632d573f7b1d89c9b3aeba69692deeff88a
+SHA256: da177f8545c8d75f94744886b73b261620a12f4289619204f63337641ff83e06
+Section: x11
+Priority: optional
+Description: graphical boot animation and logger - xubuntu-logo theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default reddragon theme.
+
 Package: plymouth-theme-retropie-kodi-animated-logo
 Source: plymouth
 Version: 1.0.0
