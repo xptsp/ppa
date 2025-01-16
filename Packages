@@ -118,7 +118,7 @@ Version: 1.0.5
 Architecture: all
 Maintainer: Luis Finke <luisfinke@gmail.com>
 Depends: bash, openbox, kodi
-Filename: ./amd64/kodi-openbox.deb
+Filename: ./amd64/kodi-openbox_1.0.5_all.deb
 Size: 1738
 MD5sum: d3143c8340d454038b6a2588fd14d105
 SHA1: 9e5f025d1e884a5c6fce98287cfc489042fc1980
