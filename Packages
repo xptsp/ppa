@@ -442,6 +442,25 @@ Description: simple Xfce oriented text editor
    * Printing
 Original-Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
 
+Package: nautilus-gnome-disks
+Version: 0.1.1
+Architecture: amd64
+Maintainer: Douglas Orend
+Installed-Size: 36
+Depends: nautilus (>= 2.10)
+Enhances: nautilus
+Filename: ./amd64/nautilus-gnome-disks_0.1.1_all.deb
+Size: 1844
+MD5sum: ad75ed914fcc070b94d7c45fc1df2b05
+SHA1: 64c54211e34e911ab75fc7bb5f7ff5cc3927f4b8
+SHA256: 9fd3aeb2c457911533b1894e8be8f0ac19b918012339a7e40473b578f92d4a34
+Section: gnome
+Priority: optional
+Homepage: https://github.com/thebitstick/nautilus-gnome-disks
+Description: Nautilus extension to restore/write/flash a disk image
+    Allows you to restore/write/flash a disk image to storage devices
+    using GNOME Disks from Nautilus
+
 Package: nftables
 Version: 1.0.5-1~git20220809.1324867
 Architecture: armhf
