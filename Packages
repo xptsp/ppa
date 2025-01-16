@@ -1,3 +1,30 @@
+Package: gnome-browser-connector
+Version: 42.1-4
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 83
+Depends: gnome-shell, python3, python3-gi, python3-requests
+Recommends: gnome-shell-extension-prefs
+Suggests: chromium | chromium-browser, firefox
+Enhances: chromium, chromium-browser, firefox
+Breaks: chrome-gnome-shell (<< 42), firefox (<< 56), firefox-esr (<< 56)
+Replaces: chrome-gnome-shell (<< 42), firefox (<< 56), firefox-esr (<< 56)
+Filename: ./amd64/gnome-browser-connector_42.1-4_all.deb
+Size: 13726
+MD5sum: 54301435d9e9cee49ea12f7b4ba56980
+SHA1: 3073f8fa5091d6021c21fda8e4eeea87e0c89c9e
+SHA256: 15af5661e857f72724856b5b47b4816b7ff35ba14dc4c73a7f0027e6c1b0c0ad
+Section: gnome
+Priority: optional
+Homepage: https://wiki.gnome.org/Projects/GnomeShellIntegration
+Description: GNOME Shell extensions integration for web browsers
+ Provides integration with GNOME Shell extensions repository for
+ Chromium (and derivatives) and Firefox
+ .
+ This package provides the connector that talks with the browser
+ extension
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
 Package: hd-idle
 Version: 1.17
 Architecture: armhf
@@ -51,6 +78,20 @@ SHA1: 97fdde691a222f3ce6f28ab899007fda60cf0501
 SHA256: 08487ffc83d19877a9d51ddd0d06cfc41706428bfb8ffa51aa65a397d29dd2dd
 Priority: optional
 Description: Pairs joy-cons together into a virtual controller
+
+Package: kodi-openbox
+Version: 1.0.5
+Architecture: all
+Maintainer: Luis Finke <luisfinke@gmail.com>
+Depends: bash, openbox, kodi
+Filename: ./amd64/kodi-openbox.deb
+Size: 1738
+MD5sum: d3143c8340d454038b6a2588fd14d105
+SHA1: 9e5f025d1e884a5c6fce98287cfc489042fc1980
+SHA256: edc21095f28821ac693347e2a42a2378a61cf6f8f08e90562238ac4bd48510c9
+Section: base
+Priority: optional
+Description: An xsession that runs Kodi Media Center on top of an Openbox session
 
 Package: libmnl-dev
 Source: libmnl
@@ -329,6 +370,44 @@ Description: UPnP and NAT-PMP daemon for gateway routers - nftables backend
  .
  This package provides miniupnpd with nftables backend.
 
+Package: mousepad
+Version: 0.5.8-1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1805
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.34), libglib2.0-0 (>= 2.37.3), libgspell-1-2 (>= 1.8.2), libgtk-3-0 (>= 3.0.0), libmousepad0 (>= 0.5.8)
+Filename: ./amd64/mousepad_0.5.8-1_amd64.deb
+Size: 339120
+MD5sum: f1599b7565ceeff7ca42ebd7d9844fd9
+SHA1: a40282b848a74152cb78e8c339ffe57e286782cd
+SHA256: b2d6b3d7e50e0fdfc7362dfe39c8f39c5456d153f56697818a32451a5f55b013
+Section: xfce
+Priority: optional
+Homepage: https://docs.xfce.org/apps/mousepad/start
+Description: simple Xfce oriented text editor
+ Mousepad is a graphical text editor for Xfce based on Leafpad.
+ .
+ The initial reason for Mousepad was to provide printing support, which would
+ have been difficult for Leafpad for various reasons.
+ .
+ Although some features are under development, currently Mousepad has the
+ following features:
+   * Complete support for UTF-8 text
+   * Cut/Copy/Paste and Select All text
+   * Search and Replace
+   * Font selection
+   * Word Wrap
+   * Character coding selection
+   * Auto character coding detection (UTF-8 and some code-sets)
+   * Manual code-set setting
+   * Infinite Undo/Redo by word
+   * Auto Indent
+   * Multi-line Indent
+   * Display line numbers
+   * Drag and Drop
+   * Printing
+Original-Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+
 Package: nftables
 Version: 1.0.5-1~git20220809.1324867
 Architecture: armhf
@@ -359,6 +438,83 @@ Description: Program to control packet filtering rules by Netfilter project
  proxying, advanced routing and traffic control.
  .
  A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
+
+Package: plymouth-theme-kodi-animated-logo
+Source: plymouth
+Version: 1.0.0
+Architecture: all
+Maintainer: solbero <njord.solberg@gmail.com>
+Depends: plymouth, plymouth-label
+Provides: plymouth-theme
+Filename: ./amd64/plymouth-theme-kodi-animated-logo.deb
+Size: 619200
+MD5sum: 349afb32ee137ba4e2785469416b747f
+SHA1: b5ceee9448179441f8955183bf9d962233d22c6c
+SHA256: 78e5c4ee5660451e71b2872930456e64ec654f3cccdc6130b54caf8f817844d5
+Section: x11
+Priority: optional
+Description: Graphical boot animation and logger (Kodi Animated Logo theme)
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the Kodi Animated Logo theme.
+
+Package: plymouth-theme-retropie-kodi-animated-logo
+Source: plymouth
+Version: 1.0.0
+Architecture: all
+Maintainer: solbero <njord.solberg@gmail.com>
+Depends: plymouth, plymouth-label
+Provides: plymouth-theme
+Filename: ./amd64/plymouth-theme-retropie-kodi-animated-logo.deb
+Size: 638374
+MD5sum: e9dfb2bc6b46441e64d6ddbed4f371db
+SHA1: 388ed8c2efec90cf6f0c918e4cddd71b2e0c15a5
+SHA256: 2e95d08b63017e305d75e08321438f22e39859755ad4dd63024ea996c8652528
+Section: x11
+Priority: optional
+Description: Graphical boot animation and logger (Kodi Animated Logo theme)
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the Kodi Animated Logo theme.
+
+Package: truecrypt-cli
+Source: truecrypt
+Version: 7.1a-15
+Architecture: amd64
+Maintainer: Stefan Sundin <stefan@stefansundin.com>
+Installed-Size: 2031
+Depends: libc6 (>= 2.14), libfuse2 (>= 2.8), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), dmsetup
+Suggests: sudo, bash-completion, opensc
+Conflicts: truecrypt
+Filename: ./amd64/truecrypt-cli_7.1a-15_amd64.deb
+Size: 590420
+MD5sum: 4e8e1d04e279e8d2c2c0c24bfde5902a
+SHA1: 94aa8cf2696c0283b81cffed55c6d0ba498c4671
+SHA256: 6361867681e6865481ce0d0d7cac0beb4980c05b636b8d6f630eb4166cab3e08
+Section: utils
+Priority: extra
+Homepage: https://launchpad.net/~stefansundin/+archive/ubuntu/truecrypt
+Description: Free open-source disk encryption software (command-line version)
+ TrueCrypt is a software system for establishing and maintaining an
+ on-the-fly-encrypted volume (data storage device). On-the-fly encryption
+ means that data are automatically encrypted or decrypted right before they
+ are loaded or saved, without any user intervention. No data stored on an
+ encrypted volume can be read (decrypted) without using the correct
+ password/keyfile(s) or correct encryption keys. Entire file systems can be
+ encrypted.
+ .
+ This package includes the following patches:
+ 1) A bash completion script is included.
+ 2) A mount external helper is included (can be used with fstab).
+ .
+ To automatically grant TrueCrypt root privileges to mount volumes, run:
+ sudo visudo -f /etc/sudoers.d/truecrypt
+ And put the following in the file:
+ your_username ALL=(ALL) NOPASSWD:/usr/bin/truecrypt
 
 Package: truecrypt-cli
 Source: truecrypt
@@ -395,40 +551,29 @@ Description: Free open-source disk encryption software (command-line version)
  And put the following in the file:
  your_username ALL=(ALL) NOPASSWD:/usr/bin/truecrypt
 
-Package: truecrypt-cli
-Source: truecrypt
-Version: 7.1a-15
+Package: urserver
+Version: 3.13.0.2505
 Architecture: amd64
-Maintainer: Stefan Sundin <stefan@stefansundin.com>
-Installed-Size: 2031
-Depends: libc6 (>= 2.14), libfuse2 (>= 2.8), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), dmsetup
-Suggests: sudo, bash-completion, opensc
-Conflicts: truecrypt
-Filename: ./amd64/truecrypt-cli_7.1a-15_amd64.deb
-Size: 590420
-MD5sum: 4e8e1d04e279e8d2c2c0c24bfde5902a
-SHA1: 94aa8cf2696c0283b81cffed55c6d0ba498c4671
-SHA256: 6361867681e6865481ce0d0d7cac0beb4980c05b636b8d6f630eb4166cab3e08
-Section: utils
+Maintainer: Unified Intents AB <info@unifiedremote.com>
+Installed-Size: 19480
+Depends: libc6, libstdc++6
+Filename: ./amd64/urserver-3.13.0.2505_amd64.deb
+Size: 8598640
+MD5sum: 65073c122c7eebcb16849220192cb002
+SHA1: e10f2eb011eba833645c202471edce9fd67441b8
+SHA256: 588596ed242597b5e9f09c24f900ee72a33a4d2f48fd6f4afb5f3e48300af42b
+Section: non-free
 Priority: extra
-Homepage: https://launchpad.net/~stefansundin/+archive/ubuntu/truecrypt
-Description: Free open-source disk encryption software (command-line version)
- TrueCrypt is a software system for establishing and maintaining an
- on-the-fly-encrypted volume (data storage device). On-the-fly encryption
- means that data are automatically encrypted or decrypted right before they
- are loaded or saved, without any user intervention. No data stored on an
- encrypted volume can be read (decrypted) without using the correct
- password/keyfile(s) or correct encryption keys. Entire file systems can be
- encrypted.
- .
- This package includes the following patches:
- 1) A bash completion script is included.
- 2) A mount external helper is included (can be used with fstab).
- .
- To automatically grant TrueCrypt root privileges to mount volumes, run:
- sudo visudo -f /etc/sudoers.d/truecrypt
- And put the following in the file:
- your_username ALL=(ALL) NOPASSWD:/usr/bin/truecrypt
+Homepage: https://www.unifiedremote.com
+Description: Unified Remote Server
+ Unified Remote Server for Linux. Easily the best way of controlling your PC from your smartphone.
+  * Easily connect using WiFi and Bluetooth coming soon.
+  * Automatic server detection to easily find servers installed on your network.
+  * Server password protection and encryption for added security.
+  * Web-based server manager lets you configure your server from anywhere.
+  * Basic Input remote to control mouse movement and keyboard input.
+  * Loaded with remotes to control many media applications, tools, system settings, etc.
+  * App available for Android, iOS, and Windows Phone.
 
 Package: usign
 Version: 20160822-e1ccc2a
