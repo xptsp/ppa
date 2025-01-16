@@ -500,6 +500,51 @@ Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  .
  This package contains the Kodi Animated Logo theme.
 
+Package: scrcpy
+Version: 3.1-5689
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 202
+Depends: libavcodec58 (>= 7:4.4), libavdevice58 (>= 7:4.4), libavformat58 (>= 7:4.4), libavutil56 (>= 7:4.4), libc6 (>= 2.34), libsdl2-2.0-0 (>= 2.0.12), libusb-1.0-0 (>= 2:1.0.16), scrcpy-server
+Recommends: adb
+Filename: ./amd64/scrcpy_3.1-5689_amd64.deb
+Size: 6626640
+MD5sum: 67dbec096df20144f092cc42ee88ac50
+SHA1: d92913611b5430c31923d05a45ecdefc118d1d5f
+SHA256: da93280a69edf1faeb7f4a642e9d94bb4f50cda861e26eb4dcf1c464dcf59e53
+Section: net
+Priority: optional
+Homepage: https://github.com/Genymobile/scrcpy
+Description: Display and control your Android device
+ This application provides display and control of Android devices connected on
+ USB (or over TCP/IP). It does not require any root access.
+ .
+ This package contains the client (desktop) binary.
+Original-Maintainer: Yangfl <mmyangfl@gmail.com>
+
+Package: scrcpy-server
+Source: scrcpy
+Version: 3.1-5689
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 49
+Filename: ./amd64/scrcpy-server_3.1-5689_all.deb
+Size: 91956
+MD5sum: f94aa3afc676623e548f87aafb7042dc
+SHA1: d9e3d9d31e6cf346af390a2c4c865435ae9852b3
+SHA256: 8cdd99d4468fed17fee2e7e92f75c4563e686a4d4cca46b3c00b47ba19fd641c
+Section: net
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/Genymobile/scrcpy
+Description: Display and control your Android device - server binary
+ This application provides display and control of Android devices connected on
+ USB (or over TCP/IP). It does not require any root access.
+ .
+ This package contains the server (mobile) binary, which will be pushed to the
+ Android device.
+Original-Maintainer: Yangfl <mmyangfl@gmail.com>
+
 Package: transmission-remote-gtk
 Version: 1.5.1-1
 Architecture: amd64
