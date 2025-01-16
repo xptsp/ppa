@@ -514,7 +514,7 @@ Architecture: all
 Maintainer: solbero <njord.solberg@gmail.com>
 Depends: plymouth, plymouth-label
 Provides: plymouth-theme
-Filename: ./amd64/plymouth-theme-kodi-animated-logo.deb
+Filename: ./amd64/plymouth-theme-kodi-animated-logo_1.0.0_all.deb
 Size: 619200
 MD5sum: 349afb32ee137ba4e2785469416b747f
 SHA1: b5ceee9448179441f8955183bf9d962233d22c6c
@@ -558,7 +558,7 @@ Architecture: all
 Maintainer: solbero <njord.solberg@gmail.com>
 Depends: plymouth, plymouth-label
 Provides: plymouth-theme
-Filename: ./amd64/plymouth-theme-retropie-kodi-animated-logo.deb
+Filename: ./amd64/plymouth-theme-retropie-kodi-animated-logo_1.0.0_all.deb
 Size: 638374
 MD5sum: e9dfb2bc6b46441e64d6ddbed4f371db
 SHA1: 388ed8c2efec90cf6f0c918e4cddd71b2e0c15a5
