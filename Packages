@@ -443,17 +443,17 @@ Description: simple Xfce oriented text editor
 Original-Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
 
 Package: nautilus-gnome-disks
-Version: 0.1.1
+Version: 0.1.1-2
 Architecture: amd64
 Maintainer: Douglas Orend
 Installed-Size: 36
-Depends: nautilus (>= 2.10)
+Depends: nautilus (>= 2.10), gnome-disk-utility
 Enhances: nautilus
-Filename: ./amd64/nautilus-gnome-disks_0.1.1_all.deb
-Size: 1844
-MD5sum: ad75ed914fcc070b94d7c45fc1df2b05
-SHA1: 64c54211e34e911ab75fc7bb5f7ff5cc3927f4b8
-SHA256: 9fd3aeb2c457911533b1894e8be8f0ac19b918012339a7e40473b578f92d4a34
+Filename: ./amd64/nautilus-gnome-disks_0.1.1-2_all.deb
+Size: 1856
+MD5sum: c381f68b58c8fac9951a4ebaf1aa2c7e
+SHA1: 950cf077540cacb20815b6145d337c0e682eb6b8
+SHA256: 2f72c5277cb25c61a48349d5b1a91de3dfe38f1cb7e8775b352fe7221a1f0395
 Section: gnome
 Priority: optional
 Homepage: https://github.com/thebitstick/nautilus-gnome-disks
