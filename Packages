@@ -44,6 +44,21 @@ Description: GNOME Shell extensions integration for web browsers
  extension
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
+Package: grub-theme-reddragon
+Source: breeze-grub
+Version: 5.24.4-0ubuntu1
+Architecture: amd64
+Maintainer: Douglas Orend
+Installed-Size: 1224
+Filename: ./amd64/grub-theme-reddragon_1.0_all.deb
+Size: 801136
+MD5sum: 153c0d1d95842c192b90d4a4f3a34dfb
+SHA1: 3546324ecac27d833b1a33e67ebec1378aaa4542
+SHA256: e1c558493608ab368e4daacf2bd78124102e9732d484cae6fd26e3fa5dbc10e5
+Section: grub
+Priority: optional
+Description: RedDragon theme for GRUB 2
+
 Package: hd-idle
 Version: 1.17
 Architecture: armhf
