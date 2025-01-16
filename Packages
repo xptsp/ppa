@@ -492,6 +492,21 @@ Description: Program to control packet filtering rules by Netfilter project
  .
  A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
 
+Package: peanut
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend
+Installed-Size: 24
+Depends: net-tools
+Filename: ./amd64/peanut_1.0_all.deb
+Size: 1148
+MD5sum: 2c7d902a259b721e00f750c36b69468c
+SHA1: b73173d6e77e82a992cb86d084986a699b11b18a
+SHA256: 16f05eb5a88b8f666b0613bcb1d3d200c9923c9443ad2df4b3dd1392a30e072d
+Section: utils
+Priority: optional
+Description: Displays listening IPs and ports, sorting by ports then IPs
+
 Package: plymouth-theme-kodi-animated-logo
 Source: plymouth
 Version: 1.0.0
