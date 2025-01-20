@@ -115,18 +115,22 @@ Priority: optional
 Description: Pairs joy-cons together into a virtual controller
 
 Package: kodi-openbox
-Version: 1.0.5
+Version: 1.0.5-1
 Architecture: all
 Maintainer: Luis Finke <luisfinke@gmail.com>
-Depends: bash, openbox, kodi
-Filename: ./amd64/kodi-openbox_1.0.5_all.deb
-Size: 1738
-MD5sum: d3143c8340d454038b6a2588fd14d105
-SHA1: 9e5f025d1e884a5c6fce98287cfc489042fc1980
-SHA256: edc21095f28821ac693347e2a42a2378a61cf6f8f08e90562238ac4bd48510c9
+Depends: bash (>=5.1), openbox, kodi
+Filename: ./amd64/kodi-openbox_1.0.5-1_all.deb
+Size: 1840
+MD5sum: 07640f0515520e8f3d77ac35258e4050
+SHA1: b1fd3921be632ae64b99dadb0e010a10fefb8724
+SHA256: 7e0bc0b4858983f7cb6bd061d45fa3fa6163a99ba55613a925024720540b54a5
 Section: base
 Priority: optional
-Description: An xsession that runs Kodi Media Center on top of an Openbox session
+Homepage: https://github.com/lufinkey/kodi-openbox
+Description: Xsession on top of an Openbox session
+ An xsession that runs Kodi media center on top of a minimal
+ Openbox session. Useful for launching emulators and other
+ external apps
 
 Package: libmnl-dev
 Source: libmnl
@@ -576,18 +580,23 @@ Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  This package contains the Kodi Animated Logo theme.
 
 Package: reddragon-motd
-Version: 1.0.1
+Version: 1.0-2
 Architecture: all
-Maintainer: Douglas Orend
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 40
 Depends: toilet
-Filename: ./amd64/reddragon-motd_1.0-1_all.deb
-Size: 2464
-MD5sum: bc76219d7dddb8693f5c1411493aaa47
-SHA1: c42020f1fd1602479db511bc307598b7c6493afe
-SHA256: bc3f0051d261ef82c096c9f6f4761309afbd1b2f871da47f1d7a529955c31a0f
+Filename: ./amd64/reddragon-motd_1.0-2_all.deb
+Size: 3022
+MD5sum: aacb0aeaf36824adb7cfdd8aadd5e05e
+SHA1: 93149b78db79dd0e32dd5095a446842dab5312a3
+SHA256: 2b14cc7126e321bb16fab9901a7d4cc6d450d9168ab51c43f1be2031d5ca0306
+Section: base
 Priority: optional
 Description: Customizes the MOTD message
+ A MOTD package that information about the system, such as
+ temperature, system uptime, memory usage, average system
+ load, usage on /, swap usage (if any), number of local
+ users, and number of processes running on the system.
 
 Package: scrcpy
 Version: 3.1-5689
