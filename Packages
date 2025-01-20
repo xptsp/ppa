@@ -510,18 +510,19 @@ Description: Displays listening IPs and ports, sorting by ports then IPs
 
 Package: plymouth-theme-kodi-animated-logo
 Source: plymouth
-Version: 1.0.0
+Version: 1.0.0-2
 Architecture: all
 Maintainer: solbero <njord.solberg@gmail.com>
 Depends: plymouth, plymouth-label
 Provides: plymouth-theme
-Filename: ./amd64/plymouth-theme-kodi-animated-logo_1.0.0_all.deb
-Size: 619200
-MD5sum: 349afb32ee137ba4e2785469416b747f
-SHA1: b5ceee9448179441f8955183bf9d962233d22c6c
-SHA256: 78e5c4ee5660451e71b2872930456e64ec654f3cccdc6130b54caf8f817844d5
+Filename: ./amd64/plymouth-theme-kodi-animated-logo_1.0-2_all.deb
+Size: 622432
+MD5sum: 58e70b87eeff53edbacf2825c9d5f9d2
+SHA1: ff53547e84921703f3d91b4a712a154a02bcf352
+SHA256: b394c0735ac0f36e12a42d037423b45e5effb5b73ff50740fcec1782d38ef420
 Section: x11
 Priority: optional
+Homepage: https://github.com/solbero/plymouth-theme-kodi-animated-logo
 Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  Plymouth is an application that runs very early in the boot process
  (even before the root filesystem is mounted!) that provides a graphical
@@ -533,16 +534,16 @@ Package: plymouth-theme-reddragon
 Source: xubuntu-artwork
 Version: 22.04.1
 Architecture: all
-Maintainer: Douglas Orend
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 964
 Depends: plymouth, plymouth-label
 Breaks: plymouth (<< 0.9.2-3ubuntu1~)
 Provides: plymouth-theme
-Filename: ./amd64/plymouth-theme-reddragon_1.0-1_all.deb
-Size: 891620
-MD5sum: 99e48a76691b91733c7aec868fe52f7d
-SHA1: 37131632d573f7b1d89c9b3aeba69692deeff88a
-SHA256: da177f8545c8d75f94744886b73b261620a12f4289619204f63337641ff83e06
+Filename: ./amd64/plymouth-theme-reddragon_1.0-2_all.deb
+Size: 892074
+MD5sum: 4fcc3b4b30988ae7106ddd32b3fda5cf
+SHA1: 91f77136ba949956421b7ee95daf8409e85cf891
+SHA256: 43e95097f8145e7b87385b7e8453937e6e4019f859ee015949f2086cacee0665
 Section: x11
 Priority: optional
 Description: graphical boot animation and logger - xubuntu-logo theme
@@ -554,18 +555,19 @@ Description: graphical boot animation and logger - xubuntu-logo theme
 
 Package: plymouth-theme-retropie-kodi-animated-logo
 Source: plymouth
-Version: 1.0.0
+Version: 1.0.0-2
 Architecture: all
 Maintainer: solbero <njord.solberg@gmail.com>
 Depends: plymouth, plymouth-label
 Provides: plymouth-theme
-Filename: ./amd64/plymouth-theme-retropie-kodi-animated-logo_1.0.0_all.deb
-Size: 638374
-MD5sum: e9dfb2bc6b46441e64d6ddbed4f371db
-SHA1: 388ed8c2efec90cf6f0c918e4cddd71b2e0c15a5
-SHA256: 2e95d08b63017e305d75e08321438f22e39859755ad4dd63024ea996c8652528
+Filename: ./amd64/plymouth-theme-retropie-kodi-animated-logo_1.0-2_all.deb
+Size: 641656
+MD5sum: 67fcd8b65f180f4e7030659aa7656a1e
+SHA1: b18872fb6f136945cb4b98803c8fb2750945113c
+SHA256: fe5b528eed58b61bfa9dcb0d58940de683665e8550cb33a4529cf391b84f550c
 Section: x11
 Priority: optional
+Homepage: https://github.com/solbero/plymouth-theme-kodi-animated-logo
 Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  Plymouth is an application that runs very early in the boot process
  (even before the root filesystem is mounted!) that provides a graphical
