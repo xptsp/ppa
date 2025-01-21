@@ -120,6 +120,28 @@ Description: Dash To Panel extension for GNOME Shell
  Please note that the extension must be manually enabled, for example
  using gnome-tweak-tool.
 
+Package: gnome-shell-extension-gamemode
+Version: 48-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 272
+Depends: gnome-shell (>= 40), gnome-shell (<< 42~), gamemode
+Filename: ./all/gnome-shell-extension-gamemode_7-1_all.deb
+Size: 11404
+MD5sum: 807112b84dc3acd3a8fe206e7cef621d
+SHA1: a16dcc772b750a633a89757bf4f6ac34bc58e1eb
+SHA256: 397d2b3efc2c8db0676545e83bd63379285a61c64a502b7174a028040afa0dd2
+Section: gnome
+Priority: optional
+Homepage: https://gitlab.com/arcmenu/ArcMenu
+Description: Game Mode extension for GNOME Shell
+ Status indicator for GameMode
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
 Package: gnome-shell-extension-grand-theft-focus
 Version: 3-1
 Architecture: all
@@ -233,6 +255,28 @@ Homepage: https://gitlab.com/g3786/prevent-double-empty-window
 Description: Prevent Double Empty Window extension for GNOME Shell
  Set MIN_NUMBER_WORKSPACES to 1 so there is only one empty workspace
  when there are no windows open.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-reboot-to-uefi
+Version: 14-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 160
+Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Filename: ./all/gnome-shell-extension-reboot-to-uefi_14-1_all.deb
+Size: 5232
+MD5sum: ac78db12343624738488a5fdcf0bbcc9
+SHA1: 94daee466c1c1060cb7d98bd7225ebcca2f3a144
+SHA256: a039611edfe384da6b0b9752ac357632b16ac180d5a607b8e9a53c6593b32a39
+Section: gnome
+Priority: optional
+Homepage: https://github.com/kgshank/gse-refresh-wifi
+Description: Reboot to UEFI extension for GNOME Shell
+ Reboot system into UEFI
  .
  This package provides the gnome-shell extension.
  .
