@@ -44,6 +44,31 @@ Description: GNOME Shell extensions integration for web browsers
  extension
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
+Package: gnome-shell-extension-arcmenu
+Version: 48-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 3516
+Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
+Filename: ./all/gnome-shell-extension-arcmenu_48-1_all.deb
+Size: 405206
+MD5sum: 0708103eef08d5b43f5f1e1b1b1a3307
+SHA1: a2e095c09ce1eb37295777043503ccdcc9ec6bf8
+SHA256: 94f70308d81b95d7bb32e15086a9b78caeb06cf86f24a5167ad562a2e9934b82
+Section: gnome
+Priority: optional
+Homepage: https://gitlab.com/arcmenu/ArcMenu
+Description: ArcMenu extension for GNOME Shell
+ Application menu for GNOME Shell
+ .
+ Features include: various menu layouts, built in GNOME search,
+ quick access to system shortcuts, and much more!
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
 Package: gnome-shell-extension-dash-to-dock-workaround
 Version: 3-1
 Architecture: all
@@ -60,6 +85,35 @@ Priority: optional
 Homepage: https://github.com/popov895/dash-to-dock-workaround
 Description: Dash-To-Dock Workaround extension for GNOME Shell
  Quick fix for https://bugs.launchpad.net/ubuntu/+source/gnome-shell-extension-ubuntu-dock/+bug/1961508
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-dash-to-panel
+Version: 50-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 1712
+Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
+Filename: ./all/gnome-shell-extension-dash-to-panel_56-1_all.deb
+Size: 202410
+MD5sum: 8e8816a771e01ed76ec5515d74a08072
+SHA1: 65009dcc8e0b50207eb7de869aca799858ddea6f
+SHA256: 6b966be297b715225930141fbc51d149a75c943a314229b1ef4c50687478a6e6
+Section: gnome
+Priority: optional
+Homepage: https://github.com/home-sweet-gnome/dash-to-panel
+Description: Dash To Panel extension for GNOME Shell
+ An icon taskbar for the Gnome Shell. This extension moves the dash into
+ the gnome main panel so that the application launchers and system tray are
+ combined into a single panel, similar to that found in KDE Plasma and
+ Windows 7+. A separate dock is no longer needed for easy access to running
+ and favorited applications.
+ .
+ For a more traditional experience, you may also want to use Tweak Tool to
+ enable Windows > Titlebar Buttons > Minimize & Maximize.
  .
  This package provides the gnome-shell extension.
  .
@@ -112,6 +166,28 @@ Description: gsconnect extension for GNOME Shell
  files and other features like SMS messaging and remote control. The KDE
  Connect team has applications for Linux, BSD, Android, Sailfish, iOS, macOS
  and Windows.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-openweather
+Version: 118-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 988
+Depends: gnome-shell (>= 42), gnome-shell (<< 42~)
+Filename: ./all/gnome-shell-extension-openweather_118-1_all.deb
+Size: 151460
+MD5sum: e8b7f7a52a23208547d8fd224f40a3fa
+SHA1: 2f46eff4f65927e8677a9d00082868388a9a0d60
+SHA256: 51c30fa704c7e29e92a323b84b3f6d89164e49631256230b90c06706e4daf70d
+Section: gnome
+Priority: optional
+Homepage: https://gitlab.com/skrewball/openweather
+Description: OpenWeather extension for GNOME Shell
+ Display weather information for any location on Earth in the GNOME Shell.
  .
  This package provides the gnome-shell extension.
  .
