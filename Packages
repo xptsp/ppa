@@ -44,6 +44,152 @@ Description: GNOME Shell extensions integration for web browsers
  extension
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
+Package: gnome-shell-extension-dash-to-dock-workaround
+Version: 3-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 76
+Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
+Filename: ./all/gnome-shell-extension-dash-to-dock-workaround_3-1_all.deb
+Size: 3200
+MD5sum: 596cd55231a890903c79ec49e2063a20
+SHA1: ecd969d150fe5fe66f7513181e9ed532c5dde681
+SHA256: d302481817061cf95943cb001159be8e2aa5e26da0d085fc6437510a4d470514
+Section: gnome
+Priority: optional
+Homepage: https://github.com/popov895/dash-to-dock-workaround
+Description: Dash-To-Dock Workaround extension for GNOME Shell
+ Quick fix for https://bugs.launchpad.net/ubuntu/+source/gnome-shell-extension-ubuntu-dock/+bug/1961508
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-grand-theft-focus
+Version: 3-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 56
+Depends: gnome-shell (>= 40), gnome-shell (<< 44~)
+Filename: ./all/gnome-shell-extension-grand-theft-focus_3-1_all.deb
+Size: 1962
+MD5sum: 4ca750c14c445b6da8cc3fd4f8d4c936
+SHA1: d5ddfdedc96ad73873b3ce5dcb823eb4bd282463
+SHA256: 1589653cccc33c9b92d5c276165bd613e61220aec730c9c4aba248127732cba2
+Section: gnome
+Priority: optional
+Homepage: https://github.com/zalckos/GrandTheftFocus
+Description: Grand Theft Focus extension for GNOME Shell
+ Removes the 'Window is ready' notification and brings the window into
+ focus instead.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-gsconnect
+Version: 50-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 1712
+Depends: gnome-shell (>= 42), gnome-shell (<< 42~), gjs
+Filename: ./all/gnome-shell-extension-gsconnect_50-1_all.deb
+Size: 266742
+MD5sum: 54405bc5c6ab51135f61536a71e0bd8a
+SHA1: 7237258a9b74307e9b50aa7f237b19de5b1a321a
+SHA256: bc6436ad8cfff823cb8c520ca482e85e214ea2a5840fe4211b080393405864e6
+Section: gnome
+Priority: optional
+Homepage: https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki
+Description: gsconnect extension for GNOME Shell
+ GSConnect is a complete implementation of KDE Connect especially for GNOME
+ Shell with Nautilus, Chrome and Firefox integration. It does not rely on
+ the KDE Connect desktop application and will not work with it installed.
+ .
+ KDE Connect allows devices to securely share content like notifications or
+ files and other features like SMS messaging and remote control. The KDE
+ Connect team has applications for Linux, BSD, Android, Sailfish, iOS, macOS
+ and Windows.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-osd-volume-number
+Version: 6-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 108
+Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
+Filename: ./all/gnome-shell-extension-osd-volume-number_6-1_all.deb
+Size: 5712
+MD5sum: 0429ac3412fe9f3d277071604385ef7f
+SHA1: bd1bbc1da1e400e6ab1a5e3c92f373c22ea0ed79
+SHA256: a1fe233afc1545ba69b11df71a1e3695f458547d01733e2e1c444454374eb9c2
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Deminder/osd-volume-number
+Description: OSD Volume Number extension for GNOME Shell
+ Replace the on-screen-display volume level icon with a number.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-prevent-double-empty-window
+Version: 4-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 76
+Depends: gnome-shell (>= 40), gnome-shell (<< 44~)
+Filename: ./all/gnome-shell-extension-prevent-double-empty-window_4-1_all.deb
+Size: 2222
+MD5sum: 68303b6c50c77d8c1b26d531fb28a16b
+SHA1: 842234b737898393ee30654702922e039993ebab
+SHA256: d6ba1ea30e24d5fb5289cf5831da5c727634b4fa35eaa9d259505622a4672620
+Section: gnome
+Priority: optional
+Homepage: https://gitlab.com/g3786/prevent-double-empty-window
+Description: Prevent Double Empty Window extension for GNOME Shell
+ Set MIN_NUMBER_WORKSPACES to 1 so there is only one empty workspace
+ when there are no windows open.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-refresh-wifi
+Version: 16-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 96
+Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Filename: ./all/gnome-shell-extension-refresh-wifi_16-1_all.deb
+Size: 14288
+MD5sum: 73c764d6e7a5fe644a337c3ce681550f
+SHA1: 7807559fac370db7dfdadd49b38f701b7fde36dc
+SHA256: 82efb68f3be03234f4a2beb7e3acc0e3abf3e8860276587b54022cf728bfb3e2
+Section: gnome
+Priority: optional
+Homepage: https://github.com/kgshank/gse-refresh-wifi
+Description: Refresh Wifi extension for GNOME Shell
+ This extension adds a refresh button to the Wi-Fi connection selection
+ dialog to manually request for a network scan.
+ .
+ NOTE: In GNOME Shell 3.32 and above, the available network list is
+ automatically updated every 15 seconds, so most people probably don't
+ need this extension anymore.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
 Package: grub-theme-reddragon
 Version: 1.0-1
 Architecture: amd64
@@ -602,6 +748,22 @@ Description: Customizes the MOTD message
  load, usage on /, swap usage (if any), number of local
  users, and number of processes running on the system.
 
+Package: reddragon-wallpaper
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 896
+Filename: ./all/reddragon-wallpaper_1.0-1_all.deb
+Size: 874968
+MD5sum: 5fb50e0d097b7d328ed21c307184e0c4
+SHA1: 54aa9ad2b988d881978f0e33b7055f4ef7b82b48
+SHA256: 538abb77a91da50306a426e1295325e1d7bf8823f194f0b5ef082cf19660eddc
+Section: x11
+Priority: optional
+Homepage: https://launchpad.net/ubuntu-wallpapers
+Description: RedDragon Wallpapers
+ Wallpaper for the RedDragon theme
+
 Package: scrcpy
 Version: 3.1-5689
 Architecture: amd64
@@ -760,6 +922,25 @@ Description: Unified Remote Server
   * Basic Input remote to control mouse movement and keyboard input.
   * Loaded with remotes to control many media applications, tools, system settings, etc.
   * App available for Android, iOS, and Windows Phone.
+
+Package: urserver-piinput
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 100
+Depends: urserver
+Filename: ./all/urserver-piinput_1.0-1_all.deb
+Size: 23608
+MD5sum: 05bff5459227703289ddb8995bb5da24
+SHA1: 17c56cedbbf51e662ec397ead0f4fa1f772c23bd
+SHA256: a039c2e6ef7414ca18fc6ac99b244342d93fefde721e33712fc97ce14b9f1da1
+Section: x11
+Priority: optional
+Homepage: https://askubuntu.com/a/1316210
+Description: PiInput remote for Unified Remote server
+ Adds a remote control called PiInput to Unified Remote server
+ that correctly works with the left- and right-click mouse on
+ Ubuntu systems.
 
 Package: usign
 Version: 20160822-e1ccc2a

@@ -1,4 +1,5 @@
 #!/bin/bash
+cd $(dirname $0)
 
 export KEYNAME=43975081+xptsp@users.noreply.github.com
 
