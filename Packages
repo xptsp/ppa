@@ -238,6 +238,32 @@ Description: gsconnect extension for GNOME Shell
  Please note that the extension must be manually enabled, for example
  using gnome-tweak-tool.
 
+Package: gnome-shell-extension-hibernate-status-button
+Version: 33-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 260
+Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Filename: ./all/gnome-shell-extension-hibernate-status-button_33-1_all.deb
+Size: 19380
+MD5sum: 685dbdb852cd4fd2fa6fdeb854aa8265
+SHA1: 7ab587645caea818044302a74655adbd46f79a5c
+SHA256: 22db31ce9c2ceca66c512ffdd1c8fabb8b85f1adfead72486090ffbc6f6520ee
+Section: gnome
+Priority: optional
+Homepage: https://github.com/arelange/gnome-shell-extension-hibernate-status
+Description: Hibernate Status Button extension for GNOME Shell
+ Adds a Hibernate button in Status menu. Using Alt modifier,
+ you can also select Hybrid Sleep instead.
+ .
+ Features include: various menu layouts, built in GNOME search,
+ quick access to system shortcuts, and much more!
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
 Package: gnome-shell-extension-notification-banner-reloaded
 Version: 8-1
 Architecture: all
