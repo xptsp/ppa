@@ -487,17 +487,24 @@ Priority: optional
 Description: intel-nuc-led driver in DKMS format.
 
 Package: joycond
-Version: 0.4-0
+Source: joycond
+Version: 0.4-1
 Architecture: amd64
 Maintainer: Daniel J. Ogorchock
-Depends: libevdev2, libudev1
-Filename: ./amd64/joycond_0.4-0_amd64.deb
-Size: 79290
-MD5sum: 87687aaf3d09cfae221d2298cee5e488
-SHA1: 97fdde691a222f3ce6f28ab899007fda60cf0501
-SHA256: 08487ffc83d19877a9d51ddd0d06cfc41706428bfb8ffa51aa65a397d29dd2dd
+Installed-Size: 504
+Depends: libc6 (>= 2.34), libevdev2 (>= 0.9.1), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libudev1 (>= 183)
+Filename: ./amd64/joycond_0.4-1_amd64.deb
+Size: 80910
+MD5sum: 1c0c118ddbeb08d9900e0f1f30bbbf2b
+SHA1: 8cd30196983eb7111b3cc8d9c3271d0be8e36c23
+SHA256: 04866245e92684372cdd0a5d8de4716dab7e905a5dac7b011946168cf1cc5590
+Section: utils
 Priority: optional
+Homepage: https://github.com/sisxph/joycond
 Description: Pairs joy-cons together into a virtual controller
+ joycond is a linux daemon which uses the evdev devices
+ provided by hid-nintendo (formerly known as hid-joycon)
+ to implement joycon pairing.
 
 Package: kodi-openbox
 Version: 1.0.5-1
