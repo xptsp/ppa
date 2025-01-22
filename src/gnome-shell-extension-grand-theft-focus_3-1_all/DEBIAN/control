@@ -1,0 +1,17 @@
+Package: gnome-shell-extension-grand-theft-focus
+Version: 3-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 56
+Depends: gnome-shell (>= 40), gnome-shell (<< 44~)
+Section: gnome
+Priority: optional
+Homepage: https://github.com/zalckos/GrandTheftFocus
+Description: Grand Theft Focus extension for GNOME Shell
+ Removes the 'Window is ready' notification and brings the window into 
+ focus instead.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.

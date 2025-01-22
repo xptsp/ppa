@@ -1,0 +1,16 @@
+Package: gnome-shell-extension-reboot-to-uefi
+Version: 14-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 160
+Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Section: gnome
+Priority: optional
+Homepage: https://github.com/kgshank/gse-refresh-wifi
+Description: Reboot to UEFI extension for GNOME Shell
+ Reboot system into UEFI
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.

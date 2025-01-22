@@ -1,0 +1,14 @@
+Package: joycond
+Source: joycond
+Architecture: amd64
+Maintainer: Daniel J. Ogorchock
+Installed-Size: 504
+Priority: optional
+Version: 0.4-1
+Section: utils
+Depends: libc6 (>= 2.34), libevdev2 (>= 0.9.1), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libudev1 (>= 183)
+Homepage: https://github.com/sisxph/joycond
+Description: Pairs joy-cons together into a virtual controller
+ joycond is a linux daemon which uses the evdev devices 
+ provided by hid-nintendo (formerly known as hid-joycon) 
+ to implement joycon pairing.

@@ -1,0 +1,17 @@
+Package: gnome-shell-extension-prevent-double-empty-window
+Version: 4-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 56
+Depends: gnome-shell (>= 40), gnome-shell (<< 44~)
+Section: gnome
+Priority: optional
+Homepage: https://gitlab.com/g3786/prevent-double-empty-window
+Description: Prevent Double Empty Window extension for GNOME Shell
+ Set MIN_NUMBER_WORKSPACES to 1 so there is only one empty workspace 
+ when there are no windows open.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.

@@ -1,0 +1,2 @@
+#!/bin/bash
+deb-systemd-invoke enable --now joycond

@@ -1,0 +1,13 @@
+Package: urserver-piinput
+Version: 1.0-1
+Architecture: all
+Installed-Size: 100
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Depends: urserver
+Section: x11
+Priority: optional
+HomePage: https://askubuntu.com/a/1316210
+Description: PiInput remote for Unified Remote server
+ Adds a remote control called PiInput to Unified Remote server
+ that correctly works with the left- and right-click mouse on
+ Ubuntu systems.

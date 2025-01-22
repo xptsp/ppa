@@ -1,0 +1,16 @@
+Package: gnome-shell-extension-battery-indicator-upower
+Version: 7-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 3516
+Depends: gnome-shell (>= 42), gnome-shell (<< 43~)
+Section: gnome
+Priority: optional
+Homepage: https://github.com/malko/battery-indicator-upower
+Description: Battery Indicator (upower) extension for GNOME Shell
+ Display battery level indicators as reported by upower
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.

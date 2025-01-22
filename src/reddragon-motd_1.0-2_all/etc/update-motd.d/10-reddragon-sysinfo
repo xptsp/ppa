@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+#    10-sysinfo - generate the system information
+#    Copyright (c) 2013 Nick Charlton
+#
+#    Authors: Nick Charlton <hello@nickcharlton.net>
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License along
+#    with this program; if not, write to the Free Software Foundation, Inc.,
+#    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ 
+date=`date`
+load=`cat /proc/loadavg | awk '{print $1", "$2", "$3}'`
+root_usage=`df -h / | awk '/\// {print $5}'`
+root_used=`df -BM / | tail -1 | awk '{print $3}'`
+mem=($(free -k | grep Mem))
+let free=(mem[1]-mem[6])*1000/mem[1]
+memory_usage=${free:0:-1}.${free:${#free[@]}:1}%
+swap_usage=None
+[[ "$(free -m | awk '/Swap/ {print $2}')" -gt "0" ]] && swap_usage=`free -m | awk '/Swap/ { printf("%3.1f%%", "exit !$2;$3/$2*100") }'`
+users=`users | wc -w`
+time=`uptime -p | sed "s|up ||"`
+processes=`ps aux | wc -l`
+temp=`awk -v n=$(cat /sys/devices/virtual/thermal/thermal_zone0/temp) 'BEGIN {printf "%.1f\n", (n/1000)}'`
+ 
+echo "System information as of: $date"
+echo
+printf "Temperature:\t%s deg C\tSystem uptime:\t%s\n" $temp "$time"
+printf "Memory usage:\t%s\t\tAverage Load:\t%s\n" $memory_usage "$load"
+printf "Usage on /:\t%s\tSwap usage:\t%s\n" "$root_usage ($root_used)" "$swap_usage"
+printf "Local Users:\t%s\t\tProcesses:\t%s\n" $users $processes
+cd /etc/network/interfaces.d
+grep "masquerade" * | cut -d: -f 1 | while read iface; do printf "${iface^^} IP Address:\t%s\n" $(ifconfig ${iface} | grep "inet " | awk '{print $2}'); done
+echo

@@ -1,0 +1,13 @@
+Package: peanut
+Version: 1.0-2
+Section: utils
+Installed-Size: 24
+Priority: optional
+Architecture: all
+Depends: net-tools
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Homepage: https://gist.github.com/xptsp/26e31b4ad66969f508d43353662821d9
+Description: Displays listening IPs and ports, sorting by ports then IPs
+ Bash script that sorts the output of "netstat -peanut" command so that 
+ listening IPs and ports are more easily searched through, sorting first
+ by ports, then IP addresses, with IPv4 and IPv6 addresses separated.

@@ -1,0 +1,13 @@
+Package: reddragon-motd
+Version: 1.0-2
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Section: base
+Depends: toilet
+Installed-Size: 40
+Priority: optional
+Description: Customizes the MOTD message 
+ A MOTD package that information about the system, such as 
+ temperature, system uptime, memory usage, average system 
+ load, usage on /, swap usage (if any), number of local 
+ users, and number of processes running on the system.

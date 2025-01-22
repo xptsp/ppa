@@ -1,0 +1,14 @@
+ac265a43bf0ced35aa63d4957c2d7bee  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/prefs.js
+a5564ab0a9309ff48c83aa2a072f1b3a  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/schemas/org.gnome.shell.extensions.battery-indicator-upower.gschema.xml
+f83fa340747649974e9696f10e33443e  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/schemas/gschemas.compiled
+7c6475ff45a2a15113870a2b3494e222  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/locale/de/LC_MESSAGES/battery-indicator@jgotti.org.mo
+a33987cc4a834db90d267cc02c3c68bd  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/locale/nl/LC_MESSAGES/battery-indicator@jgotti.org.mo
+7e4ddfce834f76c62195bcda93294bd8  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/locale/fr/LC_MESSAGES/battery-indicator@jgotti.org.mo
+600232a2f5862655159dfa5a9215fa08  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/locale/ar/LC_MESSAGES/battery-indicator@jgotti.org.mo
+ec9da6eaaa887501bbc5b25a55991227  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/locale/en/LC_MESSAGES/battery-indicator@jgotti.org.mo
+8673fec900848711734ecc8e964d7ab7  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/metadata.json
+5d631b34a099bd09d3830765475e0733  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/settingsDef.js
+10c387c70aba2f230a56aee32cd85052  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/extension.js
+4bc8dbad2cc6c1bab3852b3305c80a55  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/stylesheet.css
+1a323da86d82f4276d64f052cd3e0a92  ./usr/share/gnome-shell/extensions/battery-indicator@jgotti.org/utils/SettingsManager.js
+908ee905820d2bd8d9d5d907aa945848  ./usr/share/doc/gnome-shell-extension-battery-indicator-upower/changelog.Debian.gz

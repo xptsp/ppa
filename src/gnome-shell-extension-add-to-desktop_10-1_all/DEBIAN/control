@@ -1,0 +1,16 @@
+Package: gnome-shell-extension-add-to-desktop
+Version: 10-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 252
+Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Tommimon/add-to-desktop
+Description: Add to Desktop extension for GNOME Shell
+ An easy way to create desktop app shortcut in gnome
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.

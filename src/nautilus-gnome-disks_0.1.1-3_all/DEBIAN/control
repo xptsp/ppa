@@ -1,0 +1,13 @@
+Package: nautilus-gnome-disks
+Version: 0.1.1-3
+Architecture: amd64
+Maintainer: Douglas Orend <doug.orend@gmail.com>
+Homepage: https://github.com/thebitstick/nautilus-gnome-disks
+Installed-Size: 36
+Depends: nautilus (>= 2.10), gnome-disk-utility
+Enhances: nautilus
+Section: gnome
+Priority: optional
+Description: Nautilus extension to restore/write/flash a disk image 
+ Allows you to restore/write/flash a disk image to storage devices 
+ using GNOME Disks from Nautilus

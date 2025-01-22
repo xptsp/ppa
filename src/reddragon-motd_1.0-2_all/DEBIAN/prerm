@@ -1,0 +1,8 @@
+#!/bin/bash
+DIR=/etc/update-motd.d
+test -e ${DIR}/00-header && chmod +x ${DIR}/00-header
+test -e ${DIR}/10-uname && chmod +x ${DIR}/10-uname
+test -e ${DIR}/10-help-text && chmod +x ${DIR}/10-help-text
+test -e ${DIR}/91-contract-ua-esm-status && chmod +x ${DIR}/91-contract-ua-esm-status
+test -f /etc/motd.old && mv /etc/motd{.old,}
+exit 0

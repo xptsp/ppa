@@ -1,0 +1,21 @@
+Package: gnome-shell-extension-refresh-wifi
+Version: 16-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 96
+Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Section: gnome
+Priority: optional
+Homepage: https://github.com/kgshank/gse-refresh-wifi
+Description: Refresh Wifi extension for GNOME Shell
+ This extension adds a refresh button to the Wi-Fi connection selection 
+ dialog to manually request for a network scan.
+ .
+ NOTE: In GNOME Shell 3.32 and above, the available network list is
+ automatically updated every 15 seconds, so most people probably don't
+ need this extension anymore.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.

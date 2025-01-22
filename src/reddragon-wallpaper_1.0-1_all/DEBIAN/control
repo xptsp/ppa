@@ -1,0 +1,10 @@
+Package: reddragon-wallpaper
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 896
+Section: x11
+Priority: optional
+Homepage: https://launchpad.net/ubuntu-wallpapers
+Description: RedDragon Wallpapers
+ Wallpaper for the RedDragon theme

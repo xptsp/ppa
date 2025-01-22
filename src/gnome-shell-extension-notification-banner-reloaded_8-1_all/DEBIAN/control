@@ -1,0 +1,16 @@
+Package: gnome-shell-extension-notification-banner-reloaded
+Version: 8-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 84
+Depends: gnome-shell (>= 40), gnome-shell (<< 43~)
+Section: gnome
+Priority: optional
+Homepage: https://github.com/malko/battery-indicator-upower
+Description: Notification Banner Reloaded extension for GNOME Shell
+ Configure notification banner position and animation to your liking.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.

@@ -1,0 +1,16 @@
+Package: gnome-shell-extension-openweather
+Version: 118-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 988
+Depends: gnome-shell (>= 42), gnome-shell (<< 42~)
+Section: gnome
+Priority: optional
+Homepage: https://gitlab.com/skrewball/openweather
+Description: OpenWeather extension for GNOME Shell
+ Display weather information for any location on Earth in the GNOME Shell.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.

@@ -1,0 +1,20 @@
+Package: gnome-shell-extension-hibernate-status-button
+Version: 33-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 260
+Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Section: gnome
+Priority: optional
+Homepage: https://github.com/arelange/gnome-shell-extension-hibernate-status
+Description: Hibernate Status Button extension for GNOME Shell
+ Adds a Hibernate button in Status menu. Using Alt modifier, 
+ you can also select Hybrid Sleep instead.
+ .
+ Features include: various menu layouts, built in GNOME search,
+ quick access to system shortcuts, and much more!
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
