@@ -44,6 +44,28 @@ Description: GNOME Shell extensions integration for web browsers
  extension
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
+Package: gnome-shell-extension-add-to-desktop
+Version: 10-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 252
+Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
+Filename: ./all/gnome-shell-extension-add-to-desktop_10-1_all.deb
+Size: 18006
+MD5sum: 088000d59243a68cbd3ef33a77e218a0
+SHA1: 4d4039d6b945ed55d6fe689e94706aef556c36be
+SHA256: 869820b460aa8edea26c88b35877633190e3d5fe164ddfb87d4f38c57ef0ed77
+Section: gnome
+Priority: optional
+Homepage: https://github.com/Tommimon/add-to-desktop
+Description: Add to Desktop extension for GNOME Shell
+ An easy way to create desktop app shortcut in gnome
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
 Package: gnome-shell-extension-arcmenu
 Version: 48-1
 Architecture: all
@@ -63,6 +85,28 @@ Description: ArcMenu extension for GNOME Shell
  .
  Features include: various menu layouts, built in GNOME search,
  quick access to system shortcuts, and much more!
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-battery-indicator-upower
+Version: 7-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 3516
+Depends: gnome-shell (>= 42), gnome-shell (<< 43~)
+Filename: ./all/gnome-shell-extension-battery-indicator-upower_7-1_all.deb
+Size: 10090
+MD5sum: 228417461110410cfb25e7af57966a11
+SHA1: 1859e98ea8f6b355b97c0ef3e2aafc0d5e6e3490
+SHA256: 7f7b0e0ab486651fa6fd97cd2d54cb99a58719a8c3438310bb60d6d77d667efc
+Section: gnome
+Priority: optional
+Homepage: https://github.com/malko/battery-indicator-upower
+Description: Battery Indicator (upower) extension for GNOME Shell
+ Display battery level indicators as reported by upower
  .
  This package provides the gnome-shell extension.
  .
@@ -194,6 +238,28 @@ Description: gsconnect extension for GNOME Shell
  Please note that the extension must be manually enabled, for example
  using gnome-tweak-tool.
 
+Package: gnome-shell-extension-notification-banner-reloaded
+Version: 8-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 84
+Depends: gnome-shell (>= 40), gnome-shell (<< 43~)
+Filename: ./all/gnome-shell-extension-notification-banner-reloaded_8-1_all.deb
+Size: 6400
+MD5sum: 2ae469c9a63c6ead520497f4687b1013
+SHA1: d597d092b3788bad8cdf38e5530c56d050e4e11a
+SHA256: 728a95b34b10fb6c1f35459060a11949783b381793dfd379835bc2bd1b9eb25e
+Section: gnome
+Priority: optional
+Homepage: https://github.com/malko/battery-indicator-upower
+Description: Notification Banner Reloaded extension for GNOME Shell
+ Configure notification banner position and animation to your liking.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
 Package: gnome-shell-extension-openweather
 Version: 118-1
 Architecture: all
@@ -304,6 +370,33 @@ Description: Refresh Wifi extension for GNOME Shell
  NOTE: In GNOME Shell 3.32 and above, the available network list is
  automatically updated every 15 seconds, so most people probably don't
  need this extension anymore.
+ .
+ This package provides the gnome-shell extension.
+ .
+ Please note that the extension must be manually enabled, for example
+ using gnome-tweak-tool.
+
+Package: gnome-shell-extension-sound-output-device-chooser
+Version: 43-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 436
+Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Filename: ./all/gnome-shell-extension-sound-output-device-chooser_43-1_all.deb
+Size: 42000
+MD5sum: aea3c0728429b8d31b83b01ea5d135fe
+SHA1: b21bcae1fdd338a6037f38105893887b8ed618f9
+SHA256: c7b52ed94ebc64528a8312e7536a4e2e0edb86026f83c17f5d2c5ce99dfdb0c2
+Section: gnome
+Priority: optional
+Homepage: https://github.com/kgshank/gse-sound-output-device-chooser
+Description: Sound Input & Output Device Chooser extension for GNOME Shell
+ Shows a list of sound output and input devices (similar to gnome sound
+ settings) in the status menu below the volume slider. Various active ports
+ like HDMI, Speakers etc. of the same device are also displayed for selection.
+ V20+ needs python as dependency. If you want to continue with the old method
+ without Python, use options to switch off New Port identification. But it
+ works with only English
  .
  This package provides the gnome-shell extension.
  .
