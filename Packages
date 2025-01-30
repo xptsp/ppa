@@ -908,6 +908,25 @@ Description: Displays listening IPs and ports, sorting by ports then IPs
  listening IPs and ports are more easily searched through, sorting first
  by ports, then IP addresses, with IPv4 and IPv6 addresses separated.
 
+Package: peanut
+Version: 1.1-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 56
+Depends: net-tools, sudo
+Filename: ./all/peanut_1.1-1_all.deb
+Size: 1854
+MD5sum: 3e7919f12a9c015472b1fb758444f225
+SHA1: 5e874202b84146002e9fe004eba79fbd183227c5
+SHA256: e48d096e09b5856299d8b0c8d483ae53170541c4e9bea22512ab582dabcb2a62
+Section: utils
+Priority: optional
+Homepage: https://gist.github.com/xptsp/26e31b4ad66969f508d43353662821d9
+Description: Displays listening IPs and ports, sorting by ports then IPs
+ Bash script that sorts the output of "netstat -peanut" command so that
+ listening IPs and ports are more easily searched through, sorting first
+ by ports, then IP addresses, with IPv4 and IPv6 addresses separated.
+
 Package: plymouth-theme-kodi-animated-logo
 Source: plymouth
 Version: 1.0.0-2

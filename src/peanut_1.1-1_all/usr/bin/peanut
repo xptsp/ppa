@@ -1,4 +1,10 @@
 #!/bin/bash
+# If we are not running as root, then run this script as root:
+if [[ "$UID" -ne 0 ]]; then
+        sudo $0 $@
+        exit $?
+fi
+
 GREEN='\033[1;32m'
 BLUE='\033[1;34m'
 NC='\033[0m'

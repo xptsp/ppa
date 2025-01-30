@@ -1,10 +1,10 @@
 Package: peanut
-Version: 1.0-2
+Version: 1.1-1
 Section: utils
-Installed-Size: 24
+Installed-Size: 56
 Priority: optional
 Architecture: all
-Depends: net-tools
+Depends: net-tools, sudo
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Homepage: https://gist.github.com/xptsp/26e31b4ad66969f508d43353662821d9
 Description: Displays listening IPs and ports, sorting by ports then IPs
