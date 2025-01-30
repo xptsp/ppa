@@ -1,7 +1,7 @@
-6f45e3fab02f7d8c8d28623f3f26fd29  ./usr/share/doc/joycond/changelog.Debian.gz
+adfa1e7a3584901e054d3e005c463cc0  ./usr/share/doc/joycond/changelog.Debian.gz
 a6894655a74b921a912c19e5e4e7e6b1  ./usr/share/man/man1/joycond.1.gz
 efd977bbdfcebe6a85f45c5ea570e212  ./usr/bin/joycond
-91e36945d9b2a734205afd49cdd8d783  ./lib/udev/systemd/system/joycond.service
 f808e940b9e9fc00237a836cbd7e5258  ./lib/udev/rules.d/89-joycond.rules
 c49945e6690094ffd2a9443e3ea4304d  ./lib/udev/rules.d/72-joycond.rules
 7f116cb609f205e60d792f278a4b6a75  ./lib/udev/modules-load.d/joycond.conf
+91e36945d9b2a734205afd49cdd8d783  ./lib/systemd/system/joycond.service
