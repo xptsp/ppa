@@ -1,10 +1,10 @@
 Package: reddragon-motd
-Version: 1.0-2
+Version: 1.1-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Section: base
-Depends: toilet
-Installed-Size: 40
+Depends: toilet, lm-sensors
+Installed-Size: 64
 Priority: optional
 Description: Customizes the MOTD message 
  A MOTD package that information about the system, such as 
