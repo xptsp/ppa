@@ -897,9 +897,9 @@ Installed-Size: 56
 Depends: net-tools, sudo
 Filename: ./all/peanut_2.0-1_all.deb
 Size: 2352
-MD5sum: b037301111c8d0bd1272b5372068c0c0
-SHA1: c8904ca212a7ffce81eaed307bfbc7e3af20dd16
-SHA256: 3e163f7c24b8ca865394669ffbda1a0f9e715f50c4510fc21ecc56c4d77ee259
+MD5sum: eaffaa48b1e3740f299782e8a8d55fa1
+SHA1: f60ca62ec35870f2df303fb139e5f295e1f5e820
+SHA256: 96023c940a95593055195e9ea416c6b99cd289e5f4b8f0e7fcce5c53eaa57c00
 Section: utils
 Priority: optional
 Homepage: https://gist.github.com/xptsp/26e31b4ad66969f508d43353662821d9
