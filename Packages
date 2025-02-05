@@ -1119,16 +1119,16 @@ Description: PiInput remote for Unified Remote server
  Ubuntu systems.
 
 Package: urserver-yuzu
-Version: 1.0-1
+Version: 1.1-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 192
 Depends: urserver, libfuse2, bash (>= 5.1)
-Filename: ./all/urserver-yuzu_1.0-1_all.deb
-Size: 52372
-MD5sum: 23a89929609dbbf9cb63dec2112a541a
-SHA1: 95142ef7f1a0a1310e619f311a70e209e12d4e72
-SHA256: 795eef3f5858d131d929fa8091c51d78467fe8eb5c68e40ba64152d3b78935a2
+Filename: ./all/urserver-yuzu_1.1-1_all.deb
+Size: 52700
+MD5sum: 8e1e00378db27303e3485a2a24bf4577
+SHA1: ebbd1ee515043564f256ad7647992f821e0e6ded
+SHA256: b3a8e967d4d42a82ec4c60fae1173eb5392c6d9f37873d6a351e28057a7b7d82
 Section: x11
 Priority: optional
 Homepage: https://askubuntu.com/a/1316210
@@ -1142,6 +1142,8 @@ Description: Yuzu remote for Unified Remote server
    - Stop Emulation
    - Press Y
    - Toggle Fullscreen
+   - Sound to TV
+   - Sound to Speakers
  Note that Linux-Yuzu-*.AppImage (NOT INCLUDED) must be
  installed in the /usr/bin directory and made executable.
 

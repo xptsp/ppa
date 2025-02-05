@@ -1,0 +1,13 @@
+#!/bin/bash
+if [[ "$1" == "start" ]]; then
+	BIN=$(find /usr/bin -name Linux-Yuzu*)
+	if [[ ! -z "${BIN}" ]]; then
+		${BIN} &
+	fi
+elif [[ "$1" == "close" ]]; then
+	ps aux | grep "/bin/yuzu" | while read USER PID OTHER; do kill -9 ${PID}; done
+elif [[ "$1" == "tv" ]]; then
+	pactl set-default-sink $(pactl list sinks short | grep -m 1 "hdmi" | awk '{print $1}')
+elif [[ "$1" == "speakers" ]]; then
+	pactl set-default-sink $(pactl list sinks short | grep -m 1 -v "hdmi" | awk '{print $1}')
+fi

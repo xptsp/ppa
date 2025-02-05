@@ -26,3 +26,10 @@ actions.yes = function()
         keyboard.stroke("y");
 end
 
+actions.tv = function()
+	os.execute("/usr/bin/urserver-yuzu-helper tv");
+end
+
+actions.speakers = function()
+	os.execute("/usr/bin/urserver-yuzu-helper speakers");
+end

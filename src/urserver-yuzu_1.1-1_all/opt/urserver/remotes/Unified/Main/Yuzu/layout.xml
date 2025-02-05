@@ -10,9 +10,13 @@
       <button text="Close Yuzu" onTap="close" />
     </row>
     <row>
+      <button text="Toggle Fullscreen" onTap="toggle" />
       <button text="Stop Emulation" onTap="stop" />
       <button text="Press Y" onTap="yes" />
-      <button text="Toggle Fullscreen" onTap="toggle" />
+    </row>
+    <row>
+      <button text="Sound to TV" onTap="tv" />
+      <button text="Sound to Speakers" onTap="speakers" />
     </row>
   </grid>
 </layout>

@@ -1,8 +1,8 @@
-35f61ad75c9d279f1841f0329546645e  ./usr/share/doc/urserver-yuzu/changelog.Debian.gz
-bb4c0d38e2a38c6af082e3c6172e296c  ./usr/bin/urserver-yuzu-helper
+dee56d95a3eedbce35262025ff1ce088  ./usr/share/doc/urserver-yuzu/changelog.Debian.gz
+fc6cf90caed0e7e3f7b84d320fe83c39  ./usr/bin/urserver-yuzu-helper
 56221aa07054d28f2ba6c1241b380de2  ./opt/urserver/remotes/Unified/Main/Yuzu/icon.svg
 a1e90cb8252b823cde2091d8852d805a  ./opt/urserver/remotes/Unified/Main/Yuzu/meta.prop
-e77bc8f7a06947cd99216ee770f67b16  ./opt/urserver/remotes/Unified/Main/Yuzu/layout.xml
+cffdb9b2b274d3de2ad1dcbf1edb5ef1  ./opt/urserver/remotes/Unified/Main/Yuzu/layout.xml
 a7815a62467947679cfe82b892ff6fed  ./opt/urserver/remotes/Unified/Main/Yuzu/icon.png
-8554aaa16d6885723791e05f2ebd1f21  ./opt/urserver/remotes/Unified/Main/Yuzu/remote.lua
+67077db6196afea4bbbb5c965f8d562e  ./opt/urserver/remotes/Unified/Main/Yuzu/remote.lua
 4e7b1c332c635aacf5a64f26be70e2e3  ./opt/urserver/remotes/Unified/Main/Yuzu/icon_hires.png
