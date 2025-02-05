@@ -1137,6 +1137,33 @@ Description: PiInput remote for Unified Remote server
  that correctly works with the left- and right-click mouse on
  Ubuntu systems.
 
+Package: urserver-yuzu
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 192
+Depends: urserver, libfuse2, bash (>= 5.1)
+Filename: ./all/urserver-yuzu_1.0-1_all.deb
+Size: 52372
+MD5sum: 23a89929609dbbf9cb63dec2112a541a
+SHA1: 95142ef7f1a0a1310e619f311a70e209e12d4e72
+SHA256: 795eef3f5858d131d929fa8091c51d78467fe8eb5c68e40ba64152d3b78935a2
+Section: x11
+Priority: optional
+Homepage: https://askubuntu.com/a/1316210
+Description: Yuzu remote for Unified Remote server
+ Adds a remote control called Yuzu to Unified Remote server
+ that allows the user to do the following:
+   - Wake the PC
+   - Suspend the PC,
+   - Start Yuzu
+   - Close Yuzu
+   - Stop Emulation
+   - Press Y
+   - Toggle Fullscreen
+ Note that Linux-Yuzu-*.AppImage (NOT INCLUDED) must be
+ installed in the /usr/bin directory and made executable.
+
 Package: usign
 Version: 20160822-e1ccc2a
 Architecture: amd64

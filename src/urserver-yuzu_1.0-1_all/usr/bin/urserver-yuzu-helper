@@ -1,0 +1,9 @@
+#!/bin/bash
+if [[ "$1" == "start" ]]; then
+	BIN=$(find /usr/bin -name Linux-Yuzu*)
+	if [[ ! -z "${BIN}" ]]; then
+		${BIN} &
+	fi
+elif [[ "$1" == "close" ]]; then
+	ps aux | grep "/bin/yuzu" | while read USER PID OTHER; do kill -9 ${PID}; done
+fi
