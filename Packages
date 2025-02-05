@@ -890,35 +890,16 @@ Description: Program to control packet filtering rules by Netfilter project
  A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
 
 Package: peanut
-Version: 1.0-2
-Architecture: all
-Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 24
-Depends: net-tools
-Filename: ./all/peanut_1.0-2_all.deb
-Size: 1586
-MD5sum: 99d2a628f77629ab34992515d65c81df
-SHA1: c90ad943aaf48a8ed686cdab94dd6e26a7a57d95
-SHA256: a10bb94955980b6bbf34aab1712c27a860c368e2035ecd46413f34b6053f2e5c
-Section: utils
-Priority: optional
-Homepage: https://gist.github.com/xptsp/26e31b4ad66969f508d43353662821d9
-Description: Displays listening IPs and ports, sorting by ports then IPs
- Bash script that sorts the output of "netstat -peanut" command so that
- listening IPs and ports are more easily searched through, sorting first
- by ports, then IP addresses, with IPv4 and IPv6 addresses separated.
-
-Package: peanut
-Version: 1.1-1
+Version: 2.0-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 56
 Depends: net-tools, sudo
-Filename: ./all/peanut_1.1-1_all.deb
-Size: 1854
-MD5sum: 3e7919f12a9c015472b1fb758444f225
-SHA1: 5e874202b84146002e9fe004eba79fbd183227c5
-SHA256: e48d096e09b5856299d8b0c8d483ae53170541c4e9bea22512ab582dabcb2a62
+Filename: ./all/peanut_2.0-1_all.deb
+Size: 2352
+MD5sum: b037301111c8d0bd1272b5372068c0c0
+SHA1: c8904ca212a7ffce81eaed307bfbc7e3af20dd16
+SHA256: 3e163f7c24b8ca865394669ffbda1a0f9e715f50c4510fc21ecc56c4d77ee259
 Section: utils
 Priority: optional
 Homepage: https://gist.github.com/xptsp/26e31b4ad66969f508d43353662821d9
