@@ -1,0 +1,20 @@
+Package: libnftnl-dev
+Source: libnftnl
+Version: 1.2.3-2~git20220809.817c8b6
+Architecture: armhf
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 292
+Depends: libnftnl11 (= 1.2.3-1~git20220809.817c8b6), pkg-config
+Suggests: libnftnl-dev-doc
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://git.netfilter.org/libnftnl
+Description: Development files for libnftnl
+ libnftnl is the low-level library for Netfilter 4th generation
+ framework nftables.
+ .
+ Is the user-space library for low-level interaction with
+ nftables Netlink's API over libmnl.
+ .
+ This package provides development files and static libraries.

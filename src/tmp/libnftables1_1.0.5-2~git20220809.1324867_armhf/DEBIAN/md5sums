@@ -1,0 +1,5 @@
+62f5795ea4b8f157d4f8d8627dacfb55  ./usr/lib/arm-linux-gnueabihf/libnftables.so.1.1.0
+7271d060829a6c607d17bc96cff37449  ./usr/share/doc/libnftables1/changelog.Debian.gz
+b84fbdd69db5cf7ab46491854123dda7  ./usr/share/doc/libnftables1/COPYING.gz
+b9e07866536760e40cea4e7aaf82a901  ./usr/share/man/man5/libnftables-json.5.gz
+cdc884bc18b09d3325012a50e0758175  ./usr/share/man/man3/libnftables.3.gz

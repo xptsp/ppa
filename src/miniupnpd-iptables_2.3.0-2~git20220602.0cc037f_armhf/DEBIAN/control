@@ -1,0 +1,23 @@
+Package: miniupnpd-iptables
+Source: miniupnpd
+Version: 2.3.0-2~git20220602.0cc037f
+Architecture: armhf
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 196
+Depends: iptables, libc6 (>= 2.28), libip4tc2 (>= 1.8.3), libip6tc2 (>= 1.8.3)
+Conflicts: miniupnpd-nftables
+Breaks: miniupnpd (<< 2.2.0)
+Replaces: miniupnpd (<< 2.2.0)
+Section: net
+Priority: optional
+Homepage: http://miniupnp.free.fr/
+Description: UPnP and NAT-PMP daemon for gateway routers - legacy iptables backend
+ MiniUPnPd is a small daemon which can be installed on a NAT router to
+ provide UPnP Internet Gateway Device and Port Mapping Protocol services,
+ enabling clients on the LAN to ask for port redirections. It is
+ compatible with peer-to-peer software, messaging applications, and games
+ consoles that connect to online services (including Xbox LIVE and the
+ PlayStation Network).
+ .
+ This package provides miniupnpd with iptables backend. The iptables/xtables
+ framework has been replaced by nftables. You should consider migrating now.

@@ -1,0 +1,11 @@
+a4f4db5ddc95a4e038e8ca6432d93ce9  ./usr/sbin/miniupnpd
+fd4e13e31b473c68bd8f16eb1b396bc8  ./usr/share/doc/miniupnpd-iptables/VERSION.gz
+f526c2ebb4fd1f0db6dfc74b926411e9  ./usr/share/doc/miniupnpd-iptables/README.gz
+167bd7894133969c07106fa483f38f43  ./usr/share/doc/miniupnpd-iptables/changelog.Debian.gz
+99642ae43df9dcbc5afe2d075c84fb7b  ./usr/share/doc/miniupnpd-iptables/LICENSE.gz
+10b025a2244b5d04ccac021a6e8af20c  ./usr/share/doc/miniupnpd-iptables/TODO.gz
+083e5ec7bf3da75b80c513c3386b9519  ./usr/share/lintian/overrides/miniupnpd-iptables
+f743590d5f53257b7271acea4b73bb9b  ./etc/miniupnpd/iptables_removeall.sh
+254d18af175f5c0fd15c7d872877f23e  ./etc/miniupnpd/iptables_init.sh
+24980fa879f137f3f928bacf93894ff8  ./etc/miniupnpd/ip6tables_removeall.sh
+403bfea014120e0f2046f1b61f3c8f46  ./etc/miniupnpd/ip6tables_init.sh

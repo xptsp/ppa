@@ -1,0 +1,24 @@
+Package: libnftables1
+Source: nftables
+Version: 1.0.5-2~git20220809.1324867
+Architecture: armhf
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 3012
+Depends: libc6 (>= 2.28), libgmp10, libjansson4 (>= 2.3), libmnl0 (>= 1.0.5-1~git20220808.a92ea99), libnftnl11 (>= 1.2.3-1~git20220809.817c8b6), libxtables12 (>= 1.6.1)
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.netfilter.org/
+Description: Netfilter nftables high level userspace API library
+ This library provides high level semantics to interact with the nftables
+ framework by Netfilter project.
+ .
+ nftables replaces the old popular iptables, ip6tables, arptables and ebtables.
+ .
+ Netfilter software and nftables in particular are used in applications such
+ as Internet connection sharing, firewalls, IP accounting, transparent
+ proxying, advanced routing and traffic control.
+ .
+ A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
+ .
+ This package contains the libnftables library.

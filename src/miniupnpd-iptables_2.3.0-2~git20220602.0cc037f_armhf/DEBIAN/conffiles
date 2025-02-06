@@ -1,0 +1,4 @@
+/etc/miniupnpd/ip6tables_init.sh
+/etc/miniupnpd/ip6tables_removeall.sh
+/etc/miniupnpd/iptables_init.sh
+/etc/miniupnpd/iptables_removeall.sh

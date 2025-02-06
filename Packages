@@ -746,19 +746,19 @@ Description: UPnP and NAT-PMP daemon for gateway routers
 
 Package: miniupnpd-iptables
 Source: miniupnpd
-Version: 2.3.0-1~git20220602.0cc037f
+Version: 2.3.0-2~git20220602.0cc037f
 Architecture: armhf
-Maintainer: Thomas Goirand <zigo@debian.org>
-Installed-Size: 188
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 196
 Depends: iptables, libc6 (>= 2.28), libip4tc2 (>= 1.8.3), libip6tc2 (>= 1.8.3)
 Conflicts: miniupnpd-nftables
 Breaks: miniupnpd (<< 2.2.0)
 Replaces: miniupnpd (<< 2.2.0)
-Filename: ./armhf/miniupnpd-iptables_2.3.0-1~git20220602.0cc037f_armhf.deb
-Size: 56116
-MD5sum: f9249a8ee438585704a15c83dbd81539
-SHA1: d965242612d62dd65bcec4677a0b8ef8bf29d835
-SHA256: 7503bff915bfc55c898c9e2d28668ed5c6103546e493bad301b0d424e3d0020e
+Filename: ./armhf/miniupnpd-iptables_2.3.0-2~git20220602.0cc037f_armhf.deb
+Size: 60494
+MD5sum: a9efeb916683bd42bddb323fb9bc538e
+SHA1: 853ec85d64e76a967698d5d567375ad2f9aa1ff6
+SHA256: 5a070811069030598cd1339a2e5203e6b4ba6573a597a5ee62bd5888c21928b3
 Section: net
 Priority: optional
 Homepage: http://miniupnp.free.fr/
