@@ -2,7 +2,7 @@ Package: gnome-shell-extension-battery-indicator-upower
 Version: 7-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 3516
+Installed-Size: 160
 Depends: gnome-shell (>= 42), gnome-shell (<< 43~)
 Section: gnome
 Priority: optional

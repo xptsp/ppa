@@ -2,7 +2,7 @@ Package: joycond
 Source: joycond
 Architecture: amd64
 Maintainer: Daniel J. Ogorchock
-Installed-Size: 504
+Installed-Size: 516
 Priority: optional
 Version: 0.4-2
 Section: utils

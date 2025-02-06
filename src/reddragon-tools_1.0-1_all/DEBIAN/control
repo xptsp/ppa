@@ -1,0 +1,12 @@
+Package: reddragon-tools
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Section: utils
+Depends: bash (>=5.1)
+Installed-Size: 28
+Priority: optional
+Description: Useful Collection of Scripts
+ A small collection of scripts I've written to aid
+ in some tasks, such as DEB creation, finding the
+ differences in GSettings after changes, etc....

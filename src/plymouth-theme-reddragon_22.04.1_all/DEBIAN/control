@@ -3,7 +3,7 @@ Source: xubuntu-artwork
 Version: 22.04.1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 964
+Installed-Size: 980
 Depends: plymouth, plymouth-label
 Breaks: plymouth (<< 0.9.2-3ubuntu1~)
 Provides: plymouth-theme

@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# If we aren't in the package directory, abort with error to user:
+if [[ ! -f DEBIAN/control ]]; then echo "ERROR: No DEBIAN/control file present!  Aborting!"; exit 1; fi
+
+# Determine package name and fix directory name to match:
+DIR=($(basename $PWD | sed "s|_| |g") 1.0-1 all)
+[[ "${DIR[1]}" =~ v[0-9\.\-]+ ]] && DIR[1]=${DIR[1]/v/}
+[[ ! "${DIR[1]}" =~ [0-9\.\-]+ ]] && DIR=(${DIR[0]} 1.0-1 ${DIR[1]})
+[[ -z "${DIR[2]}" ]] && DIR=(${DIR[0]} ${DIR[1]} all)
+CUR_VER=$(grep "Version:" DEBIAN/control | cut -d" " -f 2)
+if [[ "${DIR[1]}" != "${CUR_VER}" ]]; then OLD=$PWD; cd ..; NEW=${DIR[0]}_${CUR_VER}_${DIR[2]}; mv ${OLD} ${NEW}; cd ${NEW}; fi
+ARCH=${DIR[2]}
+DIR=$(basename $PWD)
+
+# Determine unpacked size of package and update "DEBIAN/control":
+sed -i "s|Installed-Size:.*|Installed-Size: $(du -s | cut -d" " -f 1 | grep -oe "[0-9]*")|" DEBIAN/control
+
+# Pack the changelog if it is still unpacked:
+find -name changelog.Debian -exec gzip -9 {} \;
+
+# Fix file permissions:
+find -type d -exec chmod 0755 {} \;
+find -type f -exec chmod 0644 {} \;
+find DEBIAN -type f  -name p* -exec chmod 755 {} \;
+[[ -d etc/sudoers.d ]] && find etc/sudoers.d -type f -exec chmod 0440 {} \;
+grep -R "^#!" * 2> /dev/null | cut -d: -f 1 | while read FILE; do chmod 755 ${FILE}; done
+
+# Generate the list of MD5s for the package:
+find -path '*/DEBIAN' -prune -o -type f -exec md5sum {} \; > DEBIAN/md5sums
+
+# Generate the DEB file, then sign the package:
+dpkg-deb --root-owner-group --build ../${DIR} || exit 1
+dpkg-sig --sign builder ../${DIR}.deb || exit 1
+
+# Move DEB package to PPA repository, then update PPA: 
+mv -v ../${DIR}.deb ~/GitHub/ppa/${ARCH}/
+~/GitHub/ppa/update.sh
+
+# Lastly, run the Lintian tool to fix any problems:
+echo ""
+echo "Lintian Output"
+echo "============================="
+lintian --no-tag-display-limit ~/GitHub/ppa/${ARCH}/${DIR}.deb

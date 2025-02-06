@@ -2,7 +2,7 @@ Package: gnome-shell-extension-gamemode
 Version: 48-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 272
+Installed-Size: 244
 Depends: gnome-shell (>= 40), gnome-shell (<< 42~), gamemode
 Section: gnome
 Priority: optional

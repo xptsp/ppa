@@ -1,9 +1,9 @@
 4f6a690ef38d79edc227a0ef12531cb1  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/prefs.js
-fac7df328ca45520fb143a618d7000da  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/metadata.json
+0345a14ece9ba480cc09ab3f0cf57849  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/schemas/gschemas.compiled
+8635251441134ca6f7a5f1ac2ca81802  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/schemas/org.gnome.shell.extensions.osd-volume-number.gschema.xml
 67e9609d19b4edf1a247f8fb52eb7249  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/locale/de/LC_MESSAGES/osd-volume-number.mo
 cdd7b71ac3a823be9d3298279950319e  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/locale/nl/LC_MESSAGES/osd-volume-number.mo
+fac7df328ca45520fb143a618d7000da  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/metadata.json
 7ba134ca36fd0eb3b2f6a0740537bd96  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/extension.js
 ae650229411aaeda270bef0a9f91fd44  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/stylesheet.css
-8635251441134ca6f7a5f1ac2ca81802  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/schemas/org.gnome.shell.extensions.osd-volume-number.gschema.xml
-0345a14ece9ba480cc09ab3f0cf57849  ./usr/share/gnome-shell/extensions/osd-volume-number@deminder/schemas/gschemas.compiled
 0bc5c3e5a11fb383f482d036aae9e87c  ./usr/share/doc/gnome-shell-extension-osd-volume-number/changelog.Debian.gz

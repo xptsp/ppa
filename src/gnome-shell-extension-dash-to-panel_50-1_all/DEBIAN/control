@@ -2,7 +2,7 @@ Package: gnome-shell-extension-dash-to-panel
 Version: 50-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 1712
+Installed-Size: 1508
 Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
 Section: gnome
 Priority: optional

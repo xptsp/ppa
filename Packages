@@ -51,10 +51,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 252
 Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
 Filename: ./all/gnome-shell-extension-add-to-desktop_10-1_all.deb
-Size: 18006
-MD5sum: 088000d59243a68cbd3ef33a77e218a0
-SHA1: 4d4039d6b945ed55d6fe689e94706aef556c36be
-SHA256: 869820b460aa8edea26c88b35877633190e3d5fe164ddfb87d4f38c57ef0ed77
+Size: 18696
+MD5sum: dd670efd5eb18b088a69d40cfd261e34
+SHA1: bed162e033ca02f56bb2cf54ddb018b4582966c8
+SHA256: 900510b8a85761047ea140c239703313f6152d8393aa08904687a9eb7fee68a9
 Section: gnome
 Priority: optional
 Homepage: https://github.com/Tommimon/add-to-desktop
@@ -73,10 +73,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 3516
 Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
 Filename: ./all/gnome-shell-extension-arcmenu_48-1_all.deb
-Size: 405206
-MD5sum: 0708103eef08d5b43f5f1e1b1b1a3307
-SHA1: a2e095c09ce1eb37295777043503ccdcc9ec6bf8
-SHA256: 94f70308d81b95d7bb32e15086a9b78caeb06cf86f24a5167ad562a2e9934b82
+Size: 374838
+MD5sum: 06a502f2bc46b886709cbf6f91b606a4
+SHA1: 8e2b1d355e97334e71623ba6af6d8328a6b8ef3f
+SHA256: 343b20a0fa95ef8e2cd01f018568313a096d781ed67bf862fabb7352d41690ff
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/arcmenu/ArcMenu
@@ -95,13 +95,13 @@ Package: gnome-shell-extension-battery-indicator-upower
 Version: 7-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 3516
+Installed-Size: 160
 Depends: gnome-shell (>= 42), gnome-shell (<< 43~)
 Filename: ./all/gnome-shell-extension-battery-indicator-upower_7-1_all.deb
-Size: 10090
-MD5sum: 228417461110410cfb25e7af57966a11
-SHA1: 1859e98ea8f6b355b97c0ef3e2aafc0d5e6e3490
-SHA256: 7f7b0e0ab486651fa6fd97cd2d54cb99a58719a8c3438310bb60d6d77d667efc
+Size: 11084
+MD5sum: efce4a09796a1b694c358118c0192c9a
+SHA1: d9803a4460cb7bf75f69d7a6de1374d69331f1a1
+SHA256: 5ead3d16f1c2a2d7914403b97e1667d5f5c3367f54e5f6fddefa739f7d035cd9
 Section: gnome
 Priority: optional
 Homepage: https://github.com/malko/battery-indicator-upower
@@ -117,13 +117,13 @@ Package: gnome-shell-extension-dash-to-dock-workaround
 Version: 3-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 76
+Installed-Size: 72
 Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
 Filename: ./all/gnome-shell-extension-dash-to-dock-workaround_3-1_all.deb
-Size: 3200
-MD5sum: 596cd55231a890903c79ec49e2063a20
-SHA1: ecd969d150fe5fe66f7513181e9ed532c5dde681
-SHA256: d302481817061cf95943cb001159be8e2aa5e26da0d085fc6437510a4d470514
+Size: 4534
+MD5sum: 9ae93c92f1c3811982585c9dac43f587
+SHA1: ed65d54edbd5c072f0a2d2a1e18c4992876925c7
+SHA256: 114025cc12c0e230bbb4a8d7c75c00e7dcd4112625fbae4c662d8297297519f5
 Section: gnome
 Priority: optional
 Homepage: https://github.com/popov895/dash-to-dock-workaround
@@ -168,13 +168,13 @@ Package: gnome-shell-extension-gamemode
 Version: 48-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 272
+Installed-Size: 244
 Depends: gnome-shell (>= 40), gnome-shell (<< 42~), gamemode
-Filename: ./all/gnome-shell-extension-gamemode_7-1_all.deb
-Size: 11404
-MD5sum: 807112b84dc3acd3a8fe206e7cef621d
-SHA1: a16dcc772b750a633a89757bf4f6ac34bc58e1eb
-SHA256: 397d2b3efc2c8db0676545e83bd63379285a61c64a502b7174a028040afa0dd2
+Filename: ./all/gnome-shell-extension-gamemode_48-1_all.deb
+Size: 12630
+MD5sum: 731ba3cfc811d8dda71b2b92e259e960
+SHA1: 831f41db065310f72a0dd5635667fb1b5dfddd39
+SHA256: 74f08146cfe1e72535797da102ce3765cb21b9a5b644b21c4ddede932aaee039
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/arcmenu/ArcMenu
@@ -193,10 +193,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 56
 Depends: gnome-shell (>= 40), gnome-shell (<< 44~)
 Filename: ./all/gnome-shell-extension-grand-theft-focus_3-1_all.deb
-Size: 1962
-MD5sum: 4ca750c14c445b6da8cc3fd4f8d4c936
-SHA1: d5ddfdedc96ad73873b3ce5dcb823eb4bd282463
-SHA256: 1589653cccc33c9b92d5c276165bd613e61220aec730c9c4aba248127732cba2
+Size: 3212
+MD5sum: 7ec27a3e7006a706ffebf3d78b147cf7
+SHA1: 4956a11bc495536d7a900d147e5a243c0b4c5e57
+SHA256: f0d43aba0e8232e3ff5917611ad6fd93d647422f865ab59f9576cb88974d63c6
 Section: gnome
 Priority: optional
 Homepage: https://github.com/zalckos/GrandTheftFocus
@@ -216,10 +216,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 1712
 Depends: gnome-shell (>= 42), gnome-shell (<< 42~), gjs
 Filename: ./all/gnome-shell-extension-gsconnect_50-1_all.deb
-Size: 266742
-MD5sum: 54405bc5c6ab51135f61536a71e0bd8a
-SHA1: 7237258a9b74307e9b50aa7f237b19de5b1a321a
-SHA256: bc6436ad8cfff823cb8c520ca482e85e214ea2a5840fe4211b080393405864e6
+Size: 267920
+MD5sum: 5f3088b9dafc201bf5aa074b4198482d
+SHA1: 2ac46e05245cac1e52109a9d86d3232431161284
+SHA256: 077545cdb89797eabba0a3fdd3e8e9f16732cf48c5eaa05c795709ef18d3f693
 Section: gnome
 Priority: optional
 Homepage: https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki
@@ -245,10 +245,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 260
 Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
 Filename: ./all/gnome-shell-extension-hibernate-status-button_33-1_all.deb
-Size: 19380
-MD5sum: 685dbdb852cd4fd2fa6fdeb854aa8265
-SHA1: 7ab587645caea818044302a74655adbd46f79a5c
-SHA256: 22db31ce9c2ceca66c512ffdd1c8fabb8b85f1adfead72486090ffbc6f6520ee
+Size: 20674
+MD5sum: 375c4136a4e1954c3241bfd086d5b9ac
+SHA1: 11668911e888b0fdeb7379878e0a1c45b5ea4535
+SHA256: 576f731793bed9e5b69145923d39f36ffca2642c14824c1c2731c31c8e60801c
 Section: gnome
 Priority: optional
 Homepage: https://github.com/arelange/gnome-shell-extension-hibernate-status
@@ -271,10 +271,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 84
 Depends: gnome-shell (>= 40), gnome-shell (<< 43~)
 Filename: ./all/gnome-shell-extension-notification-banner-reloaded_8-1_all.deb
-Size: 6400
-MD5sum: 2ae469c9a63c6ead520497f4687b1013
-SHA1: d597d092b3788bad8cdf38e5530c56d050e4e11a
-SHA256: 728a95b34b10fb6c1f35459060a11949783b381793dfd379835bc2bd1b9eb25e
+Size: 7650
+MD5sum: 0179d6f369f83b8e4faa377efa17ad3d
+SHA1: 5a8c510c8d8f3c7cfc2baa604d26edc5e09ae08d
+SHA256: e0867626d13ceb627eb8c17d9d4766805c50e37e41bf290146ef2adb97be3de9
 Section: gnome
 Priority: optional
 Homepage: https://github.com/malko/battery-indicator-upower
@@ -293,10 +293,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 988
 Depends: gnome-shell (>= 42), gnome-shell (<< 42~)
 Filename: ./all/gnome-shell-extension-openweather_118-1_all.deb
-Size: 151460
-MD5sum: e8b7f7a52a23208547d8fd224f40a3fa
-SHA1: 2f46eff4f65927e8677a9d00082868388a9a0d60
-SHA256: 51c30fa704c7e29e92a323b84b3f6d89164e49631256230b90c06706e4daf70d
+Size: 152694
+MD5sum: 5066636133bdc7a47138d537426d1e19
+SHA1: 7dae48729bc0368b4aa1a2058d8efaf5502b361b
+SHA256: eacbfb4f2648c26c2426b7612d194a6f6c5312967cf5667c1f7fe50253e454f1
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/skrewball/openweather
@@ -315,10 +315,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 108
 Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
 Filename: ./all/gnome-shell-extension-osd-volume-number_6-1_all.deb
-Size: 5712
-MD5sum: 0429ac3412fe9f3d277071604385ef7f
-SHA1: bd1bbc1da1e400e6ab1a5e3c92f373c22ea0ed79
-SHA256: a1fe233afc1545ba69b11df71a1e3695f458547d01733e2e1c444454374eb9c2
+Size: 6944
+MD5sum: be235e944357c9ea8226fc09485d4942
+SHA1: 2975384e98dc3f7f88a7cbed2ee935e48ab79273
+SHA256: 02813e71225bf7bb1a8008a72d24a96a4278c23b7374d6ecceccdf7863513035
 Section: gnome
 Priority: optional
 Homepage: https://github.com/Deminder/osd-volume-number
@@ -334,13 +334,13 @@ Package: gnome-shell-extension-prevent-double-empty-window
 Version: 4-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 76
+Installed-Size: 56
 Depends: gnome-shell (>= 40), gnome-shell (<< 44~)
 Filename: ./all/gnome-shell-extension-prevent-double-empty-window_4-1_all.deb
-Size: 2222
-MD5sum: 68303b6c50c77d8c1b26d531fb28a16b
-SHA1: 842234b737898393ee30654702922e039993ebab
-SHA256: d6ba1ea30e24d5fb5289cf5831da5c727634b4fa35eaa9d259505622a4672620
+Size: 3490
+MD5sum: 518befdb364fa018d5fc593614fa17ed
+SHA1: 4698a6ffbc480deee5762b1e426a170ed8eae209
+SHA256: bd4294e39a988b48693025053828da8600f47407625930cfca419206b9990626
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/g3786/prevent-double-empty-window
@@ -360,10 +360,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 160
 Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
 Filename: ./all/gnome-shell-extension-reboot-to-uefi_14-1_all.deb
-Size: 5232
-MD5sum: ac78db12343624738488a5fdcf0bbcc9
-SHA1: 94daee466c1c1060cb7d98bd7225ebcca2f3a144
-SHA256: a039611edfe384da6b0b9752ac357632b16ac180d5a607b8e9a53c6593b32a39
+Size: 6478
+MD5sum: 3fc6bd4367d33cea641c1a3348eb28e7
+SHA1: ecd4c898df777fa1c00c7a97ed744eda358961c7
+SHA256: a6e1893e707dce90b2a8c9d9ebe234fb0b4c8a2e1b84088de240e545669cff0c
 Section: gnome
 Priority: optional
 Homepage: https://github.com/kgshank/gse-refresh-wifi
@@ -382,10 +382,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 96
 Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
 Filename: ./all/gnome-shell-extension-refresh-wifi_16-1_all.deb
-Size: 14288
-MD5sum: 73c764d6e7a5fe644a337c3ce681550f
-SHA1: 7807559fac370db7dfdadd49b38f701b7fde36dc
-SHA256: 82efb68f3be03234f4a2beb7e3acc0e3abf3e8860276587b54022cf728bfb3e2
+Size: 15516
+MD5sum: 36daeef42c8fbcba5780a969ed28040e
+SHA1: fbca8191eb981ebbc345079c7b2f227e6e438ab4
+SHA256: f8366cf6bed7411a9b0967eac0fdd044f42ec96d925bf4734d39331a7f8ae3ee
 Section: gnome
 Priority: optional
 Homepage: https://github.com/kgshank/gse-refresh-wifi
@@ -409,10 +409,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 436
 Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
 Filename: ./all/gnome-shell-extension-sound-output-device-chooser_43-1_all.deb
-Size: 42000
-MD5sum: aea3c0728429b8d31b83b01ea5d135fe
-SHA1: b21bcae1fdd338a6037f38105893887b8ed618f9
-SHA256: c7b52ed94ebc64528a8312e7536a4e2e0edb86026f83c17f5d2c5ce99dfdb0c2
+Size: 43216
+MD5sum: 0be659bdc147b896dbd3d6524c06d6d7
+SHA1: 6a29fd50935ea3043d4e2862fef3ca7b442e45b6
+SHA256: 0211eb3d8ca4dd2e2d3c79651460bb9d024bce22a07c37f7c67e81f6b87854ec
 Section: gnome
 Priority: optional
 Homepage: https://github.com/kgshank/gse-sound-output-device-chooser
@@ -491,13 +491,13 @@ Source: joycond
 Version: 0.4-2
 Architecture: amd64
 Maintainer: Daniel J. Ogorchock
-Installed-Size: 504
+Installed-Size: 516
 Depends: libc6 (>= 2.34), libevdev2 (>= 0.9.1), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libudev1 (>= 183)
 Filename: ./amd64/joycond_0.4-2_amd64.deb
-Size: 72560
-MD5sum: 56754b8292a52bd4110f2df149754e87
-SHA1: 2c096c6876f7a22f6478cbcb43a50bd86edfec8f
-SHA256: e89a4d67e0e69db302f29397de262d6e042be14d2b828c16896f7cd23c8351f8
+Size: 82208
+MD5sum: 1cd85e275ba3f5536fcbe272820227ff
+SHA1: 92e7f12163fa059aef8eef0e48918a6e8ce4bb3f
+SHA256: 041f115f0f6ff1219dba17a557bc3ff9317910f356dd52fe5c781815828d779b
 Section: utils
 Priority: optional
 Homepage: https://github.com/sisxph/joycond
@@ -512,10 +512,10 @@ Architecture: all
 Maintainer: Luis Finke <luisfinke@gmail.com>
 Depends: bash (>=5.1), openbox, kodi
 Filename: ./all/kodi-openbox_1.0.5-1_all.deb
-Size: 1840
-MD5sum: 07640f0515520e8f3d77ac35258e4050
-SHA1: b1fd3921be632ae64b99dadb0e010a10fefb8724
-SHA256: 7e0bc0b4858983f7cb6bd061d45fa3fa6163a99ba55613a925024720540b54a5
+Size: 3286
+MD5sum: d0c92db1f5524661964c694e922358b7
+SHA1: 56ae5718fc3998dff9a125062eb11462f61a00cd
+SHA256: 9884c682b32c086e303f11327b889ebbd92274da7a88866024cc45f58e569464
 Section: base
 Priority: optional
 Homepage: https://github.com/lufinkey/kodi-openbox
@@ -843,14 +843,14 @@ Package: nautilus-gnome-disks
 Version: 0.1.1-3
 Architecture: amd64
 Maintainer: Douglas Orend <doug.orend@gmail.com>
-Installed-Size: 36
+Installed-Size: 48
 Depends: nautilus (>= 2.10), gnome-disk-utility
 Enhances: nautilus
 Filename: ./all/nautilus-gnome-disks_0.1.1-3_all.deb
-Size: 1888
-MD5sum: a6235207afd7daf47c576700226752eb
-SHA1: a301da658ac1bf2ec817737591a0179a327a7410
-SHA256: 33b19f55311fc33dbeb8cd87f936e6849b0f837285e6cd24abcee6df242cbfe4
+Size: 3148
+MD5sum: a417c6d63f3a81045b20c1e647aa8808
+SHA1: bcef31bef8487e96556ce144f379859f32d49b7b
+SHA256: bf4d1eba62752c821f85ba42a728e7421d1defd39a766d8257d3fb5156167658
 Section: gnome
 Priority: optional
 Homepage: https://github.com/thebitstick/nautilus-gnome-disks
@@ -896,10 +896,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 56
 Depends: net-tools, sudo
 Filename: ./all/peanut_2.0-1_all.deb
-Size: 2352
-MD5sum: db76dfe7c768faba176e640aadcbd46e
-SHA1: 05975de1588ce16f31f462b8f48548a0a7a4709f
-SHA256: f93cde79c810bdc96688d306a1f4a928c4fea6f9b3d643171ffc10d1eefc6fa4
+Size: 3488
+MD5sum: 50cbe6b8e3f098e7186324e1550e58e4
+SHA1: 1812549dfcb28488196024a286e897406794e47a
+SHA256: 931ea7f10e65537da2a9000c45e4c59ba3f5761b287ef33dcfac4edc3b46efd9
 Section: utils
 Priority: optional
 Homepage: https://gist.github.com/xptsp/26e31b4ad66969f508d43353662821d9
@@ -915,11 +915,11 @@ Architecture: all
 Maintainer: solbero <njord.solberg@gmail.com>
 Depends: plymouth, plymouth-label
 Provides: plymouth-theme
-Filename: ./all/plymouth-theme-kodi-animated-logo_1.0-2_all.deb
-Size: 622432
-MD5sum: 58e70b87eeff53edbacf2825c9d5f9d2
-SHA1: ff53547e84921703f3d91b4a712a154a02bcf352
-SHA256: b394c0735ac0f36e12a42d037423b45e5effb5b73ff50740fcec1782d38ef420
+Filename: ./all/plymouth-theme-kodi-animated-logo_1.0.0-2_all.deb
+Size: 623704
+MD5sum: 1a239ea2c0b67aa08f8b9498eaf7eab8
+SHA1: a0fdd446b11b15fba5310207c25daffad51a95fd
+SHA256: 7185576b6fa2dbf697db4fe6bd70e68dfb31753f980cdef66d585a5d5875d17a
 Section: x11
 Priority: optional
 Homepage: https://github.com/solbero/plymouth-theme-kodi-animated-logo
@@ -935,15 +935,15 @@ Source: xubuntu-artwork
 Version: 22.04.1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 964
+Installed-Size: 980
 Depends: plymouth, plymouth-label
 Breaks: plymouth (<< 0.9.2-3ubuntu1~)
 Provides: plymouth-theme
-Filename: ./all/plymouth-theme-reddragon_1.0-2_all.deb
-Size: 892074
-MD5sum: 4fcc3b4b30988ae7106ddd32b3fda5cf
-SHA1: 91f77136ba949956421b7ee95daf8409e85cf891
-SHA256: 43e95097f8145e7b87385b7e8453937e6e4019f859ee015949f2086cacee0665
+Filename: ./all/plymouth-theme-reddragon_22.04.1_all.deb
+Size: 893300
+MD5sum: 1fd9f4a8f0a03cb02b8907140d42311f
+SHA1: 203a801bd5e0adee24f561ec094e06939867cb47
+SHA256: 63b710e39c752176360ece2107badabba5a03c0bf14f31ab240a893749dd596e
 Section: x11
 Priority: optional
 Description: graphical boot animation and logger - xubuntu-logo theme
@@ -960,11 +960,11 @@ Architecture: all
 Maintainer: solbero <njord.solberg@gmail.com>
 Depends: plymouth, plymouth-label
 Provides: plymouth-theme
-Filename: ./all/plymouth-theme-retropie-kodi-animated-logo_1.0-2_all.deb
-Size: 641656
-MD5sum: 67fcd8b65f180f4e7030659aa7656a1e
-SHA1: b18872fb6f136945cb4b98803c8fb2750945113c
-SHA256: fe5b528eed58b61bfa9dcb0d58940de683665e8550cb33a4529cf391b84f550c
+Filename: ./all/plymouth-theme-retropie-kodi-animated-logo_1.0.0-2_all.deb
+Size: 642928
+MD5sum: 837ca4fc1c8789dd1e68d7337ad2d4cb
+SHA1: 68ba2fe8f0d111df0496a85b8f4858239ed7422c
+SHA256: 63b52562add5f7fd94a5c81c4b1b7572b40cc9a27551a86f853becda8f43d230
 Section: x11
 Priority: optional
 Homepage: https://github.com/solbero/plymouth-theme-kodi-animated-logo
@@ -982,10 +982,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 64
 Depends: toilet, lm-sensors
 Filename: ./all/reddragon-motd_1.1-1_all.deb
-Size: 3292
-MD5sum: 6bc399d3b41d90772b03d8834c8502f0
-SHA1: e215ef7024ea69782e44648bb116e947d69f213f
-SHA256: 82219421e0b6dc112053a64a0138c766d699284dca3a02a6517e543da83e49c9
+Size: 4452
+MD5sum: cb2925140ba2e312bf77c42d8ce87688
+SHA1: 1358b9f85c57b65e8b42144d6d3b05b33793334a
+SHA256: 595aadf565a50f0e0e8ee9b57d0aed0da470a54db3539b20efdd144222f28bc8
 Section: base
 Priority: optional
 Description: Customizes the MOTD message
@@ -994,16 +994,34 @@ Description: Customizes the MOTD message
  load, usage on /, swap usage (if any), number of local
  users, and number of processes running on the system.
 
+Package: reddragon-tools
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 28
+Depends: bash (>=5.1)
+Filename: ./all/reddragon-tools_1.0-1_all.deb
+Size: 2958
+MD5sum: c4e8c82b9cc1ff0874aab57f51f55961
+SHA1: f0e6725fe2ee22fd41c796634412250d97ad910e
+SHA256: 2b67890e431aa6c2f90bb7e94e2165c3c6cd50e8c60ce57f0570296993b7631e
+Section: utils
+Priority: optional
+Description: Useful Collection of Scripts
+ A small collection of scripts I've written to aid
+ in some tasks, such as DEB creation, finding the
+ differences in GSettings after changes, etc....
+
 Package: reddragon-wallpaper
 Version: 1.0-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 896
 Filename: ./all/reddragon-wallpaper_1.0-1_all.deb
-Size: 874968
-MD5sum: 5fb50e0d097b7d328ed21c307184e0c4
-SHA1: 54aa9ad2b988d881978f0e33b7055f4ef7b82b48
-SHA256: 538abb77a91da50306a426e1295325e1d7bf8823f194f0b5ef082cf19660eddc
+Size: 876240
+MD5sum: 011c06c210aa588a7c7bd19f144dac57
+SHA1: 411694d845944f3de0aa9097d2a389e0aec7ea97
+SHA256: 3704b7c70dfc4c5dd2d34aecba2714694b987ed458423d6919d0f47bec980662
 Section: x11
 Priority: optional
 Homepage: https://launchpad.net/ubuntu-wallpapers
@@ -1106,10 +1124,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 100
 Depends: urserver
 Filename: ./all/urserver-piinput_1.0-1_all.deb
-Size: 23608
-MD5sum: 05bff5459227703289ddb8995bb5da24
-SHA1: 17c56cedbbf51e662ec397ead0f4fa1f772c23bd
-SHA256: a039c2e6ef7414ca18fc6ac99b244342d93fefde721e33712fc97ce14b9f1da1
+Size: 24878
+MD5sum: 716a0a8967b33d13fb775d3ecc1f113a
+SHA1: 9d7ec152a66fefe763f8bdbb0d41ade6168cbfd3
+SHA256: 71778a0303d306497ee6a7d594596402b4679bb5a33b70fb88dc69f7c62f5dcc
 Section: x11
 Priority: optional
 Homepage: https://askubuntu.com/a/1316210
@@ -1125,10 +1143,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 192
 Depends: urserver, libfuse2, bash (>= 5.1)
 Filename: ./all/urserver-yuzu_1.1-1_all.deb
-Size: 52700
-MD5sum: 8e1e00378db27303e3485a2a24bf4577
-SHA1: ebbd1ee515043564f256ad7647992f821e0e6ded
-SHA256: b3a8e967d4d42a82ec4c60fae1173eb5392c6d9f37873d6a351e28057a7b7d82
+Size: 59618
+MD5sum: df721f4a38b8570c190c4aca1e501dbf
+SHA1: 2eefa920964ae0016b1f89e7f7d415a325409a6c
+SHA256: 9027dcf88adcc8e61d7bc9db77cd38e202217a60db375db2984d63fc5a1a2d8e
 Section: x11
 Priority: optional
 Homepage: https://askubuntu.com/a/1316210
