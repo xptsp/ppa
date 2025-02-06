@@ -474,14 +474,14 @@ Description: Spin down idle hard disks
 Package: intel-nuc-led-dkms
 Version: 2.0
 Architecture: all
-Maintainer: Dynamic Kernel Modules Support Team <pkg-dkms-maint@lists.alioth.debian.org>
-Installed-Size: 100
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 160
 Depends: dkms (>= 1.95)
 Filename: ./all/intel-nuc-led-dkms_2.0_all.deb
-Size: 25424
-MD5sum: 5dc97af36a54363009710af702a4ada5
-SHA1: ddf72714a5213ca9df005b85e33bd605fef44bb6
-SHA256: 9d16495a9fc391989f2527fcec1ae73c1295b5765c30a999e9d62233fccaf518
+Size: 27470
+MD5sum: c8b164ad741ed12c18742b503c1e6fc3
+SHA1: 524c83c4a57abaa6f6b0a67cff8b4537cc1dd732
+SHA256: 4ee58fb2bf151e069bf9006b7b7af17ebfd51d4a401bea8fc245495c3a23aa3e
 Section: misc
 Priority: optional
 Description: intel-nuc-led driver in DKMS format.
@@ -526,16 +526,16 @@ Description: Xsession on top of an Openbox session
 
 Package: libmnl-dev
 Source: libmnl
-Version: 1.0.5-1~git20220808.a92ea99
+Version: 1.0.5-2~git20220808.a92ea99
 Architecture: armhf
-Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
-Installed-Size: 80
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 84
 Depends: libmnl0 (= 1.0.5-1~git20220808.a92ea99)
-Filename: ./armhf/libmnl-dev_1.0.5-1~git20220808.a92ea99_armhf.deb
-Size: 12904
-MD5sum: 0030a7c21a0ada090d68ab13d84b9768
-SHA1: da4001074936887c7afaec4b0a297f588d96fadc
-SHA256: de3d985400e7f5b26a9eefc12e2f5e6d0e5fbca0879efc434c56c8afd6e55865
+Filename: ./armhf/libmnl-dev_1.0.5-2~git20220808.a92ea99_armhf.deb
+Size: 15424
+MD5sum: b6196b916670ec55fab61c96917114b1
+SHA1: 374c3279bebc54a9a4e07fada0b980ca12dfc9b4
+SHA256: dcab247fc286365054a9bc3fdccf04200da05d2687b3a39f79e1ab299f8a1b13
 Section: libdevel
 Priority: optional
 Multi-Arch: same
@@ -571,16 +571,16 @@ Description: minimalistic Netlink communication library (devel)
 
 Package: libmnl0
 Source: libmnl
-Version: 1.0.5-1~git20220808.a92ea99
+Version: 1.0.5-2~git20220808.a92ea99
 Architecture: armhf
-Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
-Installed-Size: usr
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 124
 Depends: libc6 (>= 2.4)
-Filename: ./armhf/libmnl0_1.0.5-1~git20220808.a92ea99_armhf.deb
-Size: 30084
-MD5sum: 97e1f5db9d8bbff08df1600f7d89c40f
-SHA1: c0e3e04062b48b5f41ca27893d783b3ffc827fac
-SHA256: 5841491a6be1c11c98176f20a32e86740bbfe53c700fb77ea698011b7c8b4828
+Filename: ./armhf/libmnl0_1.0.5-2~git20220808.a92ea99_armhf.deb
+Size: 34694
+MD5sum: 63cce3f8cb6a3db27d757b16e5a27536
+SHA1: 4996c3c06a8c98c943e507c660d9772c2e5d96e5
+SHA256: f43ba209d33d98fa35e3877f66c810d5f47d9b5bc76fbd330d668116e95da24c
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -615,16 +615,16 @@ Description: minimalistic Netlink communication library
 
 Package: libnftables-dev
 Source: nftables
-Version: 1.0.5-1~git20220809.1324867
+Version: 1.0.5-2~git20220809.1324867
 Architecture: armhf
-Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 64
 Depends: libnftables1 (= 1.0.5-1~git20220809.1324867)
-Filename: ./armhf/libnftables-dev_1.0.5-1~git20220809.1324867_armhf.deb
-Size: 8992
-MD5sum: b3ac6735255a5473614d108d98ce6bdb
-SHA1: 0b1d284914520aa79f34154a7f897912ea7e3e80
-SHA256: c8f823a03eed516f3e7e77e6cf33c89a88303118c7a9765cdbc7761e75575d1e
+Filename: ./armhf/libnftables-dev_1.0.5-2~git20220809.1324867_armhf.deb
+Size: 4000
+MD5sum: 0b75d71071dbe8ef3f5eb4bfb5091b74
+SHA1: 80ed4b6bb6cf5f36b5c31eabd97e5e9d43014d61
+SHA256: d2ab4ca830dad4ccc0eb4e405be873573bf8c32f76b66050d24ffa8f6b065cf6
 Section: libdevel
 Priority: optional
 Multi-Arch: same
@@ -723,16 +723,16 @@ Description: Netfilter nftables userspace API library
  nftables Netlink's API over libmnl.
 
 Package: miniupnpd
-Version: 2.3.0-1~git20220603.0cc037f
+Version: 2.3.0-2~git20220603.0cc037f
 Architecture: all
-Maintainer: Thomas Goirand <zigo@debian.org>
-Installed-Size: 148
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 180
 Depends: debconf, lsb-base, uuid-runtime, miniupnpd-nftables | miniupnpd-iptables, debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.51)
-Filename: ./all/miniupnpd_2.3.0-1~git20220603.0cc037f_all.deb
-Size: 20652
-MD5sum: 7564debe31449cb6cfa4e503c2d1bc27
-SHA1: 4a2f24b5305cfad22b1681e622438af3c5dec1e1
-SHA256: 02cf7dc84d3ee750bddb11407501bcc7a0565e96fd1e1aeb02102be10ed363b3
+Filename: ./all/miniupnpd_2.3.0-2~git20220603.0cc037f_all.deb
+Size: 20552
+MD5sum: a4f38048b3ea32ea9d43d499b79b6764
+SHA1: 17cbc5c5e5166af1000b69e947a82ccb4ad6e533
+SHA256: d2e9e0a47038baf8ed2cd87b469c60ada8fcea3abb7f25d9c5e527ae5081acda
 Section: net
 Priority: optional
 Homepage: http://miniupnp.free.fr/
@@ -775,19 +775,19 @@ Description: UPnP and NAT-PMP daemon for gateway routers - legacy iptables backe
 
 Package: miniupnpd-nftables
 Source: miniupnpd
-Version: 2.3.0-1~git20220602.0cc037f
+Version: 2.3.0-2~git20220602.0cc037f
 Architecture: armhf
-Maintainer: Thomas Goirand <zigo@debian.org>
-Installed-Size: 192
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 200
 Depends: libc6 (>= 2.28), libmnl0 (>= 1.0.5-1~git20220629.12024b1), libnftnl11 (>= 1.2.2-1~git20220615.84d12cf)
 Conflicts: miniupnpd-iptables
 Breaks: miniupnpd (<< 2.2.0)
 Replaces: miniupnpd (<< 2.2.0)
-Filename: ./armhf/miniupnpd-nftables_2.3.0-1~git20220602.0cc037f_armhf.deb
-Size: 57696
-MD5sum: ebe48e7add1edc4a4c0514e63265abc5
-SHA1: 23791c240fee1e4b1e4d5aa111f356bb87038d9f
-SHA256: 4bd00a6e067ebc1f2e73fd4a54919b69edd13bf953e3cb0e559aee2a10af65de
+Filename: ./armhf/miniupnpd-nftables_2.3.0-2~git20220602.0cc037f_armhf.deb
+Size: 62378
+MD5sum: 23a7eac8383c6073a3bdb32cca779857
+SHA1: f7576774fce6ed90304dbecbafe52a689b0030c0
+SHA256: f75373dd8283be2b1131152fe17ef8d31c847efd968456eeed99e756509e05aa
 Section: net
 Priority: optional
 Homepage: http://miniupnp.free.fr/
@@ -859,18 +859,18 @@ Description: Nautilus extension to restore/write/flash a disk image
  using GNOME Disks from Nautilus
 
 Package: nftables
-Version: 1.0.5-1~git20220809.1324867
+Version: 1.0.5-2~git20220809.1324867
 Architecture: armhf
-Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
-Installed-Size: 252
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 268
 Pre-Depends: dpkg (>= 1.15.7.2)
 Depends: libnftables1 (= 1.0.5-1~git20220809.1324867), libc6 (>= 2.4), libedit2 (>= 3.1-20130611-0)
 Suggests: firewalld
-Filename: ./armhf/nftables_1.0.5-1~git20220809.1324867_armhf.deb
-Size: 64416
-MD5sum: ae95b46d25703334bac626f280f96129
-SHA1: 067f9c7ef4339bcfc1743fcd7193a78defccb0a9
-SHA256: bb074ed9f58cdc76d5e4b0d0177402c3d7dd1aba4c11682214ecf0abff3398b9
+Filename: ./armhf/nftables_1.0.5-2~git20220809.1324867_armhf.deb
+Size: 70314
+MD5sum: 2e7457f6d412081778202731a4bbdb4e
+SHA1: ec811ecb3734b7c5d3df10300394ea0b89843527
+SHA256: 6ba3197096e7bf1cfef61a35b482446d21cbf1971edc926d15fda170c69336dd
 Section: net
 Priority: important
 Homepage: https://www.netfilter.org/

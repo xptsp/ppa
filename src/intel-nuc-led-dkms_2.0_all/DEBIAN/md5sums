@@ -1,0 +1,8 @@
+fbc8adfd616cef8467d03a41467ec8d9  ./usr/src/intel-nuc-led-2.0/dkms.conf
+84dcc94da3adb52b53ae4fa38fe49e5d  ./usr/src/intel-nuc-led-2.0/LICENSE
+2991d50ba89cf073f2d9e5d93a08a074  ./usr/src/intel-nuc-led-2.0/README.md
+7cec45a1be7b2407de992b281532316a  ./usr/src/intel-nuc-led-2.0/Makefile
+dd0a5ef8a7ea3a5aa159f2105cf03ed9  ./usr/src/intel-nuc-led-2.0/nuc_led.h
+966a58aa390bc46ded8f7ebda851c813  ./usr/src/intel-nuc-led-2.0/nuc_led.c
+3937d5792f0bae2119362b97dea3b920  ./usr/share/doc/intel-nuc-led-dkms/changelog.Debian.gz
+a559774ecdaca81fc300754573bac064  ./usr/share/intel-nuc-led-dkms/postinst

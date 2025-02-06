@@ -1,0 +1,4 @@
+/etc/miniupnpd/nft_delete_chain.sh
+/etc/miniupnpd/nft_flush.sh
+/etc/miniupnpd/nft_init.sh
+/etc/miniupnpd/nft_removeall.sh

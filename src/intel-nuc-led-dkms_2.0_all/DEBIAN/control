@@ -1,0 +1,9 @@
+Package: intel-nuc-led-dkms
+Version: 2.0
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 160
+Depends: dkms (>= 1.95)
+Section: misc
+Priority: optional
+Description: intel-nuc-led driver in DKMS format.

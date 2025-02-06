@@ -1,0 +1,5 @@
+66ba2d44d479b70b52a02d02a11a371a  ./usr/lib/arm-linux-gnueabihf/pkgconfig/libmnl.pc
+84699119f5e133afc04c3c3b42d91e43  ./usr/share/doc/libmnl-dev/README.gz
+f952aa07bde51713155fc49c1dc19a00  ./usr/share/doc/libmnl-dev/changelog.Debian.gz
+2ee6c35f51b7a9afb4bc63849021dd06  ./usr/share/doc/libmnl-dev/COPYING.gz
+e006dd0b1a1a2f99919dc11e7966dfa6  ./usr/include/libmnl/libmnl.h

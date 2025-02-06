@@ -1,0 +1,12 @@
+0b726d5d03f8a752c1c22fbfa6c9a756  ./usr/libexec/miniupnpd-startstop-helper.sh
+83f75f1a531e015d4751483acfdc21bc  ./usr/share/miniupnpd/miniupnpd.conf
+c14d97dfcafb2f8e010de5f8c58cc0b8  ./usr/share/miniupnpd/miniupnpd.default
+d6ce8fea4a38eefc3a0975d6e8a1a398  ./usr/share/doc/miniupnpd/VERSION.gz
+f54b8cee6cc247d8746248bf4cf7863b  ./usr/share/doc/miniupnpd/README.gz
+971382fb1551cb144583f619a30b3d03  ./usr/share/doc/miniupnpd/changelog.Debian.gz
+ec8071e0f919e5b888c972b8239b5c4f  ./usr/share/doc/miniupnpd/LICENSE.gz
+ad34030b5cd019a3c99a5148612e446b  ./usr/share/doc/miniupnpd/TODO.gz
+f5a4d1c4fb12188103b67c7caa1abf7c  ./usr/share/lintian/overrides/miniupnpd
+2f09d5af06d9aa5aefce7150026c8345  ./lib/systemd/system/miniupnpd.service
+dc5dfa975ebf3a022199dc7c7e50ddb9  ./etc/miniupnpd/miniupnpd_functions.sh
+2b00be7d7ece3eca4cfd8ee4739f89fe  ./etc/init.d/miniupnpd

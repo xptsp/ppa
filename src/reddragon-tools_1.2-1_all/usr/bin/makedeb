@@ -6,8 +6,8 @@ if [[ ! -f DEBIAN/control ]]; then echo "ERROR: No DEBIAN/control file present! 
 # Determine package name and fix directory name to match:
 DIR=($(basename $PWD | sed "s|_| |g") 1.0-1 all)
 PKGNAME=${DIR[0]}
-[[ "${DIR[1]}" =~ v[0-9\.\-]+ ]] && DIR[1]=${DIR[1]/v/}
-[[ ! "${DIR[1]}" =~ [0-9\.\-]+ ]] && DIR=(${DIR[0]} 1.0-1 ${DIR[1]})
+[[ "${DIR[1]}" =~ v[0-9\.\-\~\+]+ ]] && DIR[1]=${DIR[1]/v/}
+[[ ! "${DIR[1]}" =~ [0-9\.\-\~\+]+ ]] && DIR=(${DIR[0]} 1.0-1 ${DIR[1]})
 [[ -z "${DIR[2]}" ]] && DIR=(${DIR[0]} ${DIR[1]} all)
 CUR_VER=$(grep "Version:" DEBIAN/control | cut -d" " -f 2)
 if [[ "${DIR[1]}" != "${CUR_VER}" ]]; then OLD=$PWD; cd ..; NEW=${DIR[0]}_${CUR_VER}_${DIR[2]}; mv ${OLD} ${NEW}; cd ${NEW}; fi
@@ -18,19 +18,19 @@ DIR=$(basename $PWD)
 sed -i "s|Installed-Size:.*|Installed-Size: $(du -s | cut -d" " -f 1 | grep -oe "[0-9]*")|" DEBIAN/control
 
 # Create changelog if missing, and pack the changelog if it is still unpacked:
-CHG=usr/share/doc/${PKGNAME}/changelog.Debian
-if [[ ! -f ${CHG} && ! -f ${CHG}.gz ]]; then
+CHG=usr/share/doc/${PKGNAME}/changelog
+if [[ ! -f ${CHG} && ! -f ${CHG}.gz && ! -f ${CHG}.Debian && ! -f ${CHG}.Debian.gz ]]; then
 	mkdir -p $(dirname ${CHG}) 
 	(echo "${PKGNAME} (${CUR_VER}) jammy; urgency=medium"
 	 echo ""
 	 echo "  * Initial Release"
 	 echo ""
-	 echo " -- $(grep "Maintainer: " DEBIAN/control | cut -d" " -f 2-)  $(date '+%a, %d %b %Y %H:%m:00 %z')") > $CHG
+	 echo " -- $(grep "Maintainer: " DEBIAN/control | cut -d" " -f 2-)  $(date '+%a, %d %b %Y %H:%m:00 %z')") > ${CHG}.Debian
 fi
-find usr/share/doc/${PKGNAME} -type f ! -name *.gz -exec gzip -9 {} \;
+find usr/share/doc/${PKGNAME} -type f ! -name *.gz -exec gzip -9nf {} \;
 
 # Compress any uncompressed man files:
-[[ -d usr/share/man/ ]] && find usr/share/man/ -type f ! -name *.gz -exec gzip -9 {} \;
+[[ -d usr/share/man/ ]] && find usr/share/man/ -type f ! -name *.gz -exec gzip -9nf {} \;
 
 # Fix file permissions and ownership:
 chown -R ${USER}:${USER} *

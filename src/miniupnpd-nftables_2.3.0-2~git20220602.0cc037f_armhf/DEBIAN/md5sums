@@ -1,0 +1,11 @@
+9998b088f26d169f58c939b28cd34467  ./usr/sbin/miniupnpd
+ddb6e0f5607b02b374b5b8dd42dd2c8c  ./usr/share/doc/miniupnpd-nftables/VERSION.gz
+50f54f8357d414456b35543118a0d411  ./usr/share/doc/miniupnpd-nftables/README.gz
+a64f4472ee4b8f00494f52659823ed1f  ./usr/share/doc/miniupnpd-nftables/changelog.Debian.gz
+4cce3bccbd0a097bb8909a7ebe7fc0fb  ./usr/share/doc/miniupnpd-nftables/LICENSE.gz
+7e6d78c959901c7a6b8719638d6fa1d7  ./usr/share/doc/miniupnpd-nftables/TODO.gz
+083e5ec7bf3da75b80c513c3386b9519  ./usr/share/lintian/overrides/miniupnpd-nftables
+15954647bfa662c07030c4c230bbc8cb  ./etc/miniupnpd/nft_delete_chain.sh
+124866d6655467c514e9d606a313389f  ./etc/miniupnpd/nft_flush.sh
+fe82f2ccccf0426d96a7cb4feed8bcde  ./etc/miniupnpd/nft_removeall.sh
+6959bbc0ffa8f2075df9b2a6de4accab  ./etc/miniupnpd/nft_init.sh
