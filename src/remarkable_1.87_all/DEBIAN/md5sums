@@ -24,7 +24,7 @@ a1d4bffb5e60813b2dea5dcf5017a46b  ./usr/lib/python3/dist-packages/remarkable-1.8
 085756530ab182e37baa6a6f8d08af99  ./usr/lib/python3/dist-packages/pdfkit/configuration.py
 50ad34ebbdc56a274735b968ea468e5c  ./usr/lib/python3/dist-packages/pdfkit/source.py
 d1869c91710a8f56b6171fbb773b703b  ./usr/lib/python3/dist-packages/pdfkit/api.py
-1eafffdccdc8ef9460f577f545d8e791  ./usr/lib/mime/packages/remarkable
+b72a6bc1d17f5ebb51087bcb813caa68  ./usr/lib/mime/packages/remarkable
 2e729d5e3fe9aa8fc4e4d5f22911937f  ./usr/share/help/C/remarkable/index.page
 226aeda1a95cfae38774fb91ef9ddaf8  ./usr/share/help/C/remarkable/figures/icon.png
 d0c4d92d8eb09853500337256d4fe95e  ./usr/share/help/C/remarkable/topic1.page
@@ -60,7 +60,6 @@ a5887aa6c72028b9f69d984c794bdbab  ./usr/share/remarkable/ui/strikethrough.png
 034eecb58cb2753538980c71f19ce62b  ./usr/share/remarkable/ui/live_preview.png
 957ea56099b904d68c1202f854f97b40  ./usr/share/remarkable/ui/open.png
 6546272fbcebcfeedb497f052bce08e3  ./usr/share/remarkable/ui/PreferencesRemarkableDialog.ui
-ae9450f3fe2b160480069f7c716b9b0a  ./usr/share/doc/remarkable/changelog.gz
-17a4644973241a2aaf032b0395e888f7  ./usr/share/doc/remarkable/changelog.Debian.gz
+de8eebdb0a209d4768aa1380f197f254  ./usr/share/doc/remarkable/changelog.Debian.gz
 08087e5c2dfd662ce6875559c51fa666  ./usr/share/doc/remarkable/copyright
 5b901eec2e7644258c4556d25915ac68  ./usr/bin/remarkable

@@ -1035,10 +1035,10 @@ Maintainer: Jamie McGowan <jamiemcgowan.dev@gmail.com>
 Installed-Size: 724
 Depends: python3, dconf-gsettings-backend | gsettings-backend, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-gtksource-3.0, python3-markdown, python3-bs4, gir1.2-webkit2-4.0, yelp, wkhtmltopdf, python3-gi
 Filename: ./all/remarkable_1.87_all.deb
-Size: 109376
-MD5sum: e468567ec0523443c11016867d406298
-SHA1: 26520293e1bd1bc9c1fed79283da08036e0d8eb2
-SHA256: 12191a5876411ebc4e5f11f59c3ffb17661419025674178d28dbe7e4d2c6f5db
+Size: 109160
+MD5sum: a95a204823cd712c455ca995041cfa85
+SHA1: 32d347b18f5123ef8b85e5363a15710f405ad1ed
+SHA256: 0c1300560818cbf30aa312fbf8bf906c3d87ab5b29b75c340f5af6961d4e21dc
 Section: python
 Priority: optional
 Description: A free fully featured markdown editor.

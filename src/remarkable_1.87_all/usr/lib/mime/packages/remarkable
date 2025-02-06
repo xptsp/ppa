@@ -1,2 +1,2 @@
-text/markdown; /usr/bin/remarkable '%s'; Remarkable
-text/x-markdown; /usr/bin/remarkable '%s'; Remarkable
+text/markdown; /usr/bin/remarkable %s; Remarkable
+text/x-markdown; /usr/bin/remarkable %s; Remarkable
