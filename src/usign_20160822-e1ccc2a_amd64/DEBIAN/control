@@ -1,0 +1,11 @@
+Package: usign
+Priority: optional
+Section: utils
+Installed-Size: 76
+Depends: libc6 (>= 2.34)
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Architecture: amd64
+Version: 20160822-e1ccc2a
+Provides: build
+Description: Public key signatures using the ed25519 algorithm.
+ Usign provides public key signatures using the ed25519 algorithm.

@@ -27,7 +27,10 @@ if [[ ! -f ${CHG} && ! -f ${CHG}.gz ]]; then
 	 echo ""
 	 echo " -- $(grep "Maintainer: " DEBIAN/control | cut -d" " -f 2-)  $(date '+%a, %d %b %Y %H:%m:00 %z')") > $CHG
 fi
-find -name changelog.Debian -exec gzip -9 {} \;
+find usr/share/doc/${PKGNAME} -type f ! -name *.gz -exec gzip -9 {} \;
+
+# Compress any uncompressed man files:
+[[ -d usr/share/man/ ]] && find usr/share/man/ -type f ! -name *.gz -exec gzip -9 {} \;
 
 # Fix file permissions and ownership:
 chown -R ${USER}:${USER} *

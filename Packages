@@ -1053,14 +1053,14 @@ Package: scrcpy
 Version: 3.1-5689
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 202
+Installed-Size: 24052
 Depends: libavcodec58 (>= 7:4.4), libavdevice58 (>= 7:4.4), libavformat58 (>= 7:4.4), libavutil56 (>= 7:4.4), libc6 (>= 2.34), libsdl2-2.0-0 (>= 2.0.12), libusb-1.0-0 (>= 2:1.0.16), scrcpy-server
 Recommends: adb
 Filename: ./amd64/scrcpy_3.1-5689_amd64.deb
-Size: 6626640
-MD5sum: 67dbec096df20144f092cc42ee88ac50
-SHA1: d92913611b5430c31923d05a45ecdefc118d1d5f
-SHA256: da93280a69edf1faeb7f4a642e9d94bb4f50cda861e26eb4dcf1c464dcf59e53
+Size: 7466880
+MD5sum: 11b5e9ab03a1b5f2f722b1886738a651
+SHA1: 084d1981530bfed9c27da2df449ffab23ee68174
+SHA256: 95bab9bf60468434d6280d14e8c9114c8fbb4e250a1764165dc5b6c594d5061e
 Section: net
 Priority: optional
 Homepage: https://github.com/Genymobile/scrcpy
@@ -1076,12 +1076,12 @@ Source: scrcpy
 Version: 3.1-5689
 Architecture: all
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 49
+Installed-Size: 132
 Filename: ./all/scrcpy-server_3.1-5689_all.deb
-Size: 91956
-MD5sum: f94aa3afc676623e548f87aafb7042dc
-SHA1: d9e3d9d31e6cf346af390a2c4c865435ae9852b3
-SHA256: 8cdd99d4468fed17fee2e7e92f75c4563e686a4d4cca46b3c00b47ba19fd641c
+Size: 92798
+MD5sum: 36aabebdadd042793606d6f32d3139ec
+SHA1: 76033f5ef65e5588dbf678c42309695738dad006
+SHA256: fdddfbea8b2e51fed19729fa283aa5702119a60fdc5c9fcc4f7d1cb453cdeab4
 Section: net
 Priority: optional
 Multi-Arch: foreign
@@ -1189,17 +1189,19 @@ Description: Yuzu remote for Unified Remote server
 Package: usign
 Version: 20160822-e1ccc2a
 Architecture: amd64
-Maintainer: root@Doug-PC
-Installed-Size: 40
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 76
+Depends: libc6 (>= 2.34)
 Provides: build
 Filename: ./amd64/usign_20160822-e1ccc2a_amd64.deb
-Size: 14828
-MD5sum: 2326289c71993a21797f4a2888f92ea2
-SHA1: 2311cd015534e85e6dff3011286ca56e42b11889
-SHA256: 338a48e90337acafe7d90b68c011192378907cf2a2cb02f285f5c82ed5084356
-Section: checkinstall
-Priority: extra
-Description: Usign provides public key signatures using the ed25519 algorithm.
+Size: 15152
+MD5sum: 832e26d7fa0ae068ffb6668d0ea0764d
+SHA1: e192c1aa8edaf04dec74501ef3065ee6c652d275
+SHA256: 5412f5decf4c7323cedd749557db3b360a58a51688ed5fd9575c7e925778f167
+Section: utils
+Priority: optional
+Description: Public key signatures using the ed25519 algorithm.
+ Usign provides public key signatures using the ed25519 algorithm.
 
 Package: vnstat
 Version: 1.18-2

@@ -1,0 +1,17 @@
+Package: scrcpy-server
+Source: scrcpy
+Version: 3.1-5689
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Yangfl <mmyangfl@gmail.com>
+Installed-Size: 132
+Section: net
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/Genymobile/scrcpy
+Description: Display and control your Android device - server binary
+ This application provides display and control of Android devices connected on
+ USB (or over TCP/IP). It does not require any root access.
+ .
+ This package contains the server (mobile) binary, which will be pushed to the
+ Android device.
