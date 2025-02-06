@@ -1,0 +1,4 @@
+489d11c1c01792025e6809837d21e926  ./usr/share/doc/reddragon-tools/changelog.Debian.gz
+a9e5cc96dc3d300201cf56ed6f9d1c0a  ./usr/bin/gsettings-diff
+da9fcc3af4f6561a056f177d1a32bf68  ./usr/bin/makedeb
+1b61d20ff6aec80df04a0fea03e91b22  ./usr/bin/gksu

@@ -995,16 +995,16 @@ Description: Customizes the MOTD message
  users, and number of processes running on the system.
 
 Package: reddragon-tools
-Version: 1.0-1
+Version: 1.1-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 28
-Depends: bash (>=5.1)
-Filename: ./all/reddragon-tools_1.0-1_all.deb
-Size: 2958
-MD5sum: c4e8c82b9cc1ff0874aab57f51f55961
-SHA1: f0e6725fe2ee22fd41c796634412250d97ad910e
-SHA256: 2b67890e431aa6c2f90bb7e94e2165c3c6cd50e8c60ce57f0570296993b7631e
+Installed-Size: 52
+Depends: bash (>=5.1), lintian, dpkg-sig, dpkg-dev
+Filename: ./all/reddragon-tools_1.1-1_all.deb
+Size: 3814
+MD5sum: cda69a15b29fe0bbd61d710b77bd4ea0
+SHA1: bed9674fb5b4334a264b80a727d3ec4daeed06a4
+SHA256: 26965e2f963ebaa6eff17796d25aae6808888695e20266a784bcae2393e69e39
 Section: utils
 Priority: optional
 Description: Useful Collection of Scripts
@@ -1027,6 +1027,27 @@ Priority: optional
 Homepage: https://launchpad.net/ubuntu-wallpapers
 Description: RedDragon Wallpapers
  Wallpaper for the RedDragon theme
+
+Package: remarkable
+Version: 1.87
+Architecture: all
+Maintainer: Jamie McGowan <jamiemcgowan.dev@gmail.com>
+Installed-Size: 724
+Depends: python3, dconf-gsettings-backend | gsettings-backend, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-gtksource-3.0, python3-markdown, python3-bs4, gir1.2-webkit2-4.0, yelp, wkhtmltopdf, python3-gi
+Filename: ./all/remarkable_1.87_all.deb
+Size: 109376
+MD5sum: e468567ec0523443c11016867d406298
+SHA1: 26520293e1bd1bc9c1fed79283da08036e0d8eb2
+SHA256: 12191a5876411ebc4e5f11f59c3ffb17661419025674178d28dbe7e4d2c6f5db
+Section: python
+Priority: optional
+Description: A free fully featured markdown editor.
+ Remarkable is a free fully featured markdown editor. It has a syntax
+ like Github flavoured markdown. With it you can write markdown and view
+ the changes as you make them in the live preview window. You can export
+ your files to a variety of formats. There are multiple styles available
+ along with extensive configuration options so you can set it up exactly
+ how you like.
 
 Package: scrcpy
 Version: 3.1-5689

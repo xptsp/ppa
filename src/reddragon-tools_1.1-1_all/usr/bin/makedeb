@@ -5,6 +5,7 @@ if [[ ! -f DEBIAN/control ]]; then echo "ERROR: No DEBIAN/control file present! 
 
 # Determine package name and fix directory name to match:
 DIR=($(basename $PWD | sed "s|_| |g") 1.0-1 all)
+PKGNAME=${DIR[0]}
 [[ "${DIR[1]}" =~ v[0-9\.\-]+ ]] && DIR[1]=${DIR[1]/v/}
 [[ ! "${DIR[1]}" =~ [0-9\.\-]+ ]] && DIR=(${DIR[0]} 1.0-1 ${DIR[1]})
 [[ -z "${DIR[2]}" ]] && DIR=(${DIR[0]} ${DIR[1]} all)
@@ -16,10 +17,20 @@ DIR=$(basename $PWD)
 # Determine unpacked size of package and update "DEBIAN/control":
 sed -i "s|Installed-Size:.*|Installed-Size: $(du -s | cut -d" " -f 1 | grep -oe "[0-9]*")|" DEBIAN/control
 
-# Pack the changelog if it is still unpacked:
+# Create changelog if missing, and pack the changelog if it is still unpacked:
+CHG=usr/share/doc/${PKGNAME}/changelog.Debian
+if [[ ! -f ${CHG} && ! -f ${CHG}.gz ]]; then
+	mkdir -p $(dirname ${CHG}) 
+	(echo "${PKGNAME} (${CUR_VER}) jammy; urgency=medium"
+	 echo ""
+	 echo "  * Initial Release"
+	 echo ""
+	 echo " -- $(grep "Maintainer: " DEBIAN/control | cut -d" " -f 2-)  $(date '+%a, %d %b %Y %H:%m:00 %z')") > $CHG
+fi
 find -name changelog.Debian -exec gzip -9 {} \;
 
-# Fix file permissions:
+# Fix file permissions and ownership:
+chown -R ${USER}:${USER} *
 find -type d -exec chmod 0755 {} \;
 find -type f -exec chmod 0644 {} \;
 find DEBIAN -type f  -name p* -exec chmod 755 {} \;

@@ -1,10 +1,10 @@
 Package: reddragon-tools
-Version: 1.0-1
+Version: 1.1-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Section: utils
-Depends: bash (>=5.1)
-Installed-Size: 28
+Depends: bash (>=5.1), lintian, dpkg-sig, dpkg-dev
+Installed-Size: 52
 Priority: optional
 Description: Useful Collection of Scripts
  A small collection of scripts I've written to aid
