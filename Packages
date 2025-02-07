@@ -462,15 +462,41 @@ Description: RedDragon theme for GRUB 2
  personal overall theme.
 
 Package: hd-idle
-Version: 1.17
+Version: 1.21
+Architecture: amd64
+Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
+Installed-Size: 2524
+Filename: ./amd64/hd-idle_1.21_amd64.deb
+Size: 1357316
+MD5sum: a03644047533816fb4dfcc0bfc387562
+SHA1: fb61148817df2fdf3998707f861d9f038d0d2ce7
+SHA256: 27c934d04743d12961006effeb6824cf61b0679c04e8c87342740c26033d37b7
+Section: admin
+Priority: optional
+Homepage: https://github.com/adelolmo/hd-idle
+Description: Spin down idle hard disks
+ hd-idle is a utility program for spinning-down external disks after a period
+ of idle time. Since most external IDE disk enclosures don't support setting
+ the IDE idle timer, a program like hd-idle is required to spin down idle disks
+ automatically.
+ .
+ A word of caution: hard disks don't like spinning up too often. Laptop disks
+ are more robust in this respect than desktop disks but if you set your disks
+ to spin down after a few seconds you may damage the disk over time due to the
+ stress the spin-up causes on the spindle motor and bearings. It seems that
+ manufacturers recommend a minimum idle time of 3-5 minutes, the default in
+ hd-idle is 10 minutes.
+
+Package: hd-idle
+Version: 1.21
 Architecture: armhf
 Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
-Installed-Size: 2398
-Filename: ./armhf/hd-idle_1.17_armhf.deb
-Size: 1182560
-MD5sum: 6d4be65b120d9771c1ea235c41035525
-SHA1: fdeed23436e90304f7404272db8ff89c88d6178d
-SHA256: c2b4683668e716570a2369540da2e9209e7086233fa957fe5e3fdf7cda7b10eb
+Installed-Size: 2586
+Filename: ./armhf/hd-idle_1.21_armhf.deb
+Size: 1268292
+MD5sum: cd876d8b596fb53b826c2f0e5bcac748
+SHA1: a8d3f479e0a7598b06aa1684832d21d4bb7cc666
+SHA256: f45a2a8d34bd48ce366717f019fd83252838ff3ad6501b79e4e9f61b4b08e64e
 Section: admin
 Priority: optional
 Homepage: https://github.com/adelolmo/hd-idle
