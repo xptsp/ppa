@@ -3,7 +3,7 @@ Source: libmnl
 Version: 1.0.5-2~git20220808.a92ea99
 Architecture: armhf
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 84
+Installed-Size: 92
 Depends: libmnl0 (= 1.0.5-1~git20220808.a92ea99)
 Section: libdevel
 Priority: optional

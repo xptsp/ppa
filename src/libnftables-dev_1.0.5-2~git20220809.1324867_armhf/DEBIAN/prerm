@@ -1,0 +1,2 @@
+#!/bin/bash
+test -e /usr/lib/arm-linux-gnueabihf/libnftables.so && rm /usr/lib/arm-linux-gnueabihf/libnftables.so

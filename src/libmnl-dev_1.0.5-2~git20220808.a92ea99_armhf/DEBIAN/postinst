@@ -1,0 +1,2 @@
+#!/bin/bash
+ln -sf /usr/lib/arm-linux-gnueabihf/{libmnl.so.0.2.0,libmnl.so}

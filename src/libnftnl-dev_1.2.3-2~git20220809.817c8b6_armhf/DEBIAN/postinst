@@ -1,0 +1,2 @@
+#!/bin/bash
+ln -sf /usr/lib/arm-linux-gnueabihf/{libnftnl.so.11.6.0,libnftnl.so}

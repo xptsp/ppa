@@ -3,7 +3,7 @@ Source: nftables
 Version: 1.0.5-2~git20220809.1324867
 Architecture: armhf
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 64
+Installed-Size: 72
 Depends: libnftables1 (= 1.0.5-1~git20220809.1324867)
 Section: libdevel
 Priority: optional

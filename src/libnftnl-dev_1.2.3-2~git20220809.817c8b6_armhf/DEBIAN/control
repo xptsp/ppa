@@ -3,7 +3,7 @@ Source: libnftnl
 Version: 1.2.3-2~git20220809.817c8b6
 Architecture: armhf
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 292
+Installed-Size: 300
 Depends: libnftnl11 (= 1.2.3-1~git20220809.817c8b6), pkg-config
 Suggests: libnftnl-dev-doc
 Section: libdevel

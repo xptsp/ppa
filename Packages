@@ -529,13 +529,13 @@ Source: libmnl
 Version: 1.0.5-2~git20220808.a92ea99
 Architecture: armhf
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 84
+Installed-Size: 92
 Depends: libmnl0 (= 1.0.5-1~git20220808.a92ea99)
 Filename: ./armhf/libmnl-dev_1.0.5-2~git20220808.a92ea99_armhf.deb
-Size: 15424
-MD5sum: b6196b916670ec55fab61c96917114b1
-SHA1: 374c3279bebc54a9a4e07fada0b980ca12dfc9b4
-SHA256: dcab247fc286365054a9bc3fdccf04200da05d2687b3a39f79e1ab299f8a1b13
+Size: 15478
+MD5sum: fc96dd7359906bf111efe62333dddd73
+SHA1: c06283a47af7a244158edca95efb5f03d2ea509b
+SHA256: f1b84826d67e35246f1c12217ed6796c487faa13a7a581cced5ed1887d4ceeb4
 Section: libdevel
 Priority: optional
 Multi-Arch: same
@@ -645,16 +645,16 @@ Description: Development files for libnftables
 
 Package: libnftables1
 Source: nftables
-Version: 1.0.5-1~git20220809.1324867
+Version: 1.0.5-2~git20220809.1324867
 Architecture: armhf
-Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
-Installed-Size: 3000
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 3012
 Depends: libc6 (>= 2.28), libgmp10, libjansson4 (>= 2.3), libmnl0 (>= 1.0.5-1~git20220808.a92ea99), libnftnl11 (>= 1.2.3-1~git20220809.817c8b6), libxtables12 (>= 1.6.1)
-Filename: ./armhf/libnftables1_1.0.5-1~git20220809.1324867_armhf.deb
-Size: 936656
-MD5sum: c619fdbaa08cc6445e24ea0754098194
-SHA1: 8c729eb0af61efaa523ebb4eec1db7fb7de6bd37
-SHA256: fe0a54cf1fc71a18f755eece9f6f59046f22ff247635834e8791e2c1e65c88ae
+Filename: ./armhf/libnftables1_1.0.5-2~git20220809.1324867_armhf.deb
+Size: 1069992
+MD5sum: 4e165d2e80b354f53377235c5582ee4c
+SHA1: 9139f4a9517491fefa6922f5718dcc623569304b
+SHA256: 2e56bc258a3559b44487c57d775314f589000e2146464356335586315783d4af
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -675,17 +675,17 @@ Description: Netfilter nftables high level userspace API library
 
 Package: libnftnl-dev
 Source: libnftnl
-Version: 1.2.3-1~git20220809.817c8b6
+Version: 1.2.3-2~git20220809.817c8b6
 Architecture: armhf
-Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
-Installed-Size: 284
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 300
 Depends: libnftnl11 (= 1.2.3-1~git20220809.817c8b6), pkg-config
 Suggests: libnftnl-dev-doc
-Filename: ./armhf/libnftnl-dev_1.2.3-1~git20220809.817c8b6_armhf.deb
-Size: 18412
-MD5sum: 892118279a4f3cdb064720d80338d9cd
-SHA1: 06f2a7b6c6b86d60da8facf6e98d860fa68f614e
-SHA256: 86b878bc27f551e28e4574f920dab8fca2c594dbaf9d00fc5f2fade909a66dac
+Filename: ./armhf/libnftnl-dev_1.2.3-2~git20220809.817c8b6_armhf.deb
+Size: 61130
+MD5sum: b3bacb63dc482c13c57c5aa56b8c1f49
+SHA1: 303ee5bf0cc2b878186beb52040eddc5c1775d30
+SHA256: 7d272cdc13d0507a602e8e6755933dc85fbfb987c0b88dc03d8dc6f37196618a
 Section: libdevel
 Priority: optional
 Multi-Arch: same
@@ -701,16 +701,16 @@ Description: Development files for libnftnl
 
 Package: libnftnl11
 Source: libnftnl
-Version: 1.2.3-1~git20220809.817c8b6
+Version: 1.2.3-2~git20220809.817c8b6
 Architecture: armhf
-Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
-Installed-Size: 924
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 932
 Depends: libc6 (>= 2.4), libmnl0 (>= 1.0.5-1~git20220808.a92ea99)
-Filename: ./armhf/libnftnl11_1.2.3-1~git20220809.817c8b6_armhf.deb
-Size: 240060
-MD5sum: 234e7b274d286c621be2e535a81ff644
-SHA1: 3e7f7ce614a28ed3eca8c7602c856a93cd1be3f4
-SHA256: 529da5421784caba1c4184b614610f5181a011ea3d2231e4c7b8f017e6d73b06
+Filename: ./armhf/libnftnl11_1.2.3-2~git20220809.817c8b6_armhf.deb
+Size: 271004
+MD5sum: 06c55bddf489cec8aa1eb352560eda35
+SHA1: 102763d092d57f080d0babc76004eec9dd0f3832
+SHA256: 5db224da956c379618763029404e8df22a64e12cc7ad98f7157b045001d10aa8
 Section: libs
 Priority: optional
 Multi-Arch: same
