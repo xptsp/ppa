@@ -139,13 +139,13 @@ Package: gnome-shell-extension-dash-to-panel
 Version: 50-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 1712
+Installed-Size: 1508
 Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
-Filename: ./all/gnome-shell-extension-dash-to-panel_56-1_all.deb
-Size: 202410
-MD5sum: 8e8816a771e01ed76ec5515d74a08072
-SHA1: 65009dcc8e0b50207eb7de869aca799858ddea6f
-SHA256: 6b966be297b715225930141fbc51d149a75c943a314229b1ef4c50687478a6e6
+Filename: ./all/gnome-shell-extension-dash-to-panel_50-1_all.deb
+Size: 203764
+MD5sum: 1e44021fed099c853bd5f9e1938c91ac
+SHA1: c9f5a6f0c3d1eedb8bf6a235c4d3767193aec97f
+SHA256: 0064c965fa409d77265800322b02ee0090e551dc238ed47e14cdeae42f5439a1
 Section: gnome
 Priority: optional
 Homepage: https://github.com/home-sweet-gnome/dash-to-panel
@@ -439,6 +439,22 @@ Size: 806624
 MD5sum: 36da4d40780cd4807e317391b661c296
 SHA1: 3e9b0e6d4c8a5ef7c254c7410acf9d395134c51b
 SHA256: 5fa2987f4bbeabde7d85d3905a52028ff9a16b18040b01afc3b91c8b0c909a08
+Section: grub
+Priority: optional
+Description: RedDragon theme for GRUB 2
+ RedDragon theme for the GRUB boot loader to fit in with my
+ personal overall theme.
+
+Package: grub-theme-reddragon
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Douglas Orend <doug.orend2@gmail.com>>
+Installed-Size: 1236
+Filename: ./all/grub-theme-reddragon_1.0-1_all.deb
+Size: 808024
+MD5sum: 7895dbfa93e8d23232a929297232b7c3
+SHA1: 28cc8baeaf0b3df91bfc8e4b480bdb0120959945
+SHA256: 0d93d3e7fbfd64039f7d1b697d3c44d61e0f9aa20ca82c163158d8636269ac46
 Section: grub
 Priority: optional
 Description: RedDragon theme for GRUB 2
