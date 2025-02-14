@@ -1,0 +1,19 @@
+#!/bin/bash
+if [[ -z "$1" || ! -f "$1" ]]; then
+	echo "Syntax: los [filename]"
+elif losetup | grep -q "/$1^"; then
+	echo "ERROR: Specified image is already mounted!"
+else
+	local dev=$(sudo losetup --show -f -P $1)
+	local dest=${dev/dev/mnt}
+	echo $dest
+	if [[ -e ${dev}p1 ]]; then
+		for part in ${dev}p*; do
+			sudo mkdir -p ${part/dev/mnt}
+			sudo mount ${part} ${part/dev/mnt}
+		done
+	else
+		sudo mkdir -p ${dest/dev/mnt}
+		sudo mount ${dest} ${dest/dev/mnt}
+	fi
+fi

@@ -1,0 +1,18 @@
+#!/bin/bash
+dev="${1/^mnt/dev}"
+mnt=$([[ ! -z "${dev}" ]] && basename ${dev})
+if [[ -z "${dev}" ]]; then
+	echo "Syntax: losd [loop device path]"
+	return 0
+fi
+dev=$(losetup -l | grep "${mnt} " | cut -d" " -f 1)
+[[ -z "${dev}" ]] && dev=$(mount | grep "${mnt} " | head -1 | awk '{print $1}' | sed "s|p[0-9]$||")
+if [[ -z "${dev}" ]]; then
+	echo "ERROR: No image mounted for \"${1}\".  Aborting..."
+else
+	for part in $(mount | grep -e "${dev/dev/mnt}/" | awk '{print $3}' | tac); do sudo umount $part; done
+	sudo umount ${dev/dev/mnt}{,p*} 2> /dev/null
+	sudo losetup -d ${dev}
+	sudo rmdir ${dev/dev/mnt}{,p*} 2> /dev/null
+fi
+

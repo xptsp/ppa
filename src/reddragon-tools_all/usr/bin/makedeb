@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# If GitHub PPA is specified, use that location instead of default.  Abort if not found!
+unset PPA_DIR USE_ARCH_DIR
+test -f /etc/default/makedeb && source /etc/default/makedeb
+PPA_DIR=${PPA_DIR:-"$HOME/GitHub/ppa/"}
+if ! test -d "${PPA_DIR}"; then echo "ERROR: PPA directory not specified or is missing!  Aborting!"; exit 1; fi
+if [[ ! -f "${PPA_DIR}/update.sh" ]]; then echo "ERROR: PPA update script is missing!  Aborting!"; exit 1; fi
+USE_ARCH_DIR=${USE_ARCH_DIR:-"1"}
+
+# If we aren't in the package directory, abort with error to user:
+while [[ "$PWD" != "/" && ! -f DEBIAN/control ]]; do cd ..; done
+if [[ ! -f DEBIAN/control ]]; then echo "ERROR: No DEBIAN/control file present!  Aborting!"; exit 1; fi
+
+# Determine package name and fix directory name to match:
+DIR=$(basename $PWD)
+PKGNAME=${DIR%%_*}
+CUR_VER=$(grep "Version:" DEBIAN/control | cut -d" " -f 2)
+ARCH=$(grep "Architecture:" DEBIAN/control | cut -d" " -f 2)
+
+# Determine unpacked size of package and update "DEBIAN/control":
+sed -i "s|Installed-Size:.*|Installed-Size: $(du -s | cut -d" " -f 1 | grep -oe "[0-9]*")|" DEBIAN/control
+
+# Create changelog if missing, and pack the changelog if it is still unpacked:
+CHG_DIR=usr/share/doc/${PKGNAME}
+CHG=$(find ${CHG_DIR} -type f) 
+if [[ -z "${CHG}" ]]; then
+	CHG=${CHG_DIR}/changelog.Debian
+	mkdir -p $(dirname ${CHG_DIR}) 
+	(echo "${PKGNAME} (${CUR_VER}) main; urgency=medium"
+	 echo ""
+	 echo "  * Initial Release"
+	 echo ""
+	 echo " -- $(grep "Maintainer: " DEBIAN/control | cut -d" " -f 2-)  $(date '+%a, %d %b %Y %H:%m:00 %z')") > ${CHG}
+fi
+find usr/share/doc/${PKGNAME} -type f ! -name *.gz -exec gzip -9nf {} \;
+
+# Compress any uncompressed man files:
+[[ -d usr/share/man/ ]] && find usr/share/man/ -type f ! -name *.gz -exec gzip -9nf {} \;
+
+# Fix file permissions and ownership:
+chown -R ${USER}:${USER} *
+find -type d -exec chmod 0755 {} \;
+find -type f -exec chmod 0644 {} \;
+find DEBIAN -type f  -name p* -exec chmod 755 {} \;
+[[ -d etc/sudoers.d ]] && find etc/sudoers.d -type f -exec chmod 0440 {} \;
+grep -R "^#!" * 2> /dev/null | cut -d: -f 1 | while read FILE; do chmod 755 ${FILE}; done
+
+# Generate the list of MD5s for the package:
+find -path '*/DEBIAN' -prune -o -type f -exec md5sum {} \; > DEBIAN/md5sums
+
+# Generate the DEB file:
+FILE=${PPA_DIR}/$([[ "${USE_ARCH_DIR:-"1"}" -ne 0 ]] && echo ${ARCH}/)${PKGNAME}_${CUR_VER}_${ARCH}.deb
+dpkg-deb -Zxz --root-owner-group --build ../${DIR} ${FILE} || exit 1
+
+# Run the Lintian tool to fix any problems:
+echo ""
+echo "Lintian Output"
+echo "============================="
+lintian --no-tag-display-limit ${FILE}
+
+# Sign the DEB file:
+echo ""
+dpkg-sig --sign builder ${FILE} || exit 1
+
+# Update PPA: 
+${PPA_DIR}/update.sh

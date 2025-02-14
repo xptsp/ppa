@@ -433,22 +433,6 @@ Package: grub-theme-reddragon
 Version: 1.0-1
 Architecture: amd64
 Maintainer: Douglas Orend <doug.orend2@gmail.com>>
-Installed-Size: 1224
-Filename: ./all/grub-theme-reddragon_1.0_all.deb
-Size: 806624
-MD5sum: 36da4d40780cd4807e317391b661c296
-SHA1: 3e9b0e6d4c8a5ef7c254c7410acf9d395134c51b
-SHA256: 5fa2987f4bbeabde7d85d3905a52028ff9a16b18040b01afc3b91c8b0c909a08
-Section: grub
-Priority: optional
-Description: RedDragon theme for GRUB 2
- RedDragon theme for the GRUB boot loader to fit in with my
- personal overall theme.
-
-Package: grub-theme-reddragon
-Version: 1.0-1
-Architecture: amd64
-Maintainer: Douglas Orend <doug.orend2@gmail.com>>
 Installed-Size: 1236
 Filename: ./all/grub-theme-reddragon_1.0-1_all.deb
 Size: 808024

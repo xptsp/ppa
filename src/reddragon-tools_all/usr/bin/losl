@@ -1,0 +1,2 @@
+#!/bin/bash
+losetup -l | sort -V | grep -v "/var/lib/"
