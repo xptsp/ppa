@@ -7,6 +7,10 @@ Depends: bash (>=5.1), lintian, dpkg-sig, dpkg-dev, squashfs-tools, genisoimage,
 Installed-Size: 120
 Priority: optional
 Description: Useful Collection of Scripts
- A small collection of scripts I've written to aid
- in some tasks, such as DEB creation, finding the
- differences in GSettings after changes, etc....
+ This package contains a small collection of scripts I've 
+ written to aid in some tasks, such as DEB creation, finding 
+ the differences in GSettings after changes, etc....
+ .
+ Specifically, this package includes:
+ deb-extract, edit_chroot, gksu, gsettings-diff, los, losd,
+ losl, makedeb

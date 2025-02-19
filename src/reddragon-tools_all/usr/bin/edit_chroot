@@ -6,27 +6,27 @@
 # If exists, load the user settings into the script:
 [[ -f /usr/local/finisher/settings.conf ]] && source /usr/local/finisher/settings.conf
 # Flag: Defaults to adding date ISO was generated to end of ISO name.  Set to 0 to prevent this.
-export FLAG_ADD_DATE=${FLAG_ADD_DATE:-"1"}
+FLAG_ADD_DATE=${FLAG_ADD_DATE:-"1"}
 # Flag: Use XZ (value: 1) instead of GZIP (value: 0) compression.  Defaults to 0:
-export FLAG_XZ=${FLAG_XZ:-"0"}
+FLAG_XZ=${FLAG_XZ:-"0"}
 # Flag: Use MKIFOFS (value: 1) instead of GENISOIMAGE (value: 0).  Defaults to 0.
-export FLAG_MKISOFS=${FLAG_MKISOFS:-"0"}
+FLAG_MKISOFS=${FLAG_MKISOFS:-"0"}
 # Where to place extracted and chroot environment directories.  Defaults to "/img".
-export UNPACK_DIR=${UNPACK_DIR:-"/home/img"}
+UNPACK_DIR=${UNPACK_DIR:-"/home/img"}
 # Where to place the generated ISO file.  Defaults to current directory.
-export ISO_DIR=${ISO_DIR:-"${UNPACK_DIR}"}
+ISO_DIR=${ISO_DIR:-"${UNPACK_DIR}"}
 # Default to removing old kernels from chroot environment.  Set to 0 to prevent this.
-export OLD_KERNEL=${OLD_KERNEL:-"1"}
+OLD_KERNEL=${OLD_KERNEL:-"1"}
 # Determine ISO version number to use:
-[[ -f ${UNPACK_DIR}/edit/etc/os-release ]] && export ISO_VERSION=$(cat ${UNPACK_DIR}/edit/etc/os-release | grep "VERSION=" | cut -d "\"" -f 2 | cut -d " " -f 1)
+[[ -f ${UNPACK_DIR}/edit/etc/os-release ]] && ISO_VERSION=$(cat ${UNPACK_DIR}/edit/etc/os-release | grep "VERSION=" | cut -d "\"" -f 2 | cut -d " " -f 1)
 # MUK path:
-export MUK_DIR=${MUK_DIR:-"/opt/modify_ubuntu_kit"}
+MUK_DIR=${MUK_DIR:-"/opt/modify_ubuntu_kit"}
 # Custom USB Stick partition #1 identification:
-export USB_LIVE=${USB_LIVE:-"LABEL=\"UBUNTU_EFI\""}
-export USB_LIVE=$(echo ${USB_LIVE} | cut -d= -f 1)=\"$(echo ${USB_LIVE} | cut -d= -f 2 | sed "s|\"||g")\"
+USB_LIVE=${USB_LIVE:-"LABEL=\"UBUNTU_EFI\""}
+USB_LIVE=$(echo ${USB_LIVE} | cut -d= -f 1)=\"$(echo ${USB_LIVE} | cut -d= -f 2 | sed "s|\"||g")\"
 # Custom USB Stick partition #2 identification:
-export USB_CASPER=${USB_CASPER:-"LABEL=\"UBUNTU_CASPER\""}
-echo ${USB_CASPER} | grep -q "=" && export USB_CASPER=$(echo ${USB_CASPER} | cut -d= -f 1)=\"$(echo ${USB_CASPER} | cut -d= -f 2 | sed "s|\"||g")\"
+USB_CASPER=${USB_CASPER:-"LABEL=\"UBUNTU_CASPER\""}
+echo ${USB_CASPER} | grep -q "=" && USB_CASPER=$(echo ${USB_CASPER} | cut -d= -f 1)=\"$(echo ${USB_CASPER} | cut -d= -f 2 | sed "s|\"||g")\"
 
 #==============================================================================
 # Get the necessary functions in order to function correctly:
@@ -35,8 +35,8 @@ echo ${USB_CASPER} | grep -q "=" && export USB_CASPER=$(echo ${USB_CASPER} | cut
 . ${MUK_DIR}/files/includes.sh
 [[ $(ischroot; echo $?) -ne 1 ]] || systemctl daemon-reload
 
-export UI=$([[ "$1" =~ -ui$ ]] && echo "Y" || echo "N")
-export ACTION=${1/-ui/}
+UI=$([[ "$1" =~ -ui$ ]] && echo "Y" || echo "N")
+ACTION=${1/-ui/}
 function _ui_title() { if [[ "$UI" == "N" ]]; then _title $@; else dialog --msgbox "$@" 8 60; clear; fi }
 function _ui_error() { if [[ "$UI" == "N" ]]; then _error $@; else dialog --msgbox "$@" 8 60; clear; fi }
 
@@ -273,15 +273,15 @@ elif [[ "${ACTION}" =~ (enter|upgrade|build|debootstrap|sub_rollback) ]]; then
 		mount -t proc none /proc
 		mount -t sysfs none /sys
 		mount -t devpts none /dev/pts
-		export HOME=/etc/skel
-		export LC_ALL=C
-		export PASSWORD=xubuntu
-		export DEBIAN_FRONTEND=noninteractive
-		export USER=root
-		export SUDO_USER=root
-		export KODI_OPT=/opt/kodi
-		export KODI_ADD=/etc/skel/.kodi/addons
-		export KODI_BASE=http://mirrors.kodi.tv/addons/leia/
+		HOME=/etc/skel
+		LC_ALL=C
+		PASSWORD=xubuntu
+		DEBIAN_FRONTEND=noninteractive
+		USER=root
+		SUDO_USER=root
+		KODI_OPT=/opt/kodi
+		KODI_ADD=/etc/skel/.kodi/addons
+		KODI_BASE=http://mirrors.kodi.tv/addons/leia/
 
 		### Second: Build debootstrap environment to start with:
 		#[[ "${ACTION}" == "debootstrap" ]] && ACTION=enter		## NOTE: Uncomment this line to skip installing all the packages...
@@ -572,6 +572,7 @@ elif [[ "${ACTION}" =~ (pack|changes)(-xz|) ]]; then
 	if [[ ! -z "${KEY}" ]]; then
 		_title "Signing ${BLUE}${FS}${GREEN}...."
 		sudo -u ${SUDO_USER} gpg -v -u "${KEY}" -o extract/${DIR}/${FS}.gpg -b extract/${DIR}/${FS}
+		chown root:root extract/${DIR}/${FS}.gpg
 	fi
 
 	# Sixth: remove the overlay filesystem and upper layer of overlay, then create the "md5sum.txt" file:
@@ -669,8 +670,7 @@ elif [[ "${ACTION}" == "iso" ]]; then
 
 	# Third: Try to patch grub.cfg for successful LiveCD boot.  Why this is necessary is beyond me.....
 	FILE=$(find ${UNPACK_DIR}/extract -name grub.cfg  -print -quit)
-	sed -i "s|boot=casper ||g" ${FILE}
-	sed -i "s|file=|boot=casper file=|g" ${FILE}
+	grep -q " boot=casper " ${FILE} || sed -i "s|file=|boot=casper file=|g" ${FILE}
 
 	# Fourth: Fix the ISO identification for Casper Installer:
 	FILE=${UNPACK_DIR}/extract/.disk/info
@@ -695,13 +695,23 @@ elif [[ "${ACTION}" == "iso" ]]; then
 		# >>>> NEW WAY TO CREATE ISO: Valid for Jammy and above <<<<<
 		NAME=${NAME,,}
 		if [[ ! -f ${UNPACK_DIR}/${NAME}_hybrid.img || ! -f ${UNPACK_DIR}/${NAME}_efi.img ]]; then
-			$0 sub_efi $(ls ${UNPACK_DIR}/${NAME}-*.iso 2> /dev/null| head -1) || exit 1
+			# Create the EFI partition image from files in the "EFI/boot" directory:
+			cd ${UNPACK_DIR}
+			FILE=${UNPACK_DIR}/${NAME}_efi.img
+			DIR=${UNPACK_DIR}/mnt
+			dd if=/dev/zero of=${FILE} count=$(( $(du -s extract/EFI/boot/ | awk '{print $1}') + 128 )) bs=1K
+			mkfs.vfat ${FILE}
+			mkdir ${DIR}
+			mount ${FILE} ${DIR}
+			cp -a extract/EFI/boot/* ${DIR}/
+			umount ${DIR}
+
+			# Create the hybrid MBR code file:
+			dd if=/lib/grub/i386-pc/boot_hybrid.img of=${UNPACK_DIR}/${NAME}_hybrid.img bs=1 count=432
 		fi
 		IMG=/boot/grub/i386-pc/eltorito.img
-		if [[ ! -f ${UNPACK_DIR}/extract/${IMG} ]]; then
-			IMG=/boot/grub/efi.img
-			if [[ ! -f ${UNPACK_DIR}/extract/${IMG} ]]; then _ui_error "No EFI image file found!  Aborting!"; exit 1; fi
-		fi
+		[[ -f ${UNPACK_DIR}/extract/${IMG} ]] || IMG=/boot/grub/efi.img
+		if [[ ! -f ${UNPACK_DIR}/extract/${IMG} ]]; then _ui_error "No EFI image file found!  Aborting!"; exit 1; fi
 
 		# Finally pack up an ISO the new way:
 		xorriso -as mkisofs -r \
@@ -725,24 +735,6 @@ elif [[ "${ACTION}" == "iso" ]]; then
 
 	# Sixth: Tell user we done!
 	_ui_title "Done building ${BLUE}${ISO_DIR}/${ISO_FILE}.iso${GREEN}!"
-
-#==============================================================================
-# Did user request to rebuild the filesystem.squashfs and the ISO together?
-#==============================================================================
-elif [[ "${ACTION}" == "sub_efi" ]]; then
-	ISO=$2
-	if [[ -z "${ISO}" ]]; then _ui_error "No ISO specified!  Aborting!"; exit 1; fi
-	if [[ ! -f "${ISO}" ]]; then _ui_error "Specified ISO ${BLUE}${ISO}${NC} not found!  Aborting!"; exit 1; fi
-	NAME=$3
-	NAME=${NAME:=$(basename $ISO | cut -d\- -f 1)}
-
-	# Extract the EFI partition image image for -append_partition:
-	INFO=($(fdisk -l ${ISO} | grep "EFI"))
-	if [[ -z "${INFO}" ]]; then _ui_error "No EFI filesystem present in ISO!  Aborting!"; exit 1; fi
-	dd if=${ISO} bs=512 skip=${INFO[1]} count=${INFO[3]} of=${UNPACK_DIR}/${NAME}_efi.img
-
-	# Extract hybrid MBR code:
-	dd if=${ISO} bs=1 count=432 of=${UNPACK_DIR}/${NAME}_hybrid.img
 
 #==============================================================================
 # Did user request to rebuild the filesystem.squashfs and the ISO together?
@@ -828,7 +820,7 @@ elif [[ "${ACTION}" == "usb_load" ]]; then
 	DEV=$(mount | grep "${UNPACK_DIR}/usb_casper" | cut -d" " -f 1)
 	if [[ -z "${DEV}" ]]; then $0 usb_mount || exit 1; fi
 	cp -R --verbose --update ${UNPACK_DIR}/extract/casper* ${UNPACK_DIR}/mnt/casper/
-	eval `blkid -o export ${DEV}`
+	eval `blkid -o ${DEV}`
 	FILE=$(find ${UNPACK_DIR}/mnt -name grub.cfg  -print -quit)
 	sed -i "s| boot=casper||" ${FILE}
 	sed -i "s| live-media=/dev/disk/by-uuid/[0-9a-z\-]*||" ${FILE}
@@ -965,7 +957,6 @@ elif [[ ! -z "${ACTION}" ]]; then
 	echo -e "  ${GREEN}upgrade${NC}        Only upgrades Ubuntu packages with updates available."
 	echo -e "  ${GREEN}mount${NC}          Mounts all unpacked filesystem mount points."
 	echo -e "  ${GREEN}unmount${NC}        Safely unmounts all unpacked filesystem mount points."
-	echo -e "  ${GREEN}sub_efi${NC}      Extracts EFI images necessary for ISO hybrid boot."
 	echo -e "  ${GREEN}remove${NC}         Safely removes the unpacked filesystem from the hard drive."
 	echo -e "  ${GREEN}update${NC}         Updates this script with the latest version."
 	echo -e "  ${GREEN}debootstrap${NC}    Build a new chroot environment using debootstrap tool."

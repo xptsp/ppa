@@ -2,7 +2,7 @@ Package: remarkable
 Version: 1.87
 Architecture: all
 Maintainer: Jamie McGowan <jamiemcgowan.dev@gmail.com>
-Installed-Size: 724
+Installed-Size: 720
 Depends: python3, dconf-gsettings-backend | gsettings-backend, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-gtksource-3.0, python3-markdown, python3-bs4, gir1.2-webkit2-4.0, yelp, wkhtmltopdf, python3-gi
 Section: python
 Priority: optional
