@@ -13,7 +13,7 @@ while [[ "$PWD" != "/" && ! -f DEBIAN/control ]]; do cd ..; done
 if [[ ! -f DEBIAN/control ]]; then echo "ERROR: No DEBIAN/control file present!  Aborting!"; exit 1; fi
 
 # Execute the "prebuild" executable in the DEBIAN if available:
-[[ -x DEBIAN/prebuild ]] && DEBIAN/prebuild
+[[ -x DEBIAN/preinst ]] && DEBIAN/preinst prebuild
 
 # Determine package name and fix directory name to match:
 DIR=$(basename $PWD)

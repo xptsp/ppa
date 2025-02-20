@@ -5,38 +5,41 @@
 #==============================================================================
 # If exists, load the user settings into the script:
 [[ -f /usr/local/finisher/settings.conf ]] && source /usr/local/finisher/settings.conf
+[[ -f /etc/default/edit_chroot ]] && source /etc/default/edit_chroot
 # Flag: Defaults to adding date ISO was generated to end of ISO name.  Set to 0 to prevent this.
-FLAG_ADD_DATE=${FLAG_ADD_DATE:-"1"}
+export FLAG_ADD_DATE=${FLAG_ADD_DATE:-"1"}
 # Flag: Use XZ (value: 1) instead of GZIP (value: 0) compression.  Defaults to 0:
-FLAG_XZ=${FLAG_XZ:-"0"}
+export FLAG_XZ=${FLAG_XZ:-"0"}
 # Flag: Use MKIFOFS (value: 1) instead of GENISOIMAGE (value: 0).  Defaults to 0.
-FLAG_MKISOFS=${FLAG_MKISOFS:-"0"}
+export FLAG_MKISOFS=${FLAG_MKISOFS:-"0"}
 # Where to place extracted and chroot environment directories.  Defaults to "/img".
-UNPACK_DIR=${UNPACK_DIR:-"/home/img"}
+export UNPACK_DIR=${UNPACK_DIR:-"/home/img"}
 # Where to place the generated ISO file.  Defaults to current directory.
-ISO_DIR=${ISO_DIR:-"${UNPACK_DIR}"}
+export ISO_DIR=${ISO_DIR:-"${UNPACK_DIR}"}
 # Default to removing old kernels from chroot environment.  Set to 0 to prevent this.
-OLD_KERNEL=${OLD_KERNEL:-"1"}
+export OLD_KERNEL=${OLD_KERNEL:-"1"}
 # Determine ISO version number to use:
-[[ -f ${UNPACK_DIR}/edit/etc/os-release ]] && ISO_VERSION=$(cat ${UNPACK_DIR}/edit/etc/os-release | grep "VERSION=" | cut -d "\"" -f 2 | cut -d " " -f 1)
+[[ -f ${UNPACK_DIR}/edit/etc/os-release ]] && export ISO_VERSION=$(cat ${UNPACK_DIR}/edit/etc/os-release | grep "VERSION=" | cut -d "\"" -f 2 | cut -d " " -f 1)
 # MUK path:
-MUK_DIR=${MUK_DIR:-"/opt/modify_ubuntu_kit"}
+export MUK_DIR=${MUK_DIR:-"/opt/modify_ubuntu_kit"}
 # Custom USB Stick partition #1 identification:
-USB_LIVE=${USB_LIVE:-"LABEL=\"UBUNTU_EFI\""}
-USB_LIVE=$(echo ${USB_LIVE} | cut -d= -f 1)=\"$(echo ${USB_LIVE} | cut -d= -f 2 | sed "s|\"||g")\"
+export USB_LIVE=${USB_LIVE:-"LABEL=\"UBUNTU_EFI\""}
+export USB_LIVE=$(echo ${USB_LIVE} | cut -d= -f 1)=\"$(echo ${USB_LIVE} | cut -d= -f 2 | sed "s|\"||g")\"
 # Custom USB Stick partition #2 identification:
-USB_CASPER=${USB_CASPER:-"LABEL=\"UBUNTU_CASPER\""}
-echo ${USB_CASPER} | grep -q "=" && USB_CASPER=$(echo ${USB_CASPER} | cut -d= -f 1)=\"$(echo ${USB_CASPER} | cut -d= -f 2 | sed "s|\"||g")\"
+export USB_CASPER=${USB_CASPER:-"LABEL=\"UBUNTU_CASPER\""}
+echo ${USB_CASPER} | grep -q "=" && export USB_CASPER=$(echo ${USB_CASPER} | cut -d= -f 1)=\"$(echo ${USB_CASPER} | cut -d= -f 2 | sed "s|\"||g")\"
 
 #==============================================================================
 # Get the necessary functions in order to function correctly:
 #==============================================================================
-[[ ! -e ${MUK_DIR}/files/includes.sh ]] && (echo Missing includes file!  Aborting!; exit 1)
-. ${MUK_DIR}/files/includes.sh
+export INC_SRC=${MUK_DIR}/files/includes.sh
+test -e ${INC_SRC} || export INC_SRC=/usr/share/edit_chroot/includes.sh
+if [[ ! -e ${INC_SRC} ]]; then echo Missing includes file!  Aborting!; exit 1; fi
+source ${INC_SRC}
 [[ $(ischroot; echo $?) -ne 1 ]] || systemctl daemon-reload
 
-UI=$([[ "$1" =~ -ui$ ]] && echo "Y" || echo "N")
-ACTION=${1/-ui/}
+export UI=$([[ "$1" =~ -ui$ ]] && echo "Y" || echo "N")
+export ACTION=${1/-ui/}
 function _ui_title() { if [[ "$UI" == "N" ]]; then _title $@; else dialog --msgbox "$@" 8 60; clear; fi }
 function _ui_error() { if [[ "$UI" == "N" ]]; then _error $@; else dialog --msgbox "$@" 8 60; clear; fi }
 
@@ -146,7 +149,7 @@ elif [[ "${ACTION}" =~ (enter|upgrade|build|debootstrap|sub_rollback) ]]; then
 			source /etc/os-release
 			DISTRO=${2:-${UBUNTU_CODENAME}}
 			ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')"
-			debootstrap --arch=${ARCH} --variant=minbase ${DISTRO:-"noble"} ${UNPACK_DIR}/edit || exit 1
+			debootstrap --arch=${ARCH} --variant=minbase ${DISTRO:-"${VERSION_CODENAME}"} ${UNPACK_DIR}/edit || exit 1
 		else
 			$0 unmount
 			$0 mount || exit 1
@@ -273,31 +276,46 @@ elif [[ "${ACTION}" =~ (enter|upgrade|build|debootstrap|sub_rollback) ]]; then
 		mount -t proc none /proc
 		mount -t sysfs none /sys
 		mount -t devpts none /dev/pts
-		HOME=/etc/skel
-		LC_ALL=C
-		PASSWORD=xubuntu
-		DEBIAN_FRONTEND=noninteractive
-		USER=root
-		SUDO_USER=root
-		KODI_OPT=/opt/kodi
-		KODI_ADD=/etc/skel/.kodi/addons
-		KODI_BASE=http://mirrors.kodi.tv/addons/leia/
+		export HOME=/etc/skel
+		export LC_ALL=C
+		export PASSWORD=xubuntu
+		export DEBIAN_FRONTEND=noninteractive
+		export USER=root
+		export SUDO_USER=root
+		export KODI_OPT=/opt/kodi
+		export KODI_ADD=/etc/skel/.kodi/addons
+		export KODI_BASE=http://mirrors.kodi.tv/addons/leia/
 
 		### Second: Build debootstrap environment to start with:
 		#[[ "${ACTION}" == "debootstrap" ]] && ACTION=enter		## NOTE: Uncomment this line to skip installing all the packages...
 		if [[ "${ACTION}" == "debootstrap" ]]; then
 			### Set a custom hostname and  configure apt sources.list:
-			echo "ubuntu-fs-live" > /etc/hostname
-			(
-				echo "deb http://us.archive.ubuntu.com/ubuntu/ noble main restricted universe multiverse"
-				echo "deb-src http://us.archive.ubuntu.com/ubuntu/ noble main restricted universe multiverse"
-				echo ""
-				echo "deb http://us.archive.ubuntu.com/ubuntu/ noble-security main restricted universe multiverse"
-				echo "deb-src http://us.archive.ubuntu.com/ubuntu/ noble-security main restricted universe multiverse"
-				echo ""
-				echo "deb http://us.archive.ubuntu.com/ubuntu/ noble-updates main restricted universe multiverse"
-				echo "deb-src http://us.archive.ubuntu.com/ubuntu/ noble-updates main restricted universe multiverse"
-			) > /etc/apt/sources.list
+			source /etc/os-release
+			if [[ "${ID}" == "ubuntu" ]]; then
+				echo "ubuntu-fs-live" > /etc/hostname
+				(
+					echo "deb http://us.archive.ubuntu.com/ubuntu/ ${VERSION_CODENAME} main restricted universe multiverse"
+					echo "deb-src http://us.archive.ubuntu.com/ubuntu/ ${VERSION_CODENAME} main restricted universe multiverse"
+					echo ""
+					echo "deb http://us.archive.ubuntu.com/ubuntu/ ${VERSION_CODENAME}-security main restricted universe multiverse"
+					echo "deb-src http://us.archive.ubuntu.com/ubuntu/ ${VERSION_CODENAME}-security main restricted universe multiverse"
+					echo ""
+					echo "deb http://us.archive.ubuntu.com/ubuntu/ ${VERSION_CODENAME}-updates main restricted universe multiverse"
+					echo "deb-src http://us.archive.ubuntu.com/ubuntu/ ${VERSION_CODENAME}-updates main restricted universe multiverse"
+				) > /etc/apt/sources.list
+			else
+				echo "debian-fs-live" > /etc/hostname
+				(
+					echo "deb http://ftp.de.debian.org/debian/ ${VERSION_CODENAME} main non-free non-free-firmware contrib"
+					echo "deb-src http://ftp.de.debian.org/debian/ ${VERSION_CODENAME} main non-free non-free-firmware contrib"
+					echo ""
+					echo "deb http://ftp.de.debian.org/debian/ ${VERSION_CODENAME}-security main non-free non-free-firmware contrib"
+					echo "deb-src http://ftp.de.debian.org/debian/ ${VERSION_CODENAME}-security main non-free non-free-firmware contrib"
+					echo ""
+					echo "deb http://ftp.de.debian.org/debian/ ${VERSION_CODENAME}-updates main non-free non-free-firmware contrib"
+					echo "deb-src http://ftp.de.debian.org/debian/ ${VERSION_CODENAME}-updates main non-free non-free-firmware contrib"
+				) > /etc/apt/sources.list
+			fi
 
 			### Update package list, then install systemd packages:
 			apt-get update
@@ -313,9 +331,10 @@ elif [[ "${ACTION}" =~ (enter|upgrade|build|debootstrap|sub_rollback) ]]; then
 		### Fourth: Continue building debootstrap environment:
 		if [[ "${ACTION}" == "debootstrap" ]]; then
 			### Install packages needed for Live System, as well as the kernel:
-			apt-get install -y sudo ubuntu-standard casper discover laptop-detect os-prober network-manager net-tools \
-					wireless-tools wpagui locales grub-common grub-gfxpayload-lists grub-pc grub-pc-bin grub2-common \
-					grub-efi-amd64-signed shim-signed mtools binutils tasksel
+			PKGS=($(apt list sudo ubuntu-standard casper discover laptop-detect os-prober network-manager net-tools \
+					wireless-tools locales grub-common grub-gfxpayload-lists grub-pc grub-pc-bin grub2-common \
+					grub-efi-amd64-signed shim-signed mtools binutils tasksel 2> /dev/null | sed '1d' | cut -d/ -f 1))
+			apt install -y ${PKGS[@]}
    			apt-get install -y --no-install-recommends linux-generic
 
 			### Change "action" variable to "enter", so we can continue to modify the chroot environment:
@@ -323,7 +342,7 @@ elif [[ "${ACTION}" =~ (enter|upgrade|build|debootstrap|sub_rollback) ]]; then
    		fi
 
 		### Fifth: Install the chroot tools if required, then put firefox on hold if it is still snap version:
-		${MUK_DIR}/install.sh
+		test -f ${MUK_DIR}/install.sh && source ${MUK_DIR}/install.sh
 		if grep -q "ID=ubuntu" /etc/os-release; then
 			if ! apt-mark showhold | grep -q firefox; then apt list --installed firefox 2> /dev/null | grep -q 1snap1 && apt-mark hold firefox > /dev/null; fi
 		fi
@@ -337,9 +356,9 @@ elif [[ "${ACTION}" =~ (enter|upgrade|build|debootstrap|sub_rollback) ]]; then
 			echo -e "${RED}NOTE: ${GREEN}Enter ${BLUE}exit${GREEN} to exit the CHROOT environment"
 			echo -e ""
 			echo "CHROOT" > /etc/debian_chroot
-			echo ". ${MUK_DIR}/files/includes.sh" >> /etc/skel/.bashrc
+			echo ". ${INC_SRC}" >> /etc/skel/.bashrc
 			bash -s
-			cat /etc/skel/.bashrc | grep -v "${MUK_DIR}/files/includes.sh" > /tmp/.bashrc
+			cat /etc/skel/.bashrc | grep -v "${INC_SRC}" > /tmp/.bashrc
 			mv /tmp/.bashrc /etc/skel/.bashrc
 			[ -f /etc/debian_chroot ] && rm /etc/debian_chroot
 			clear
@@ -541,13 +560,13 @@ elif [[ "${ACTION}" =~ (pack|changes)(-xz|) ]]; then
 	XZ=$([[ ${FLAG_XZ:-"0"} == "1" ]] && echo "-comp xz -Xdict-size 100%")
 
 	# Fourth: Pack the filesystem into squashfs if required:
-	test -d extract/live && DIR=live || DIR=casper
 	[[ "${ACTION}" == "pack" || "${ACTION}" == "pack-xz" ]] && SRC=edit || SRC=.upper
 	FS=filesystem_$(date +"%Y%m%d")
 	FS=${FS}-$(( $(ls -r extract/${DIR}/${FS}-* 2> /dev/null | grep -m 1 -oe "$FS-[0-9]" | cut -d- -f 2 | cut -d_ -f 1) + 1 ))
 	eval `grep -m 1 -e "^MUK_COMMENT=" edit/etc/os-release && sed -i "/^MUK_COMMENT=/d" edit/etc/os-release`
 	[[ ! -z "${2}" ]] && MUK_COMMENT=$2
 	[[ ! -z "${MUK_COMMENT}" ]] && FS=${FS}_${MUK_COMMENT}
+	test -d extract/live && DIR=live || DIR=casper
 
 	FS=${FS}.squashfs
 	_title "Building ${BLUE}${FS}${GREEN}...."
@@ -580,11 +599,8 @@ elif [[ "${ACTION}" =~ (pack|changes)(-xz|) ]]; then
 	$0 remove
 	if [[ "${ACTION}" == "pack" || "${ACTION}" == "pack-xz" ]]; then
 		mv ${UNPACK_DIR}/extract/${DIR}/${FS} ${UNPACK_DIR}/extract/${DIR}/filesystem.squashfs
-		rm ${UNPACK_DIR}/extract/${DIR}/filesystem_*.squashfs 2> /dev/null
-		if [[ -f ${UNPACK_DIR}/extract/${DIR}/${FS}.gpg ]]; then
-			mv ${UNPACK_DIR}/extract/${DIR}/${FS}.gpg ${UNPACK_DIR}/extract/${DIR}/filesystem.squashfs.gpg
-			rm ${UNPACK_DIR}/extract/${DIR}/filesystem_*.squashfs.gpg 2> /dev/null
-		fi
+		test -f ${UNPACK_DIR}/extract/${DIR}/${FS}.gpg && mv ${UNPACK_DIR}/extract/${DIR}/${FS}.gpg ${UNPACK_DIR}/extract/${DIR}/filesystem.squashfs.gpg
+		rm ${UNPACK_DIR}/extract/${DIR}/filesystem_*.squashfs* 2> /dev/null
 	fi
 
 	# Seventh: Create MD5 checksum file:
@@ -610,10 +626,7 @@ elif [[ "${ACTION}" == "sub_manifest" ]]; then
 	sed -i '/laptop-detect/d' extract/${DIR}/filesystem.${EXT}${EXT2}
 	sed -i '/os-prober/d' extract/${DIR}/filesystem.${EXT}${EXT2}
 
-	# If "KEEP_CIFS" flag is set, remove the "cifs-utils" package from the list of stuff to
-	[[ "${KEEP_CIFS:-"0"}" == "1" && -f extract/casper/filesystem.manifest-remove ]] && sed -i '/cifs-utils/d' extract/casper/filesystem.manifest-remove
-
-	# Create the "filesystem.size" file:
+	# Then create the "filesystem.size" file:
 	_title "Updating ${BLUE}filesystem.size${GREEN}...."
 	du -s --block-size=1 edit | cut -f1 > extract/${DIR}/filesystem.size
 
@@ -670,7 +683,8 @@ elif [[ "${ACTION}" == "iso" ]]; then
 
 	# Third: Try to patch grub.cfg for successful LiveCD boot.  Why this is necessary is beyond me.....
 	FILE=$(find ${UNPACK_DIR}/extract -name grub.cfg  -print -quit)
-	grep -q " boot=casper " ${FILE} || sed -i "s|file=|boot=casper file=|g" ${FILE}
+	sed -i "s|boot=casper ||g" ${FILE}
+	sed -i "s|file=|boot=casper file=|g" ${FILE}
 
 	# Fourth: Fix the ISO identification for Casper Installer:
 	FILE=${UNPACK_DIR}/extract/.disk/info
@@ -695,23 +709,13 @@ elif [[ "${ACTION}" == "iso" ]]; then
 		# >>>> NEW WAY TO CREATE ISO: Valid for Jammy and above <<<<<
 		NAME=${NAME,,}
 		if [[ ! -f ${UNPACK_DIR}/${NAME}_hybrid.img || ! -f ${UNPACK_DIR}/${NAME}_efi.img ]]; then
-			# Create the EFI partition image from files in the "EFI/boot" directory:
-			cd ${UNPACK_DIR}
-			FILE=${UNPACK_DIR}/${NAME}_efi.img
-			DIR=${UNPACK_DIR}/mnt
-			dd if=/dev/zero of=${FILE} count=$(( $(du -s extract/EFI/boot/ | awk '{print $1}') + 128 )) bs=1K
-			mkfs.vfat ${FILE}
-			mkdir ${DIR}
-			mount ${FILE} ${DIR}
-			cp -a extract/EFI/boot/* ${DIR}/
-			umount ${DIR}
-
-			# Create the hybrid MBR code file:
-			dd if=/lib/grub/i386-pc/boot_hybrid.img of=${UNPACK_DIR}/${NAME}_hybrid.img bs=1 count=432
+			$0 sub_efi $(ls ${UNPACK_DIR}/${NAME}-*.iso 2> /dev/null| head -1) || exit 1
 		fi
 		IMG=/boot/grub/i386-pc/eltorito.img
-		[[ -f ${UNPACK_DIR}/extract/${IMG} ]] || IMG=/boot/grub/efi.img
-		if [[ ! -f ${UNPACK_DIR}/extract/${IMG} ]]; then _ui_error "No EFI image file found!  Aborting!"; exit 1; fi
+		if [[ ! -f ${UNPACK_DIR}/extract/${IMG} ]]; then
+			IMG=/boot/grub/efi.img
+			if [[ ! -f ${UNPACK_DIR}/extract/${IMG} ]]; then _ui_error "No EFI image file found!  Aborting!"; exit 1; fi
+		fi
 
 		# Finally pack up an ISO the new way:
 		xorriso -as mkisofs -r \
@@ -735,6 +739,24 @@ elif [[ "${ACTION}" == "iso" ]]; then
 
 	# Sixth: Tell user we done!
 	_ui_title "Done building ${BLUE}${ISO_DIR}/${ISO_FILE}.iso${GREEN}!"
+
+#==============================================================================
+# Did user request to rebuild the filesystem.squashfs and the ISO together?
+#==============================================================================
+elif [[ "${ACTION}" == "sub_efi" ]]; then
+	ISO=$2
+	if [[ -z "${ISO}" ]]; then _ui_error "No ISO specified!  Aborting!"; exit 1; fi
+	if [[ ! -f "${ISO}" ]]; then _ui_error "Specified ISO ${BLUE}${ISO}${NC} not found!  Aborting!"; exit 1; fi
+	NAME=$3
+	NAME=${NAME:=$(basename $ISO | cut -d\- -f 1)}
+
+	# Extract the EFI partition image image for -append_partition:
+	INFO=($(fdisk -l ${ISO} | grep "EFI"))
+	if [[ -z "${INFO}" ]]; then _ui_error "No EFI filesystem present in ISO!  Aborting!"; exit 1; fi
+	dd if=${ISO} bs=512 skip=${INFO[1]} count=${INFO[3]} of=${UNPACK_DIR}/${NAME}_efi.img
+
+	# Extract hybrid MBR code:
+	dd if=${ISO} bs=1 count=432 of=${UNPACK_DIR}/${NAME}_hybrid.img
 
 #==============================================================================
 # Did user request to rebuild the filesystem.squashfs and the ISO together?
@@ -820,7 +842,7 @@ elif [[ "${ACTION}" == "usb_load" ]]; then
 	DEV=$(mount | grep "${UNPACK_DIR}/usb_casper" | cut -d" " -f 1)
 	if [[ -z "${DEV}" ]]; then $0 usb_mount || exit 1; fi
 	cp -R --verbose --update ${UNPACK_DIR}/extract/casper* ${UNPACK_DIR}/mnt/casper/
-	eval `blkid -o ${DEV}`
+	eval `blkid -o export ${DEV}`
 	FILE=$(find ${UNPACK_DIR}/mnt -name grub.cfg  -print -quit)
 	sed -i "s| boot=casper||" ${FILE}
 	sed -i "s| live-media=/dev/disk/by-uuid/[0-9a-z\-]*||" ${FILE}

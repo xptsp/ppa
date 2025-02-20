@@ -1,9 +1,11 @@
 b3e15e49c064f23b9fb9651812d97a3e  ./usr/share/doc/reddragon-tools/changelog.Debian.gz
+d352bcade4a03433c3a279a5926c8400  ./usr/share/edit_chroot/includes.sh
 177319c7d2095dd51b10ba7da2552969  ./usr/bin/losl
 a9e5cc96dc3d300201cf56ed6f9d1c0a  ./usr/bin/gsettings-diff
-fb2d1703ae245c9788b15297bef1c553  ./usr/bin/makedeb
-fcadc6cb89556f7eebd3fab167d87a6c  ./usr/bin/edit_chroot
+f6de372afc25704c63ee5abd8bde3273  ./usr/bin/makedeb
+1bebf611bec986b8bae2a72877572570  ./usr/bin/edit_chroot
 8651e5fa88d477a189be404a9a366c63  ./usr/bin/los
 ae699bc901e473360d64e23db0fe5514  ./usr/bin/losd
 bef8fbb95942b72fc9c2263b333b79c0  ./usr/bin/deb-extract
 1b61d20ff6aec80df04a0fea03e91b22  ./usr/bin/gksu
+48f344402d22c7fa70a94c97eb3d2638  ./etc/default/edit_chroot
