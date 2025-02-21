@@ -1,0 +1,2 @@
+/etc/default/edit_chroot
+/etc/sudoers.d/edit_chroot.pkg

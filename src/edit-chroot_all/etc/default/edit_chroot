@@ -1,0 +1,35 @@
+# MUK installation directory
+MUK_DIR=/opt/modify_ubuntu_kit
+
+# Where to place the generated ISO file.  Defaults to current directory.
+ISO_DIR=/img
+
+# Where to place extracted and chroot environment directories.  Defaults to "/img".
+UNPACK_DIR=/img
+
+# Flag: Defaults to adding date ISO was generated to end of ISO name.  Set to 0 to prevent this.
+FLAG_ADD_DATE=1
+
+# Flag: Use XZ (value: 1) instead of GZIP (value: 0) compression.  Defaults to 0:
+FLAG_XZ=0
+
+# Flag: Use MKIFOFS (value: 1) instead of GENISOIMAGE (value: 0).  Defaults to 0.
+FLAG_MKISOFS=0
+
+# Flag: Set to 1 to use RAM for temp folder.  Defaults to 0.
+FLAG_TMP_RAM=0
+
+# Default sto removing old kernels from chroot environment.  Set to 0 to prevent this.
+OLD_KERNEL=1
+
+# Keep CIFS-UTILS package from being removed during installation.  Set to 0 to prevent this.
+KEEP_CIFS=1
+
+# USB Stick partition #1 identification:
+USB_LIVE=LABEL=UBUNTU_EFI
+
+# USB Stick partition #2 identification:
+USB_CASPER=LABEL=UBUNTU_ROOT
+
+# Specify default GPG key to use:
+#GPG_KEY=

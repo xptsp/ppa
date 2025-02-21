@@ -1,0 +1,12 @@
+Package: edit-chroot
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Section: utils
+Depends: bash (>=5.1), squashfs-tools, dialog, mount
+Recommends: genisoimage, xorriso, git
+Installed-Size: 176
+Priority: optional
+Description: Chroot Modification Tool
+ This package allows a user to unpack, modify and repack a
+ Ubuntu/Debian ISO.

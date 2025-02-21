@@ -17,6 +17,24 @@ Description: GNOME Shell integration for browsers - transitional package
  This empty transitional package is here to ensure smooth upgrades.
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
+Package: edit-chroot
+Version: 1.0-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 176
+Depends: bash (>=5.1), squashfs-tools, dialog, mount
+Recommends: genisoimage, xorriso, git
+Filename: ./all/edit-chroot_1.0-1_all.deb
+Size: 17600
+MD5sum: 859ee6319847fa3fa9a9163dceebc6cd
+SHA1: 737e8e22bf7176bc7bf6e5abc97dc233e2c005e3
+SHA256: 8696977c7914fcab21862270b1f798569cf0acbe162e2b8bf7e6562a29bc3ee1
+Section: utils
+Priority: optional
+Description: Chroot Modification Tool
+ This package allows a user to unpack, modify and repack a
+ Ubuntu/Debian ISO.
+
 Package: gnome-browser-connector
 Version: 42.1-4
 Architecture: all

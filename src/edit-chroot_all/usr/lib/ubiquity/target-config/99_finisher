@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Execute the finisher inside a chroot inside target install:
+(chroot /target /usr/share/edit_chroot/finisher.sh) 1> /target/usr/share/edit_chroot/finisher.log 2>&1
+
+exit 0
