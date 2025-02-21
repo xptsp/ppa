@@ -1,11 +1,10 @@
 Package: reddragon-tools
-Version: 1.4-1
+Version: 1.5-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Section: utils
-Depends: bash (>=5.1), lintian, dpkg-sig, dpkg-dev, squashfs-tools, dialog
-Recommends: genisoimage, xorriso, git
-Installed-Size: 152
+Depends: bash (>=5.1), lintian, dpkg-sig, dpkg
+Installed-Size: 72
 Priority: optional
 Description: Useful Collection of Scripts
  This package contains a small collection of scripts I've 

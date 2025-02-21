@@ -50,7 +50,7 @@ find DEBIAN -type f  -name p* -exec chmod 755 {} \;
 grep -R "^#!" * 2> /dev/null | cut -d: -f 1 | while read FILE; do chmod 755 ${FILE}; done
 
 # Generate the list of MD5s for the package:
-find -path '*/DEBIAN' -prune -o -type f -exec md5sum {} \; > DEBIAN/md5sums
+find -path '*/DEBIAN' -prune -o -type f -exec md5sum {} \; | sort -k2 > DEBIAN/md5sums
 
 # Generate the DEB file:
 FILE=${PPA_DIR}/$([[ "${USE_ARCH_DIR:-"1"}" -ne 0 ]] && echo ${ARCH}/)${PKGNAME}_${CUR_VER}_${ARCH}.deb
