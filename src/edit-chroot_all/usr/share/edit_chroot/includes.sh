@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# If we are not running as root, then run this script as root:
+if [[ "$UID" -ne 0 ]]; then
+	sudo $0 $@
+	exit $?
+fi
+
 # Functions for zip and 7z files:
 function zip() {
 	[[ -z "$(whereis zip | cut -d" " -f 2)" ]] && apt install -y unzip
@@ -49,7 +55,7 @@ function __remove_from() {
 	shift
 	[ ! -d /usr/local/finisher ] && mkdir -p /usr/local/finisher
 	if [ -f /usr/share/edit_chroot/${FILE}.list ]; then
-		cat /usr/share/edit_chroot/${FILE}.list | grep -v "$1 " > /tmp/${FILE}.list
+		grep -v "$1 " /usr/share/edit_chroot/${FILE}.list > /tmp/${FILE}.list
 		mv /tmp/${FILE}.list /usr/share/edit_chroot/${FILE}.list
 	fi
 }
@@ -79,7 +85,7 @@ function add_outside() {
 function del_outside() {
 	P="$(echo $@ | sed "s|\"||g")"
 	if [ -f /usr/share/edit_chroot/outside_chroot.list ]; then
-		cat /usr/share/edit_chroot/outside_chroot.list | grep -v "$P" > /tmp/outside_chroot.list
+		grep -v "$P"  /usr/share/edit_chroot/outside_chroot.list > /tmp/outside_chroot.list
 		mv /tmp/outside_chroot.list /usr/share/edit_chroot/outside_chroot.list
 	fi
 }
@@ -130,35 +136,6 @@ function _chroot() {
 	[[ $(ischroot; echo $?) -ne 1 ]] && return 1
 }
 
-# Function that enables specified Kodi addons:
-function kodi_enable() {
-	[[ ! -f /etc/skel/.kodi/userdata/Database/Addons27.db ]] && ${MUK_DIR}/base/kodi_addon_db.sh
-	sqlite3 ~/.kodi/userdata/Database/Addons27.db 'update installed set enabled=1 where addonid=="$1";'
-}
-function kodi_repo() {
-	${MUK_DIR:-"/opt/modify_ubuntu_kit"}/files/kodi_repo.sh $@
-}
-
-# If we are not running as root, then run this script as root:
-if [[ "$UID" -ne 0 ]]; then
-	sudo $0 $@
-	exit $?
-fi
-
-# Kodi directories and URL base:
-KODI_ADD=/usr/skel/.kodi/addons
-KODI_OPT=/opt/kodi
-KODI_BASE=https://mirrors.kodi.tv/addons/leia/
-
-# Defined directories:
-USB=${UNPACK_DIR}/usb
-MNT=${UNPACK_DIR}/mnt
-PTN2=${UNPACK_DIR}/extract-base
-PTN3=${UNPACK_DIR}/extract-desktop
-PTN4=${UNPACK_DIR}/extract-htpc
-EXT=${UNPACK_DIR}/extract
-ORG=${UNPACK_DIR}/original
-
 # Define stuff we need for this script:
 export DEBIAN_FRONTEND=noninteractive
 RED='\033[1;31m'
@@ -168,8 +145,8 @@ NC='\033[0m'
 CHECK="\xE2\x9C\x94"
 
 # What version of the Ubuntu OS are we running?
-OS_VER=$(cat /etc/os-release | grep "VERSION_ID" | cut -d"\"" -f 2 | sed "s|\.||g")
-OS_NAME=$(cat /etc/os-release  | grep VERSION_CODENAME | cut -d"=" -f 2)
+OS_VER=$(grep "VERSION_ID" cat /etc/os-release | cut -d"\"" -f 2 | sed "s|\.||g")
+OS_NAME=$(grep VERSION_CODENAME /etc/os-release | cut -d"=" -f 2)
 
 # Store any flags passed to the script for later processing:
 for opt in "$@"; do

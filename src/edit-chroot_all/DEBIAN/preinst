@@ -1,5 +1,5 @@
 #!/bin/bash
 if [[ "$1" == "prebuild" ]]; then
-	test -f /opt/modify_ubuntu_kit/edit_chroot.sh && cp /opt/modify_ubuntu_kit/edit_chroot.sh usr/bin/edit_chroot
+	test -f /opt/modify_ubuntu_kit/edit_chroot.sh && cp -v /opt/modify_ubuntu_kit/edit_chroot.sh usr/bin/edit_chroot
 	rm -v ~/GitHub/ppa/all/edit-chroot_*_all.deb 2> /dev/null
 fi
