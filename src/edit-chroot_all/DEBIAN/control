@@ -1,9 +1,9 @@
 Package: edit-chroot
-Version: 1.1-1
+Version: 1.2-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Section: utils
-Depends: bash (>=5.1), squashfs-tools, dialog, mount
+Depends: bash (>=5.1), squashfs-tools, dialog, mount, nano
 Recommends: genisoimage, xorriso, git
 Installed-Size: 176
 Priority: optional

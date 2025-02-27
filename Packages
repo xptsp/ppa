@@ -18,17 +18,17 @@ Description: GNOME Shell integration for browsers - transitional package
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
 Package: edit-chroot
-Version: 1.1-1
+Version: 1.2-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 176
-Depends: bash (>=5.1), squashfs-tools, dialog, mount
+Depends: bash (>=5.1), squashfs-tools, dialog, mount, nano
 Recommends: genisoimage, xorriso, git
-Filename: ./all/edit-chroot_1.1-1_all.deb
-Size: 17736
-MD5sum: 7ab6c0509b6fcdfa2c4dceca2859d8b8
-SHA1: 6c10d8cbb7a953d7b4c9281507d65c91c6d83168
-SHA256: 5454743242d27fa1cc0fbb5b4433b26246beaec7844f1de94e362adaf2369c40
+Filename: ./all/edit-chroot_1.2-1_all.deb
+Size: 17784
+MD5sum: 0b8e8b14977b74c07da2e12100cfbd38
+SHA1: 7fe1ac6d1e1345b8f394dc4fa297a83e37ba0186
+SHA256: 3e2ceab6ed875df41eafe8ebe9ceb30c78eff2d404316a8b0d08bd99009f702a
 Section: utils
 Priority: optional
 Description: Chroot Modification Tool
@@ -1039,16 +1039,16 @@ Description: Customizes the MOTD message
  users, and number of processes running on the system.
 
 Package: reddragon-tools
-Version: 1.5-1
+Version: 1.6-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 72
 Depends: bash (>=5.1), lintian, dpkg-sig, dpkg
-Filename: ./all/reddragon-tools_1.5-1_all.deb
-Size: 5354
-MD5sum: b76e918bb8e39977a4679122e6947df5
-SHA1: 83218dea10b517019f4c42991e32edebf5b4da94
-SHA256: 20a2cc0e68756b9a97f36f74dce88add9f67cac075121d63f94ce4255c1167ad
+Filename: ./all/reddragon-tools_1.6-1_all.deb
+Size: 5790
+MD5sum: cd1cdaae325a2331ecad0f661a6fed6a
+SHA1: 208706cf6403dd0937c18c5f5084f3623d988291
+SHA256: d868e311f98424b4a9c103bfb8277ca96e8d6c033163eb904e2ea053ecbd7ca2
 Section: utils
 Priority: optional
 Description: Useful Collection of Scripts

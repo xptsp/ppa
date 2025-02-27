@@ -4,5 +4,5 @@ a9e5cc96dc3d300201cf56ed6f9d1c0a  ./usr/bin/gsettings-diff
 8651e5fa88d477a189be404a9a366c63  ./usr/bin/los
 ae699bc901e473360d64e23db0fe5514  ./usr/bin/losd
 177319c7d2095dd51b10ba7da2552969  ./usr/bin/losl
-df4d66cf5990daf1e6ebe5fe4b5f1fb0  ./usr/bin/makedeb
-eb00d258e5ff133a233b25149c2eb62f  ./usr/share/doc/reddragon-tools/changelog.Debian.gz
+2a2be6842fb509b451aad531ce0c7fa6  ./usr/bin/makedeb
+dd2e669770d7057752edc4cb31c220ea  ./usr/share/doc/reddragon-tools/changelog.Debian.gz
