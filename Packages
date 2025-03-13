@@ -1039,16 +1039,16 @@ Description: Customizes the MOTD message
  users, and number of processes running on the system.
 
 Package: reddragon-tools
-Version: 1.6-1
+Version: 1.7-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 72
 Depends: bash (>=5.1), lintian, dpkg-sig, dpkg
-Filename: ./all/reddragon-tools_1.6-1_all.deb
-Size: 5790
-MD5sum: cd1cdaae325a2331ecad0f661a6fed6a
-SHA1: 208706cf6403dd0937c18c5f5084f3623d988291
-SHA256: d868e311f98424b4a9c103bfb8277ca96e8d6c033163eb904e2ea053ecbd7ca2
+Filename: ./all/reddragon-tools_1.7-1_all.deb
+Size: 6050
+MD5sum: 8d62ae16651c8bc7205c3068d10e35f5
+SHA1: 7bf15122ef87c5b1fdeb4e352a42e8eab69067c2
+SHA256: cecb27164a554dd1137965ed84386ff475bd9ffa4a7762e9f7331c919b6b3d47
 Section: utils
 Priority: optional
 Description: Useful Collection of Scripts

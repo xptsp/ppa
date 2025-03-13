@@ -1,19 +1,29 @@
 #!/bin/bash
+RED='\033[1;31m'
+BLUE='\033[1;34m'
+NC='\033[0m'
+FILE=$1
+[[ ! "$FILE" =~ ^/ ]] && FILE=$PWD/${FILE} 
 if [[ -z "$1" || ! -f "$1" ]]; then
 	echo "Syntax: los [filename]"
-elif losetup | grep -q "/$1^"; then
-	echo "ERROR: Specified image is already mounted!"
+elif losetup | grep -q " ${FILE} "; then
+	echo "${RED}ERROR${NC}: Specified image is already mounted!"
 else
-	local dev=$(sudo losetup --show -f -P $1)
-	local dest=${dev/dev/mnt}
-	echo $dest
+	dev=$(sudo losetup --show -f -P "${FILE}")
+	dest=${dev/dev/mnt}
 	if [[ -e ${dev}p1 ]]; then
 		for part in ${dev}p*; do
 			sudo mkdir -p ${part/dev/mnt}
-			sudo mount ${part} ${part/dev/mnt}
+			echo -e -n "${BLUE}${part}${NC}: "
+			DIR=${part/dev/mnt}
+			TXT=$(sudo mount ${part} ${DIR} 2>&1)
+			if [[ ! -z "${TXT}" ]]; then echo "${TXT}"; sudo rmdir ${DIR} 2> /dev/null; else echo "Mounted Successfully"; fi
 		done
 	else
-		sudo mkdir -p ${dest/dev/mnt}
-		sudo mount ${dest} ${dest/dev/mnt}
+		echo -e -n "${BLUE}${dest}${NC}: "
+		DIR=${dest/dev/mnt}
+		sudo mkdir -p ${DIR}
+		TXT=$(sudo mount ${dest} ${DIR} 2>&1)
+		if [[ ! -z "${TXT}" ]]; then echo "${TXT}"; sudo rmdir ${DIR} 2> /dev/null; else echo "Mounted Successfully"; fi
 	fi
 fi

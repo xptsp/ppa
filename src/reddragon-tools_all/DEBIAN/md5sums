@@ -1,8 +1,8 @@
 bef8fbb95942b72fc9c2263b333b79c0  ./usr/bin/deb-extract
 1b61d20ff6aec80df04a0fea03e91b22  ./usr/bin/gksu
 a9e5cc96dc3d300201cf56ed6f9d1c0a  ./usr/bin/gsettings-diff
-8651e5fa88d477a189be404a9a366c63  ./usr/bin/los
+ee929807acaf1abd16375e87c125a1ba  ./usr/bin/los
 ae699bc901e473360d64e23db0fe5514  ./usr/bin/losd
 177319c7d2095dd51b10ba7da2552969  ./usr/bin/losl
 2a2be6842fb509b451aad531ce0c7fa6  ./usr/bin/makedeb
-dd2e669770d7057752edc4cb31c220ea  ./usr/share/doc/reddragon-tools/changelog.Debian.gz
+5340a5384fb72e68890d6e62af0e569e  ./usr/share/doc/reddragon-tools/changelog.Debian.gz
