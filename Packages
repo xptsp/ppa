@@ -568,6 +568,34 @@ Description: Xsession on top of an Openbox session
  Openbox session. Useful for launching emulators and other
  external apps
 
+Package: led-ugreen-dkms
+Version: 0.2
+Architecture: amd64
+Maintainer: Yuhao Zhou <miskcoo@gmail.com>
+Depends: dkms
+Filename: ./amd64/led-ugreen-dkms_0.2_amd64.deb
+Size: 5212
+MD5sum: 38eaaad9fd7efa0ab07d87432d731dfb
+SHA1: 11356cbf301f4b9a56ed6b475a58515fe0d06b07
+SHA256: fe067b83efff7dcce662ddef649f1fa26811cc0a9eddc0f5f70afc8f28d57827
+Homepage: https://github.com/miskcoo/ugreen_leds_controller
+Description: UGREEN NAS LED driver
+ A reverse-engineered LED driver of UGREEN NAS.
+
+Package: led-ugreen-utils
+Version: 0.2
+Architecture: amd64
+Maintainer: Yuhao Zhou <miskcoo@gmail.com>
+Depends: dmidecode, smartmontools
+Filename: ./amd64/led-ugreen-utils_0.2_amd64.deb
+Size: 704984
+MD5sum: ec993fa389302d435bb46f58d0bf9256
+SHA1: c4821a0b2bca4b954f7172465d2a87886f02bdc8
+SHA256: 295314aa9098698c4b62a85210425bd27429fa8f31c0e93740a305f0f3e62beb
+Homepage: https://github.com/miskcoo/ugreen_leds_controller
+Description: UGREEN NAS LED tools
+ A reverse-engineered LED tools of UGREEN NAS.
+
 Package: libmnl-dev
 Source: libmnl
 Version: 1.0.5-2~git20220808.a92ea99
