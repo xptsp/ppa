@@ -1,9 +1,9 @@
 Package: gnome-shell-extension-gsconnect
-Version: 50-1
+Version: 50-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 1712
-Depends: gnome-shell (>= 42), gnome-shell (<< 42~), gjs
+Depends: gnome-shell (>= 42), gnome-shell (<< 43), gjs
 Section: gnome
 Priority: optional
 Homepage: https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki

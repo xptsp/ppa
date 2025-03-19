@@ -1,9 +1,9 @@
 Package: gnome-shell-extension-reboot-to-uefi
-Version: 14-1
+Version: 14-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 160
-Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Depends: gnome-shell (>= 40), gnome-shell (<< 43)
 Section: gnome
 Priority: optional
 Homepage: https://github.com/kgshank/gse-refresh-wifi

@@ -1,9 +1,9 @@
 Package: gnome-shell-extension-refresh-wifi
-Version: 16-1
+Version: 16-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 96
-Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Depends: gnome-shell (>= 40), gnome-shell (<< 43)
 Section: gnome
 Priority: optional
 Homepage: https://github.com/kgshank/gse-refresh-wifi

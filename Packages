@@ -63,16 +63,16 @@ Description: GNOME Shell extensions integration for web browsers
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
 Package: gnome-shell-extension-add-to-desktop
-Version: 10-1
+Version: 10-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 252
-Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
-Filename: ./all/gnome-shell-extension-add-to-desktop_10-1_all.deb
-Size: 19246
-MD5sum: e787af9930136c04bc7519ed50ca4613
-SHA1: 475076f7e20b757e37edfe2c2fe699b1643baff8
-SHA256: c083e92f5282bbd6c5fd675146e719f231c234ef7072c180f2a0afa9e9d05427
+Depends: gnome-shell (>= 42), gnome-shell (<< 45)
+Filename: ./all/gnome-shell-extension-add-to-desktop_10-2_all.deb
+Size: 18760
+MD5sum: bdaec39cca65518e1f58e5e141b9ee3a
+SHA1: dc22d87fe5b912dc420504c0603ec3b853866910
+SHA256: 9640a5af9fa9dfc4f7eb28bb80be0fbf30482c5e0ace7072b81fb635c678665b
 Section: gnome
 Priority: optional
 Homepage: https://github.com/Tommimon/add-to-desktop
@@ -85,16 +85,16 @@ Description: Add to Desktop extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-arcmenu
-Version: 48-1
+Version: 48-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 3516
-Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
-Filename: ./all/gnome-shell-extension-arcmenu_48-1_all.deb
-Size: 406470
-MD5sum: 69c3f81c4d06be4ce62c2b2c5fe0c450
-SHA1: 11ebc568767d8720c21a709bfa50dfdf0c9cbf59
-SHA256: df8bdcc0103035d8c02e8dc18dd829425f6845a37c9fd2110c8757711e859f79
+Depends: gnome-shell (>= 42), gnome-shell (<< 45)
+Filename: ./all/gnome-shell-extension-arcmenu_48-2_all.deb
+Size: 374566
+MD5sum: f299e4b3f35eb47eddff686f53e7ddcf
+SHA1: 2347f217d4411c97458c6d73ab3df184ff92b4f2
+SHA256: 3ee1997f20ad1c8a42b897b8f6bd3740c925db522f93c8077605de23bf0d7003
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/arcmenu/ArcMenu
@@ -110,16 +110,16 @@ Description: ArcMenu extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-battery-indicator-upower
-Version: 7-1
+Version: 7-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 160
-Depends: gnome-shell (>= 42), gnome-shell (<< 43~)
-Filename: ./all/gnome-shell-extension-battery-indicator-upower_7-1_all.deb
-Size: 11328
-MD5sum: b824f1839452eb17ad0846c6c281b6cc
-SHA1: 0685ece18c21b320875de86b3bf1e2e67f981874
-SHA256: b2acca5722c713394cd6cef8fe5fa64f304d9a1f20a370f87be20a5acac7b2f9
+Depends: gnome-shell (>= 42), gnome-shell (<< 44)
+Filename: ./all/gnome-shell-extension-battery-indicator-upower_7-2_all.deb
+Size: 11136
+MD5sum: 3ab78739ba11ee4bfe66aa00b92a1c03
+SHA1: aca8f9adc7040abefd28a2466a498d5a05f362fe
+SHA256: 23a770130fb3173b81a7691749d92cfe1f1855a65563c0a62ddcbf7d7ea1b534
 Section: gnome
 Priority: optional
 Homepage: https://github.com/malko/battery-indicator-upower
@@ -132,16 +132,16 @@ Description: Battery Indicator (upower) extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-dash-to-dock-workaround
-Version: 3-1
+Version: 3-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 72
-Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
-Filename: ./all/gnome-shell-extension-dash-to-dock-workaround_3-1_all.deb
-Size: 4428
-MD5sum: 8fc005c5395129bb50f961a5f6cbe666
-SHA1: b0120b177808156a81553122e179b97b3d8e9cb7
-SHA256: 5e66ddc17bb0997c95abc04b20dd127d2248f0a62a26ca39a04b7772594dea8d
+Depends: gnome-shell (>= 42), gnome-shell (<< 45)
+Filename: ./all/gnome-shell-extension-dash-to-dock-workaround_3-2_all.deb
+Size: 4606
+MD5sum: 043db14409a9c910a8543bca420d1139
+SHA1: ac771f1edb4e5805ab31492e9ba117b996c952ff
+SHA256: 6acaaa63d5f0cc9c4aa32cdf8a872d17185040313cf3ee109f83ed55e54ba871
 Section: gnome
 Priority: optional
 Homepage: https://github.com/popov895/dash-to-dock-workaround
@@ -154,16 +154,16 @@ Description: Dash-To-Dock Workaround extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-dash-to-panel
-Version: 50-1
+Version: 50-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 1508
-Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
-Filename: ./all/gnome-shell-extension-dash-to-panel_50-1_all.deb
-Size: 203764
-MD5sum: aa38c300249b15d4cf35963454b41b2d
-SHA1: bd9f97e023d08007082389e13035378d0961b585
-SHA256: b02a406d9fd5f1ee9ecd57b285cd00c4e7d712248eb47784609aaecbaba0e120
+Depends: gnome-shell (>= 42), gnome-shell (<< 45)
+Filename: ./all/gnome-shell-extension-dash-to-panel_50-2_all.deb
+Size: 184522
+MD5sum: 91f90c87501ebfb63f401bf8164a5362
+SHA1: 514a2667f9fb7047ed94976806dd5e9e10d9ebcf
+SHA256: cbde34568ac1bac47fc0c0cadb02fc30e45cc3f8f7cc25ea04c7cf5da5abb422
 Section: gnome
 Priority: optional
 Homepage: https://github.com/home-sweet-gnome/dash-to-panel
@@ -183,16 +183,16 @@ Description: Dash To Panel extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-gamemode
-Version: 48-1
+Version: 48-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 244
-Depends: gnome-shell (>= 40), gnome-shell (<< 42~), gamemode
-Filename: ./all/gnome-shell-extension-gamemode_48-1_all.deb
-Size: 12630
-MD5sum: 0d46a163e900277ebcf44828b9d6781d
-SHA1: 89bf6a697118a26b50b889e506a49921e4f0a79b
-SHA256: 50c8bbbbe33ed68cd36afd30f93e75bb9a243433b6dafe4d515c2e4af00d8f4b
+Depends: gnome-shell (>= 40), gnome-shell (<< 43), gamemode
+Filename: ./all/gnome-shell-extension-gamemode_48-2_all.deb
+Size: 12300
+MD5sum: a18527f7840a44d1c18eb9c6c9f73feb
+SHA1: 7cc12ca9e02f7cc51a28654df3478d90aed667d7
+SHA256: 87d6dd04793dca7f8adcbe6b687066f816f2f1795e3815f1d2c9c9574a3ed008
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/arcmenu/ArcMenu
@@ -205,16 +205,16 @@ Description: Game Mode extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-grand-theft-focus
-Version: 3-1
+Version: 3-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 56
-Depends: gnome-shell (>= 40), gnome-shell (<< 44~)
-Filename: ./all/gnome-shell-extension-grand-theft-focus_3-1_all.deb
-Size: 3212
-MD5sum: a9b689717b93b3ddf6ed45fd3f1efff7
-SHA1: 3a1f366d2f73024d0edeae37e37eb5601436f77c
-SHA256: b4e47467169ade69cb58c43acf0149ee647a65e6dc28e56bd7e225a8571b6dd2
+Depends: gnome-shell (>= 40), gnome-shell (<< 45)
+Filename: ./all/gnome-shell-extension-grand-theft-focus_3-2_all.deb
+Size: 3410
+MD5sum: f1eba2d488f89a823b48fb75825b8726
+SHA1: 736fcf9a8f114221abaabb6d9b54e5f4c0825b10
+SHA256: ef0ebaa97129139f947c63c9d563f4fa5d80f57b4dfe0caac909a07b939d2f2f
 Section: gnome
 Priority: optional
 Homepage: https://github.com/zalckos/GrandTheftFocus
@@ -228,16 +228,16 @@ Description: Grand Theft Focus extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-gsconnect
-Version: 50-1
+Version: 50-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 1712
-Depends: gnome-shell (>= 42), gnome-shell (<< 42~), gjs
-Filename: ./all/gnome-shell-extension-gsconnect_50-1_all.deb
-Size: 267916
-MD5sum: 4b90deac26bf07d2ffd6f7e1ffcdc64d
-SHA1: 7d6f856f43699974946ab4d3afd9da9fcf7e5d4e
-SHA256: 55beebfce406a6bb57ae92041fd65d356d0b44fe7ade07719f943dbfd36e25e4
+Depends: gnome-shell (>= 42), gnome-shell (<< 43), gjs
+Filename: ./all/gnome-shell-extension-gsconnect_50-2_all.deb
+Size: 249806
+MD5sum: e04a760092af2e5cb0a405022aa716ff
+SHA1: 7395c5497c97a03bee208549902da9ffe7e9feb5
+SHA256: 36e27b9ef48ee8ff234475b33e3af859c9a665aa91adde7e925d516b914770b9
 Section: gnome
 Priority: optional
 Homepage: https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki
@@ -257,16 +257,16 @@ Description: gsconnect extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-hibernate-status-button
-Version: 33-1
+Version: 33-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 260
-Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
-Filename: ./all/gnome-shell-extension-hibernate-status-button_33-1_all.deb
-Size: 20672
-MD5sum: c5b5648d63d6685fe864fc7c68239e1f
-SHA1: 301b09811111ec704d2ebc354dd66eb737ba0e86
-SHA256: a0e3720af598d833d47e6f56039e6277f039a07a970b09f30030ea3d5fd13db3
+Depends: gnome-shell (>= 40), gnome-shell (<< 43)
+Filename: ./all/gnome-shell-extension-hibernate-status-button_33-2_all.deb
+Size: 19788
+MD5sum: 3df77544516a768827099c13515cdaf5
+SHA1: e508a932f8aa3eec3b33280a437b7b75d003fc7a
+SHA256: 916078c992987cca0befadc263b0437c92d2db61b61eeb9846723927bad85985
 Section: gnome
 Priority: optional
 Homepage: https://github.com/arelange/gnome-shell-extension-hibernate-status
@@ -283,16 +283,16 @@ Description: Hibernate Status Button extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-notification-banner-reloaded
-Version: 8-1
+Version: 8-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 84
-Depends: gnome-shell (>= 40), gnome-shell (<< 43~)
-Filename: ./all/gnome-shell-extension-notification-banner-reloaded_8-1_all.deb
-Size: 7650
-MD5sum: ffb0f0f90917e5334ff1cd42a9abd830
-SHA1: ca8d3697134b226d13786cc94f24eb629b8ba17a
-SHA256: d7e7fe57acd6484448c74beb6e75c198058c10fad892ff06e731e66e402dd227
+Depends: gnome-shell (>= 40), gnome-shell (<< 44)
+Filename: ./all/gnome-shell-extension-notification-banner-reloaded_8-2_all.deb
+Size: 7730
+MD5sum: cf605bb0b135b6cd29bc7a659cdd1eec
+SHA1: eca3dc785763db55d61d2c95685686262dff66ca
+SHA256: 2a2b4b9c29ce25de06aa6d3184a8f8b524e0f77cfcb35cd1b9dc8457e70face8
 Section: gnome
 Priority: optional
 Homepage: https://github.com/malko/battery-indicator-upower
@@ -305,16 +305,16 @@ Description: Notification Banner Reloaded extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-openweather
-Version: 118-1
+Version: 118-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 988
-Depends: gnome-shell (>= 42), gnome-shell (<< 42~)
-Filename: ./all/gnome-shell-extension-openweather_118-1_all.deb
-Size: 152690
-MD5sum: e96e4d6df53a06539465c8d1401c9f9a
-SHA1: 4200efc47f3934fbbf8783f3cdd9fa8c9850cedd
-SHA256: 29b3ffa808a4ba5ab21c5d414f0d27fd4588b7a14a30617877f5d3813f62626b
+Depends: gnome-shell (>= 42), gnome-shell (<< 43)
+Filename: ./all/gnome-shell-extension-openweather_118-2_all.deb
+Size: 138046
+MD5sum: 86a739476c4731cf999e7f3e7819d03f
+SHA1: 8505b35b3bc16c54f8fb4b2f17ba3117dd87c14d
+SHA256: a2768cf7adaab72b0884b75f23f2bd2d6c8a1b127fd99f2ca63b59a2c5284a34
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/skrewball/openweather
@@ -327,16 +327,16 @@ Description: OpenWeather extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-osd-volume-number
-Version: 6-1
+Version: 6-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 108
-Depends: gnome-shell (>= 42), gnome-shell (<< 44~)
-Filename: ./all/gnome-shell-extension-osd-volume-number_6-1_all.deb
-Size: 6944
-MD5sum: 154ee5874c386db4f259a8b60cf5839e
-SHA1: 5de3eefc209acc5d0814174ffb862870e18a1a41
-SHA256: 280a7b879c2ddcdd521b1ce5d6bdaac293f7895cf172bc76c85363ccff3d214f
+Depends: gnome-shell (>= 42), gnome-shell (<< 45)
+Filename: ./all/gnome-shell-extension-osd-volume-number_6-2_all.deb
+Size: 7006
+MD5sum: 8215824c21266fe12b31b58c8d37ec8c
+SHA1: fdd372aed0eff0bf2652591198c31cd9873c7eb3
+SHA256: cfbedf44419e2b0486c0b0a0edfe3bcdf5b56e3d75803118a1f94a898e6aea41
 Section: gnome
 Priority: optional
 Homepage: https://github.com/Deminder/osd-volume-number
@@ -349,16 +349,16 @@ Description: OSD Volume Number extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-prevent-double-empty-window
-Version: 4-1
+Version: 4-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 56
-Depends: gnome-shell (>= 40), gnome-shell (<< 44~)
-Filename: ./all/gnome-shell-extension-prevent-double-empty-window_4-1_all.deb
-Size: 3492
-MD5sum: 13a01de2f521eb0c419992226f689eec
-SHA1: 2ad1591898ebb5b5bc97ec94f164bd50c896c58a
-SHA256: fc4bc1b88069d2e9c254bdfd778d534addfae20735df3ebf6b4b5e48840ac407
+Depends: gnome-shell (>= 40), gnome-shell (<< 45)
+Filename: ./all/gnome-shell-extension-prevent-double-empty-window_4-2_all.deb
+Size: 3678
+MD5sum: 69d0bf7e607793e99e72fe6e5c8e3c50
+SHA1: 0aef62049f834c0829c4d2283d59f32e05ee5a66
+SHA256: 05f5f04a683708eeb09f1dc92900066824d18dda5743bad8ca433577703c917d
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/g3786/prevent-double-empty-window
@@ -372,16 +372,16 @@ Description: Prevent Double Empty Window extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-reboot-to-uefi
-Version: 14-1
+Version: 14-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 160
-Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
-Filename: ./all/gnome-shell-extension-reboot-to-uefi_14-1_all.deb
-Size: 6476
-MD5sum: aadc5887b17e4056e42e1705eafa59c7
-SHA1: f04db2a565aa5fac6132353951e991bebab84188
-SHA256: 0e00e3a763aec237fad1c6951064c8b123869b9599d84036a9c81ad24f1b7bfb
+Depends: gnome-shell (>= 40), gnome-shell (<< 43)
+Filename: ./all/gnome-shell-extension-reboot-to-uefi_14-2_all.deb
+Size: 6510
+MD5sum: 9df569ae3af601199ab567034c4d7480
+SHA1: 3245af3c6ce3a8667ee3b976e6056dfcf7cfefa3
+SHA256: f20d00363880c43cd3404288a35e86777cebdf634b1c4b699b7dd4388231aad0
 Section: gnome
 Priority: optional
 Homepage: https://github.com/kgshank/gse-refresh-wifi
@@ -394,16 +394,16 @@ Description: Reboot to UEFI extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-refresh-wifi
-Version: 16-1
+Version: 16-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 96
-Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
-Filename: ./all/gnome-shell-extension-refresh-wifi_16-1_all.deb
-Size: 15518
-MD5sum: 95f2b640e815da87de7bbcd3d132d428
-SHA1: f42d7e3cf87966d645613c2437709f9fe543f83f
-SHA256: 9d1254d0ea5a24d81c0406ceafe103d7cf2ff15f4ad50c8d4390fa1aaa125ff5
+Depends: gnome-shell (>= 40), gnome-shell (<< 43)
+Filename: ./all/gnome-shell-extension-refresh-wifi_16-2_all.deb
+Size: 15388
+MD5sum: 41855837d397aa6b38b753de857e87c9
+SHA1: 37c842d68979f9257ee5768448cde884af1c2424
+SHA256: 0cd94205da86aef456e1df1bcc58cba1f4da5dc296e6b73bfb64a685630c58e6
 Section: gnome
 Priority: optional
 Homepage: https://github.com/kgshank/gse-refresh-wifi
@@ -421,16 +421,16 @@ Description: Refresh Wifi extension for GNOME Shell
  using gnome-tweak-tool.
 
 Package: gnome-shell-extension-sound-output-device-chooser
-Version: 43-1
+Version: 43-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 436
-Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
-Filename: ./all/gnome-shell-extension-sound-output-device-chooser_43-1_all.deb
-Size: 43218
-MD5sum: 8e080deba9a50a0e55d8ef9966f16c21
-SHA1: 694e255f8b260c5096c0d2182c58191f541bb2e9
-SHA256: 972b631efd3ec986e11e62267ea954e9443d90c5150bc18f195ff0f0311f8c1f
+Installed-Size: 428
+Depends: gnome-shell (>= 40), gnome-shell (<< 43)
+Filename: ./all/gnome-shell-extension-sound-output-device-chooser_43-2_all.deb
+Size: 41264
+MD5sum: 2c1a2862844cd46898352fc723e67613
+SHA1: 1cd68af5231a6f8b64290ab163702e303c4261ed
+SHA256: 7a4b20f6fe20835cd442579a41dc02241b5d8382b63f95dd1b9e6d309ad49aa6
 Section: gnome
 Priority: optional
 Homepage: https://github.com/kgshank/gse-sound-output-device-chooser

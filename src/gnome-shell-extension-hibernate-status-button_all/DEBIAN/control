@@ -1,9 +1,9 @@
 Package: gnome-shell-extension-hibernate-status-button
-Version: 33-1
+Version: 33-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 260
-Depends: gnome-shell (>= 40), gnome-shell (<< 42~)
+Depends: gnome-shell (>= 40), gnome-shell (<< 43)
 Section: gnome
 Priority: optional
 Homepage: https://github.com/arelange/gnome-shell-extension-hibernate-status

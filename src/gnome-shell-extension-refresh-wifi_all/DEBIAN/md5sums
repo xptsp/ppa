@@ -1,5 +1,5 @@
-1020860a8999a3812fa19e5ffc90d3d3  ./usr/share/gnome-shell/extensions/refresh-wifi@kgshank.net/metadata.json
-d32239bcb673463ab874e80d47fae504  ./usr/share/gnome-shell/extensions/refresh-wifi@kgshank.net/license
+0a87e98a83f3849c23a4eae748ba8354  ./usr/share/doc/gnome-shell-extension-refresh-wifi/changelog.Debian.gz
 712f9fb11ff80a24310698e072e5b607  ./usr/share/gnome-shell/extensions/refresh-wifi@kgshank.net/extension.js
+d32239bcb673463ab874e80d47fae504  ./usr/share/gnome-shell/extensions/refresh-wifi@kgshank.net/license
+1020860a8999a3812fa19e5ffc90d3d3  ./usr/share/gnome-shell/extensions/refresh-wifi@kgshank.net/metadata.json
 149d6201acd98d1f339a9bfae2871e6f  ./usr/share/gnome-shell/extensions/refresh-wifi@kgshank.net/stylesheet.css
-f91096085dc63a92f426ae9209d4b1d9  ./usr/share/doc/gnome-shell-extension-refresh-wifi/changelog.Debian.gz

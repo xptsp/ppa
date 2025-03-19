@@ -1,11 +1,11 @@
-7588be1e5fd064a81a620c57a9d4dff4  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/it/LC_MESSAGES/reboottouefi@ubaygd.com.mo
-388f7d4233454cbfa18689c9aa65b284  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/es/LC_MESSAGES/reboottouefi@ubaygd.com.mo
-2c191242d0769e417f5520ea201feeb9  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/hu/LC_MESSAGES/reboottouefi@ubaygd.com.mo
+a4726a880a5fcdd02dc407941450a57f  ./usr/share/doc/gnome-shell-extension-reboot-to-uefi/changelog.Debian.gz
+cae7b4c46add291ed93dea2c736fc1bb  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/extension.js
 0e31af156e59780e746aa1f314aa8c42  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/de/LC_MESSAGES/reboottouefi@ubaygd.com.mo
+388f7d4233454cbfa18689c9aa65b284  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/es/LC_MESSAGES/reboottouefi@ubaygd.com.mo
+6f44cd5ea7da4bb3ff5b251507e97132  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/fr/LC_MESSAGES/reboottouefi@ubaygd.com.mo
+2c191242d0769e417f5520ea201feeb9  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/hu/LC_MESSAGES/reboottouefi@ubaygd.com.mo
+7588be1e5fd064a81a620c57a9d4dff4  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/it/LC_MESSAGES/reboottouefi@ubaygd.com.mo
 7f6211a9d9e86da70144eb4a03dbd765  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/nl/LC_MESSAGES/reboottouefi@ubaygd.com.mo
 4c2bb702bf69b585012e795e498ad5f7  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/ru/LC_MESSAGES/reboottouefi@ubaygd.com.mo
 9ec2e604e573c77d819d0c221a3e4f4f  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/tr/LC_MESSAGES/reboottouefi@ubaygd.com.mo
-6f44cd5ea7da4bb3ff5b251507e97132  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/locale/fr/LC_MESSAGES/reboottouefi@ubaygd.com.mo
 ee2c68911f92eff671bd3a360784922e  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/metadata.json
-cae7b4c46add291ed93dea2c736fc1bb  ./usr/share/gnome-shell/extensions/reboottouefi@ubaygd.com/extension.js
-0efc049bc31a8f2190d6b98ac6a40bef  ./usr/share/doc/gnome-shell-extension-reboot-to-uefi/changelog.Debian.gz

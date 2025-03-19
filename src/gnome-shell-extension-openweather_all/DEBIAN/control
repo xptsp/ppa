@@ -1,9 +1,9 @@
 Package: gnome-shell-extension-openweather
-Version: 118-1
+Version: 118-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 988
-Depends: gnome-shell (>= 42), gnome-shell (<< 42~)
+Depends: gnome-shell (>= 42), gnome-shell (<< 43)
 Section: gnome
 Priority: optional
 Homepage: https://gitlab.com/skrewball/openweather

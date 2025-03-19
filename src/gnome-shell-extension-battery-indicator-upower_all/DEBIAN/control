@@ -1,9 +1,9 @@
 Package: gnome-shell-extension-battery-indicator-upower
-Version: 7-1
+Version: 7-2
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 160
-Depends: gnome-shell (>= 42), gnome-shell (<< 43~)
+Depends: gnome-shell (>= 42), gnome-shell (<< 44)
 Section: gnome
 Priority: optional
 Homepage: https://github.com/malko/battery-indicator-upower
