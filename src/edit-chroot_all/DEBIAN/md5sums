@@ -1,8 +1,8 @@
 48f344402d22c7fa70a94c97eb3d2638  ./etc/default/edit_chroot
 2b3794e169f309031b6940b337a1922a  ./etc/sudoers.d/edit_chroot.pkg
-8034db0ecfe33bb0ac270736a6490c1c  ./usr/bin/edit_chroot
+1bf3f91e5e72a1817a0b56638b52d8ec  ./usr/bin/edit_chroot
 ae196a6c819d02c2556377d6083be1d8  ./usr/lib/ubiquity/target-config/99_finisher
-4f2274290298c6a322aa0875dbafc3e2  ./usr/share/doc/edit-chroot/changelog.Debian.gz
+aa9a15d77b21219c581e614e707beac3  ./usr/share/doc/edit-chroot/changelog.Debian.gz
 d41d8cd98f00b204e9800998ecf8427e  ./usr/share/edit_chroot/boot.d/.placeholder
 ec8233a19296ed6615352a276afd8150  ./usr/share/edit_chroot/finisher.sh
 a888d3c9898cba114e0d526d8fa1d2f3  ./usr/share/edit_chroot/first_boot.sh

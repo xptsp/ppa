@@ -18,17 +18,17 @@ Description: GNOME Shell integration for browsers - transitional package
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
 Package: edit-chroot
-Version: 1.3-1
+Version: 1.4-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 180
 Depends: bash (>=5.1), squashfs-tools, dialog, mount, nano
 Recommends: genisoimage, xorriso, git
-Filename: ./all/edit-chroot_1.3-1_all.deb
-Size: 19300
-MD5sum: 8a6d55affcf5449a874eddc7458d653c
-SHA1: 92ef1f1e4bcc074bda83d3035035da1a50109f06
-SHA256: 8637fced2a255c7201c9253563e32068aee965e438122f989aad14a28e764f5b
+Filename: ./all/edit-chroot_1.4-1_all.deb
+Size: 19352
+MD5sum: 9beb0c5e9bc4bfcc575fd607505822b8
+SHA1: 7db1af9ab572c0978c8dec985a439b07c49dee30
+SHA256: 43e3e2816cb57b46fc6d0ec9d63b7058c3bd7a8af7fd4a80f90e6bec9903c93b
 Section: utils
 Priority: optional
 Description: Chroot Modification Tool
