@@ -1,9 +1,9 @@
 Package: reddragon-tools
-Version: 1.8-1
+Version: 1.9-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Section: utils
-Depends: bash (>=5.1), lintian, dpkg-sig, dpkg
+Depends: bash (>=5.1), lintian, dpkg-sig, dpkg, dialog, nano
 Installed-Size: 76
 Priority: optional
 Description: Useful Collection of Scripts

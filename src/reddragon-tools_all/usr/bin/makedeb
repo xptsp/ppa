@@ -18,11 +18,11 @@ PKGNAME=${DIR%%_*}
 ARCH=$(grep "Architecture:" DEBIAN/control | cut -d" " -f 2)
 
 # Ask if the user wants to increment the version number:
-CUR_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*\.[0-9]*\-[0-9]*")
-[[ -z "${CUR_VER}" ]] && CUR_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*\.[0-9]*")
-[[ -z "${CUR_VER}" ]] && CUR_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*-[0-9]*")
-[[ -z "${CUR_VER}" ]] && CUR_VER=1.0-1
-TMP=(${CUR_VER/-/ })
+OLD_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*\.[0-9]*\-[0-9]*")
+[[ -z "${OLD_VER}" ]] && OLD_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*\.[0-9]*")
+[[ -z "${OLD_VER}" ]] && OLD_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*-[0-9]*")
+[[ -z "${OLD_VER}" ]] && OLD_VER=1.0-1
+TMP=(${OLD_VER/-/ })
 VER=(${TMP[0]/\./ })
 NEW[0]=$(( ${VER[0]} + 1 ))
 NEW[1]=$(( ${VER[1]:-"0"} + 1 ))
@@ -30,7 +30,7 @@ MIN_VER=${VER[0]}.${NEW[1]}-${TMP[1]}
 MAJ_VER=${NEW[0]}$([[ ! -z ${VER[1]} ]] && echo ".${VER[1]:-"0"}")-${TMP[1]}
 REV_VER=${VER[0]}$([[ ! -z ${VER[1]} ]] && echo ".${VER[1]:-"0"}")-$(( ${TMP[1]} + 1 ))
 choices=(
-	1 "${CUR_VER} (Current)" \
+	1 "${OLD_VER} (Current)" \
 	2 "${MIN_VER}" \
 	3 "${MAJ_VER}" \
 	4 "${REV_VER}" \
@@ -98,7 +98,8 @@ find -path '*/DEBIAN' -prune -o -type f -exec md5sum {} \; | sort -k2 > DEBIAN/m
 
 # Generate the DEB file:
 FILE=${PPA_DIR}/$([[ "${USE_ARCH_DIR:-"1"}" -ne 0 ]] && echo ${ARCH}/)${PKGNAME}_${CUR_VER}_${ARCH}.deb
-dpkg-deb -Zxz --root-owner-group --build ../${DIR} ${FILE} || exit 1
+unalias dpkg-deb 2> /dev/null
+dpkg-deb --root-owner-group --build ../${DIR} ${FILE} || exit 1
 
 # Run the Lintian tool to fix any problems:
 echo ""
