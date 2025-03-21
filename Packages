@@ -227,35 +227,6 @@ Description: Grand Theft Focus extension for GNOME Shell
  Please note that the extension must be manually enabled, for example
  using gnome-tweak-tool.
 
-Package: gnome-shell-extension-gsconnect
-Version: 50-2
-Architecture: all
-Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 1712
-Depends: gnome-shell (>= 42), gnome-shell (<< 43), gjs
-Filename: ./all/gnome-shell-extension-gsconnect_50-2_all.deb
-Size: 267896
-MD5sum: ec250c1a74d78c39cbbeb75b52d2c601
-SHA1: 03e0fc76321db90058d6744a66c0e73abe4e5571
-SHA256: 8254a940b2134904034f3973ab28a53ab4f045594288430e51b6bc2c4806d44b
-Section: gnome
-Priority: optional
-Homepage: https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki
-Description: gsconnect extension for GNOME Shell
- GSConnect is a complete implementation of KDE Connect especially for GNOME
- Shell with Nautilus, Chrome and Firefox integration. It does not rely on
- the KDE Connect desktop application and will not work with it installed.
- .
- KDE Connect allows devices to securely share content like notifications or
- files and other features like SMS messaging and remote control. The KDE
- Connect team has applications for Linux, BSD, Android, Sailfish, iOS, macOS
- and Windows.
- .
- This package provides the gnome-shell extension.
- .
- Please note that the extension must be manually enabled, for example
- using gnome-tweak-tool.
-
 Package: gnome-shell-extension-hibernate-status-button
 Version: 33-2
 Architecture: all
