@@ -4,5 +4,5 @@ bef8fbb95942b72fc9c2263b333b79c0  ./usr/bin/deb-extract
 ee929807acaf1abd16375e87c125a1ba  ./usr/bin/los
 3242e65b0e3542eb5dd2104d26592c7b  ./usr/bin/losd
 177319c7d2095dd51b10ba7da2552969  ./usr/bin/losl
-938e304cfb6777d67e0513690eb523a0  ./usr/bin/makedeb
-439ea2cc109b35ed0d22143441b32e04  ./usr/share/doc/reddragon-tools/changelog.Debian.gz
+b0b7a17d92a4e2e88162a136369ceefe  ./usr/bin/makedeb
+464065ee92eec0948570c70041646df7  ./usr/share/doc/reddragon-tools/changelog.Debian.gz

@@ -18,22 +18,21 @@ PKGNAME=${DIR%%_*}
 ARCH=$(grep "Architecture:" DEBIAN/control | cut -d" " -f 2)
 
 # Ask if the user wants to increment the version number:
-OLD_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*\.[0-9]*\-[0-9]*")
-[[ -z "${OLD_VER}" ]] && OLD_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*\.[0-9]*")
-[[ -z "${OLD_VER}" ]] && OLD_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9]*-[0-9]*")
-[[ -z "${OLD_VER}" ]] && OLD_VER=1.0-1
+OLD_VER=$(grep "Version:" DEBIAN/control | grep -oe "[0-9\.\-]*")
 TMP=(${OLD_VER/-/ })
-VER=(${TMP[0]/\./ })
+VER=(${TMP[0]/./ })
 NEW[0]=$(( ${VER[0]} + 1 ))
-NEW[1]=$(( ${VER[1]:-"0"} + 1 ))
-MIN_VER=${VER[0]}.${NEW[1]}-${TMP[1]}
-MAJ_VER=${NEW[0]}$([[ ! -z ${VER[1]} ]] && echo ".${VER[1]:-"0"}")-${TMP[1]}
-REV_VER=${VER[0]}$([[ ! -z ${VER[1]} ]] && echo ".${VER[1]:-"0"}")-$(( ${TMP[1]} + 1 ))
+VER[1]=${VER[1]:-"0"}
+NEW[1]=$(( ${VER[1]%.*} + 1 ))
+NEW[2]=${VER[1]##[0-9]}
+MIN_VER=${VER[0]}.${NEW[1]}${NEW[2]}-${TMP[1]}
+MAJ_VER=${NEW[0]}.0${NEW[2]}-${TMP[1]}
+REV_VER=${TMP[0]}-$(( ${TMP[1]} + 1 ))
 choices=(
 	1 "${OLD_VER} (Current)" \
-	2 "${MIN_VER}" \
-	3 "${MAJ_VER}" \
-	4 "${REV_VER}" \
+	2 "${MIN_VER} (Minor)" \
+	3 "${MAJ_VER} (Major)" \
+	4 "${REV_VER} (Revision)" \
 )
 CHOICE=$(dialog --no-cancel --ok-label "Set" --menu "Change Version:" 11 30 16 "${choices[@]}" 2>&1 >/dev/tty)
 CUR_VER=$(echo ${choices[ $(( ${CHOICE} * 2 - 1 )) ]} | cut -d" " -f 1)

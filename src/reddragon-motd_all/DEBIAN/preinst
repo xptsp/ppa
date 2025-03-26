@@ -1,0 +1,4 @@
+#!/bin/bash
+if [[ "$1" == "prebuild" ]]; then
+	rm -v ~/GitHub/ppa/all/reddragon-motd_*_all.deb
+fi

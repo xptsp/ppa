@@ -1019,16 +1019,16 @@ Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  This package contains the Kodi Animated Logo theme.
 
 Package: reddragon-motd
-Version: 1.1-1
+Version: 1.2-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 64
+Installed-Size: 68
 Depends: toilet, lm-sensors
-Filename: ./all/reddragon-motd_1.1-1_all.deb
-Size: 4450
-MD5sum: 7fb353420db7e24c6362b00388160725
-SHA1: 7c1eb207c6999b85e3ccb4e3d22b55695943e141
-SHA256: 4784b22de0a414eb102c913638d225fd5dbcf284f3af1e5718cb409e974d0bc3
+Filename: ./all/reddragon-motd_1.2-1_all.deb
+Size: 4644
+MD5sum: 1d3c21d26ca164132f9a756895013e4f
+SHA1: a61872d720dd66c9176335911d62a6f27a5b63ce
+SHA256: 2a7e867d2890f60552888c7c232c6573c1ec7df73f13a597be32969cddc7a099
 Section: base
 Priority: optional
 Description: Customizes the MOTD message
@@ -1038,16 +1038,16 @@ Description: Customizes the MOTD message
  users, and number of processes running on the system.
 
 Package: reddragon-tools
-Version: 1.9-1
+Version: 1.10-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 76
+Installed-Size: 72
 Depends: bash (>=5.1), lintian, dpkg-sig, dpkg, dialog, nano
-Filename: ./all/reddragon-tools_1.9-1_all.deb
-Size: 6418
-MD5sum: bcba2c53326950fcd8f9fe910f5e96c0
-SHA1: 3e6eb7d7b4f080d67a877f9ac82ecc6c3fbab446
-SHA256: 3aa626c672c7e3ee0e34509eda68f40d4aa5f447b8724fbbbf306c887648215e
+Filename: ./all/reddragon-tools_1.10-1_all.deb
+Size: 6480
+MD5sum: d3f750faaab8752a31b96dbbb3c2f03b
+SHA1: 734f6b6bbf3838736a35198ae93e190a575ecae0
+SHA256: a76973de3f71bc73be7956dcbfa32b3366cc6d79c4a7d44cc4d6200267d66248
 Section: utils
 Priority: optional
 Description: Useful Collection of Scripts

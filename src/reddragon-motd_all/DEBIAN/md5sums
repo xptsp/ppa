@@ -1,4 +1,4 @@
-7bf3d00022ec84d64d136538bccf3595  ./usr/share/doc/reddragon-motd/changelog.Debian.gz
-2d069e69ac3f1401bc55c51449e96de8  ./etc/update-motd.d/00-reddragon-header
+3d5a60cefe07b84d422ea5f5c7d2f741  ./etc/update-motd.d/00-reddragon-header
 b3d78b7b0826a91069dcc3c17c05ea5d  ./etc/update-motd.d/10-reddragon-sysinfo
 45194425295c91123420e2be8e018af7  ./etc/update-motd.d/99-reddragon-footer
+286eba2b0fdf9731c094172848a20906  ./usr/share/doc/reddragon-motd/changelog.Debian.gz
