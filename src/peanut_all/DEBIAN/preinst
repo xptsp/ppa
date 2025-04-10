@@ -1,0 +1,5 @@
+#!/bin/bash
+if [[ "$1" == "prebuild" ]]; then
+	for FILE in usr/bin/*; do cp -vu /${FILE} usr/bin/; done
+	rm -v ~/GitHub/ppa/all/peanut_*_all.deb
+fi
