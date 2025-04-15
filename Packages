@@ -933,16 +933,16 @@ Description: Program to control packet filtering rules by Netfilter project
  A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
 
 Package: peanut
-Version: 2.2-1
+Version: 2.3-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 60
 Depends: net-tools, sudo
-Filename: ./all/peanut_2.2-1_all.deb
-Size: 3908
-MD5sum: fbf1598af146068ac1bdd37feaeab183
-SHA1: 97faecd693f02603481e50829c539d26fd1fb7a8
-SHA256: c963863e8588ee21302fd0cbd581c5f47266bdef758d2e1f18fe73ad63720ed1
+Filename: ./all/peanut_2.3-1_all.deb
+Size: 4058
+MD5sum: 8ac46a63833188ad903f8b3c45366f8e
+SHA1: 702a60a844c0076523e93e9cb1408143095cf53a
+SHA256: 126a4c90c196dcc1b3457747fda1f449b9ae2d0d4e296cb0e8161bf49ef758f7
 Section: utils
 Priority: optional
 Homepage: https://gist.github.com/xptsp/26e31b4ad66969f508d43353662821d9
