@@ -17,6 +17,27 @@ Description: GNOME Shell integration for browsers - transitional package
  This empty transitional package is here to ensure smooth upgrades.
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
+Package: dpkg-sig
+Version: 0.13.1+nmu4
+Architecture: all
+Maintainer: Marc 'HE' Brockschmidt <he@debian.org>
+Installed-Size: 113
+Depends: perl, gnupg, libdigest-md5-perl, libconfig-file-perl
+Suggests: ssh, libterm-readkey-perl
+Filename: ./all/dpkg-sig_0.13.1+nmu4_all.deb
+Size: 35224
+MD5sum: 9d915cf920e4d21f0ed5edbfb16957fc
+SHA1: 9e240a86aefe7f00cf84e0621fc6074ae229a820
+SHA256: 64a0898317de54f50bebead2867a921b9adb1c8588ff3e5113164ff87efbc609
+Section: devel
+Priority: optional
+Description: create and verify signatures on .deb-files
+ dpkg-sig is a low-level tool for creation and verification of
+ signature on Debian binary packages (.deb-files).
+ .
+ The created signed packages are strict compatible with dpkg and the
+ apt-utils.
+
 Package: edit-chroot
 Version: 1.4-1
 Architecture: all
