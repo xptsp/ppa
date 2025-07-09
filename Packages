@@ -1226,16 +1226,16 @@ Description: PiInput remote for Unified Remote server
  Ubuntu systems.
 
 Package: urserver-yuzu
-Version: 1.1-1
+Version: 1.2-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
-Installed-Size: 192
+Installed-Size: 196
 Depends: urserver, libfuse2, bash (>= 5.1)
-Filename: ./all/urserver-yuzu_1.1-1_all.deb
-Size: 59626
-MD5sum: c889027e02528096b8792f2607d75e85
-SHA1: 33f200472e159589ba4a2d1c3b07d3b50a164bf7
-SHA256: 51c026079bb20478fab99d8943b5c5d882ed74f781c1ce0f573ef9e16a470ae5
+Filename: ./all/urserver-yuzu_1.2-1_all.deb
+Size: 59872
+MD5sum: 74bbbe4b479e4d9a793db6ae70719f74
+SHA1: 0d3897703d8f4317948464f4c0f7277627cf4108
+SHA256: 457d3bfa9ce604e53b0983ae8294d5838cdd2ce0639c1a29b9d46a7096646773
 Section: x11
 Priority: optional
 Homepage: https://askubuntu.com/a/1316210

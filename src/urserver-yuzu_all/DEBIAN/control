@@ -1,7 +1,7 @@
 Package: urserver-yuzu
-Version: 1.1-1
+Version: 1.2-1
 Architecture: all
-Installed-Size: 192
+Installed-Size: 196
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Depends: urserver, libfuse2, bash (>= 5.1)
 Section: x11

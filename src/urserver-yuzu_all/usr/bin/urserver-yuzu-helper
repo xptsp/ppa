@@ -1,9 +1,7 @@
 #!/bin/bash
 if [[ "$1" == "start" ]]; then
 	BIN=$(find /usr/bin -name Linux-Yuzu*)
-	if [[ ! -z "${BIN}" ]]; then
-		${BIN} &
-	fi
+	[[ ! -z "${BIN}" ]] && sudo -u ${USER:-"$(cat /etc/group | grep :1000: | cut -d: -f 1)"} ${BIN} &
 elif [[ "$1" == "close" ]]; then
 	ps aux | grep "/bin/yuzu" | while read USER PID OTHER; do kill -9 ${PID}; done
 elif [[ "$1" == "tv" ]]; then
