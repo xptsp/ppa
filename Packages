@@ -1183,16 +1183,16 @@ Description: GTK+ interface for the Transmission BitTorrent daemon
  monitor downloads, and adjust speed limits.
 
 Package: urserver
-Version: 3.13.0.2505
+Version: 3.14.0.2574
 Architecture: amd64
 Maintainer: Unified Intents AB <info@unifiedremote.com>
-Installed-Size: 19480
+Installed-Size: 21704
 Depends: libc6, libstdc++6
-Filename: ./amd64/urserver-3.13.0.2505_amd64.deb
-Size: 8598640
-MD5sum: 65073c122c7eebcb16849220192cb002
-SHA1: e10f2eb011eba833645c202471edce9fd67441b8
-SHA256: 588596ed242597b5e9f09c24f900ee72a33a4d2f48fd6f4afb5f3e48300af42b
+Filename: ./amd64/urserver-3.14.0.2574_amd64.deb
+Size: 9132588
+MD5sum: 0d83043a4e16d42749cfdf1b349f47d4
+SHA1: 7fa620dc959fe1a14f51a94b00d233e75cc59abe
+SHA256: 4e44711e7b489e4cf8d3a54394ea5a77358e4de53e0a091740d7076707d93ac8
 Section: non-free
 Priority: extra
 Homepage: https://www.unifiedremote.com
