@@ -561,29 +561,29 @@ Description: Xsession on top of an Openbox session
  external apps
 
 Package: led-ugreen-dkms
-Version: 0.2
+Version: 0.3
 Architecture: amd64
 Maintainer: Yuhao Zhou <miskcoo@gmail.com>
 Depends: dkms
-Filename: ./amd64/led-ugreen-dkms_0.2_amd64.deb
-Size: 5212
-MD5sum: 38eaaad9fd7efa0ab07d87432d731dfb
-SHA1: 11356cbf301f4b9a56ed6b475a58515fe0d06b07
-SHA256: fe067b83efff7dcce662ddef649f1fa26811cc0a9eddc0f5f70afc8f28d57827
+Filename: ./amd64/led-ugreen-dkms_0.3_amd64.deb
+Size: 5272
+MD5sum: e9ac8f146a3e1bceffa06c0d1515d3ff
+SHA1: 0c33e5fcf0775cdf22025738d758c28603e2cd50
+SHA256: c49d1696c0eee3a9488d5ff3277d81f66d83c592197594bc30d9ddd1bbe93838
 Homepage: https://github.com/miskcoo/ugreen_leds_controller
 Description: UGREEN NAS LED driver
  A reverse-engineered LED driver of UGREEN NAS.
 
 Package: led-ugreen-utils
-Version: 0.2
+Version: 0.3
 Architecture: amd64
 Maintainer: Yuhao Zhou <miskcoo@gmail.com>
 Depends: dmidecode, smartmontools
-Filename: ./amd64/led-ugreen-utils_0.2_amd64.deb
-Size: 704984
-MD5sum: ec993fa389302d435bb46f58d0bf9256
-SHA1: c4821a0b2bca4b954f7172465d2a87886f02bdc8
-SHA256: 295314aa9098698c4b62a85210425bd27429fa8f31c0e93740a305f0f3e62beb
+Filename: ./amd64/led-ugreen-utils_0.3_amd64.deb
+Size: 701500
+MD5sum: 025eb164ade36c64557ceaac86397e57
+SHA1: 7f3016fea6702620b6dbc3f7df64564bdb4dbcb1
+SHA256: 6dc979c8532f2e988c77158e5dc7efdb1b10aba10656c6fae330366cf1849079
 Homepage: https://github.com/miskcoo/ugreen_leds_controller
 Description: UGREEN NAS LED tools
  A reverse-engineered LED tools of UGREEN NAS.
