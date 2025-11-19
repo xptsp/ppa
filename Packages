@@ -1162,6 +1162,27 @@ Description: Display and control your Android device - server binary
  Android device.
 Original-Maintainer: Yangfl <mmyangfl@gmail.com>
 
+Package: timeshift
+Version: 25.07.7
+Architecture: amd64
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 3943
+Depends: libc6 (>= 2.34), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.16.2), libjson-glib-1.0-0 (>= 1.5.2), libvte-2.91-0, libxapp1 (>= 1.0.4), rsync, debianutils, btrfs-progs | btrfs-tools
+Replaces: timeshift-btrfs
+Filename: ./amd64/timeshift_25.07.7_amd64.deb
+Size: 809664
+MD5sum: 1aaf633a1a4ad8cc5987b5879d65c78c
+SHA1: a9dd9e1533724283b497ddcdbba6a830354a4c55
+SHA256: 156c7e176efb32850518fd2c2ae678f6ab570d5bf399366b77c7f16b6482e311
+Section: utils
+Priority: extra
+Homepage: https://github.com/linuxmint/timeshift
+Description: System restore utility
+ Timeshift is a system restore utility which takes snapshots
+ of the system at regular intervals. These snapshots can be restored
+ at a later date to undo system changes. Creates incremental snapshots
+ using rsync or BTRFS snapshots using BTRFS tools.
+
 Package: transmission-remote-gtk
 Version: 1.5.1-1
 Architecture: amd64
