@@ -1040,16 +1040,16 @@ Description: Graphical boot animation and logger (Kodi Animated Logo theme)
  This package contains the Kodi Animated Logo theme.
 
 Package: reddragon-motd
-Version: 1.2-1
+Version: 1.3-1
 Architecture: all
 Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 68
 Depends: toilet, lm-sensors
-Filename: ./all/reddragon-motd_1.2-1_all.deb
-Size: 4644
-MD5sum: 1d3c21d26ca164132f9a756895013e4f
-SHA1: a61872d720dd66c9176335911d62a6f27a5b63ce
-SHA256: 2a7e867d2890f60552888c7c232c6573c1ec7df73f13a597be32969cddc7a099
+Filename: ./all/reddragon-motd_1.3-1_all.deb
+Size: 4940
+MD5sum: 68796757d9b1afe4f9cbece5238011f5
+SHA1: dbb9b2cc70268fa8c2b773e00835078a90e08513
+SHA256: 7191c95d6feca9b4de2ea2280af6faf64888f4b1045806c3bebd0aaa3991efcb
 Section: base
 Priority: optional
 Description: Customizes the MOTD message
@@ -1329,6 +1329,24 @@ Priority: optional
 Homepage: http://www.thefanclub.co.za
 Description: WhatsApp Web Application
  Launch icon for WhatsApp Web Application.
+
+Package: wireguard-initramfs
+Version: 1.0
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 180
+Depends: busybox | busybox-static, wireguard, initramfs-tools (>= 0.94)
+Filename: ./all/wireguard-initramfs_1.0_all.deb
+Size: 13792
+MD5sum: 7efd47c06cf6752be2fbb45a013a4878
+SHA1: d8099ae82f351007c5ddd85cbe10cee411331cc5
+SHA256: de3157457ccecdc8bfdeb0712dec7c07561ed5478e2ff82ed1eac24398a7e321
+Section: admin
+Priority: optional
+Homepage: https://github.com/xptsp/wireguard-initramfs
+Description: Wireguard Initramfs Package
+ Enables wireguard networking during kernel boot, before encrypted
+ partitions are mounted.
 
 Package: xfce4-weather-plugin
 Version: 0.10.2-1~mx17

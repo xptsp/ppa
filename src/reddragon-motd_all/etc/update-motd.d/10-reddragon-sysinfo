@@ -19,16 +19,21 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-IFS=')' read -ra core_temp_arr <<< $(sensors | grep '^Core\s[[:digit:]]\+:')
-total_cpu_temp=0
-index=0
-for i in "${core_temp_arr[@]}"; do :
-    temp=$(echo $i | sed -n 's/°C.*//; s/.*[+-]//; p; q' | cut -d\. -f 1)
-    let index++
-    total_cpu_temp=$(( ${total_cpu_temp} + ${temp} ))
-done
-temp=$(( ${total_cpu_temp} / ${index} ))
- 
+temp=$(sensors | awk '/^Core /{++r; gsub(/[^[:digit:]]+/, "", $3); s+=$3} END{print s/(10*r)}')
+if [[ "$temp" == "nan" ]]; then
+	IFS=')' read -ra core_temp_arr <<< $(sensors | grep -e '^(Core|temp)\s[[:digit:]]\+:')
+	total_cpu_temp=0
+	index=0
+	for i in "${core_temp_arr[@]}"; do :
+		temp=$(echo $i | sed -n 's/°C.*//; s/.*[+-]//; p; q' | cut -d\. -f 1)
+		let index++
+		total_cpu_temp=$(( ${total_cpu_temp} + ${temp} ))
+	done
+	[[ "${index}" -eq 0 ]] && index=1
+	temp=$(( ${total_cpu_temp} / ${index} ))
+	[[ "${temp}" -eq 0 ]] && temp=$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000))
+fi
+
 date=`date`
 load=`cat /proc/loadavg | awk '{print $1", "$2", "$3}'`
 root_usage=`df -h / | awk '/\// {print $5}'`
@@ -49,8 +54,9 @@ printf "Memory usage:\t%s\t\tAverage Load:\t%s\n" $memory_usage "$load"
 printf "Usage on /:\t%s\tSwap usage:\t%s\n" "$root_usage ($root_used)" "$swap_usage"
 printf "Local Users:\t%s\t\tProcesses:\t%s\n" $users $processes
 cd /sys/class/net
-ls -l | grep -v virtual | awk '{print $9}' | sed "/^$/d" | while read iface; do 
+echo ""
+(ls -l | grep -v virtual | awk '{print $9}' | sed "/^$/d" | while read iface; do 
 	IPADDR=$(ifconfig ${iface} | grep "inet " | awk '{print $2}')
 	[[ ! -z "${IPADDR}" ]] && printf "[${iface,,}] IP Address:\t%s\n" ${IPADDR}
-done
+done) | column -t | sed "s|  IP  Address| IP Address|"
 echo

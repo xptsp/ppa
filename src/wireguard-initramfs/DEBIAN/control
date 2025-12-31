@@ -1,0 +1,12 @@
+Package: wireguard-initramfs
+Version: 1.0
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Section: admin
+Depends: busybox | busybox-static, wireguard, initramfs-tools (>= 0.94)
+Homepage: https://github.com/xptsp/wireguard-initramfs
+Installed-Size: 180
+Priority: optional
+Description: Wireguard Initramfs Package
+ Enables wireguard networking during kernel boot, before encrypted 
+ partitions are mounted. 
