@@ -1,0 +1,86 @@
+Installing dropbear SSH in the initramfs
+----------------------------------------
+
+Setup
+-----
+
+For remote unlocking to work, dropbear-initramfs has to be installed before
+building the initrd.
+
+The host keys used for the initramfs are dropbear_{dss,rsa,ecdsa,ed25519}_host_key,
+all four located in the /etc/dropbear/initramfs directory.  They are
+created automatically if they do not exist when dropbear-initramfs is
+installed or upgraded.  They can also be created manually with the
+following commands:
+
+  # dropbearkey -t dss     -f /etc/dropbear/initramfs/dropbear_dss_host_key
+  # dropbearkey -t rsa     -f /etc/dropbear/initramfs/dropbear_rsa_host_key
+  # dropbearkey -t ecdsa   -f /etc/dropbear/initramfs/dropbear_ecdsa_host_key
+  # dropbearkey -t ed25519 -f /etc/dropbear/initramfs/dropbear_ed25519_host_key
+
+A warning is raised if none of these host key files exist.  (dropbear will then
+fail to start.)  In case of an encrypted rootfs, you typically don't want the
+initramfs SSHd to reuse the host keys of the main SSH server (those in /etc/ssh
+or /etc/dropbear), since the initrd lies in /boot which, unlike /etc, is
+usually not encrypted.
+
+Set the "ip=" kernel boot parameter if you wish to use a non-default IP address
+or device.  (See Documentation/filesystems/nfsroot.txt in the Linux
+documentation for details.)  If "ip=none" or "ip=off", then dropbear is not
+started at boot time.  On local (non NFS) boots, all network interfaces are
+brought down by default once the rootfs has been mounted; however
+$DROPBEAR_IFDOWN can be set to a shell pattern matching the interface(s) to
+bring down, or to the special value "none" to keep all interfaces up.
+
+Command line options are taken from the $DROPBEAR_OPTIONS variable.  For
+instance add DROPBEAR_OPTIONS="-p 2222" to /etc/dropbear/initramfs/dropbear.conf
+to change the listening port to 2222.
+
+Password logins are disabled.  Public key(s) used for authentication are taken
+from /etc/dropbear/initramfs/authorized_keys, or from
+/etc/dropbear/initramfs/id_{dsa,rsa,ecdsa,ed25519}.pub if the former
+does not exist.  A warning is raised if no authorized keys could be
+found.
+
+
+Unlocking procedure
+-------------------
+
+You can unlock your rootfs on bootup remotely, using SSH to log in to
+the booting system while it's running with the initramfs mounted.
+Consult cryptsetup's /usr/share/doc/cryptsetup/README.Debian.gz sec. 8
+for details.
+
+
+Issues
+------
+
+You'll have to include the driver of (one of) your network card(s) to
+/etc/initramfs-tools/modules.  To list all network drivers curently in use, run
+
+  $ while read m _; do /sbin/modinfo -F filename "$m"; done </proc/modules |
+    sed -nr "s@^/lib/modules/`uname -r`/kernel/drivers/net(/.*)?/([^/]+)\.ko\$@\2@p"
+
+Don't forget to run update-initramfs when you changed the config to make it
+effective!
+
+  # update-initramfs -u -k all
+
+Since by default the initramfs' host keys differ from those of the main SSH
+server, SSH clients such as OpenSSH's might issue a "REMOTE HOST IDENTIFICATION
+HAS CHANGED!" warning.  In that case you might want to use another port for the
+initramfs SSHd, and/or the "UserKnownHostsFile" option to specify an
+alternative known_hosts file:
+
+  $ ssh -F ~/.luks/ssh.conf remote.system.com
+  $ cat ~/.luks/ssh.conf
+  Host *
+    User root
+    UserKnownHostsFile ~/.luks/known_hosts
+    PasswordAuthentication no
+    IdentityFile ~/.ssh/id_rsa
+
+Collecting enough entropy for the SSH daemon sometimes seems to be an issue.
+Startup of the SSH daemon might be delayed until enough entropy has been
+retrieved. This is non-blocking for the startup process, so when you are at the
+console you won't have to wait for the SSHd to complete its startup.

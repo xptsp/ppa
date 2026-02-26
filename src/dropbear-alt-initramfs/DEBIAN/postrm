@@ -1,0 +1,20 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "purge" ]; then
+    rm -f /etc/dropbear/initramfs/dropbear_dss_host_key \
+          /etc/dropbear/initramfs/dropbear_rsa_host_key \
+          /etc/dropbear/initramfs/dropbear_ecdsa_host_key \
+          /etc/dropbear/initramfs/dropbear_ed25519_host_key \
+          /etc/dropbear/initramfs/authorized_keys \
+          /etc/dropbear/initramfs/id_dsa.pub \
+          /etc/dropbear/initramfs/id_rsa.pub \
+          /etc/dropbear/initramfs/id_ecdsa.pub \
+          /etc/dropbear/initramfs/id_ed25519.pub
+fi
+
+# Automatically added by dh_installdeb/13.6ubuntu1
+dpkg-maintscript-helper mv_conffile /etc/dropbear-initramfs/config /etc/dropbear/initramfs/dropbear.conf 2020.81-4\~ -- "$@"
+# End automatically added section
+
+exit 0
