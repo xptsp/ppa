@@ -1,0 +1,23 @@
+Package: urserver-eden
+Version: 1.0-1
+Architecture: all
+Installed-Size: 328
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Depends: urserver, libfuse2, bash (>= 5.1)
+Section: x11
+Priority: optional
+HomePage: https://askubuntu.com/a/1316210
+Description: Eden remote for Unified Remote server
+ Adds a remote control called Eden to Unified Remote server
+ that allows the user to do the following:
+   - Wake the PC
+   - Suspend the PC,
+   - Start Yuzu
+   - Close Yuzu
+   - Stop Emulation
+   - Press Y
+   - Toggle Fullscreen
+   - Sound to TV
+   - Sound to Speakers
+ Note that Eden*.AppImage (NOT INCLUDED) must be 
+ installed in the /usr/bin directory and made executable.

@@ -1,0 +1,11 @@
+#!/bin/bash
+if [[ "$1" == "start" ]]; then
+	BIN=$(find /usr/bin -name Eden*)
+	[[ ! -z "${BIN}" ]] && sudo -u ${USER:-"$(cat /etc/group | grep :1000: | cut -d: -f 1)"} ${BIN} &
+elif [[ "$1" == "close" ]]; then
+	ps aux | grep "/bin/eden" | while read USER PID OTHER; do kill -9 ${PID}; done
+elif [[ "$1" == "tv" ]]; then
+	pactl set-default-sink $(pactl list sinks short | grep -m 1 "hdmi" | awk '{print $1}')
+elif [[ "$1" == "speakers" ]]; then
+	pactl set-default-sink $(pactl list sinks short | grep -m 1 -v "hdmi" | awk '{print $1}')
+fi

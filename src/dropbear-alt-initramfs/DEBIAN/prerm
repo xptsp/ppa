@@ -1,5 +1,0 @@
-#!/bin/sh
-set -e
-# Automatically added by dh_installdeb/13.6ubuntu1
-dpkg-maintscript-helper mv_conffile /etc/dropbear-initramfs/config /etc/dropbear/initramfs/dropbear.conf 2020.81-4\~ -- "$@"
-# End automatically added section
