@@ -896,10 +896,10 @@ Maintainer: Douglas Orend <doug.orend2@gmail.com>
 Installed-Size: 328
 Depends: urserver, libfuse2, bash (>= 5.1)
 Filename: ./all/urserver-eden_1.0-1_all.deb
-Size: 230362
-MD5sum: 22465595124b8c7e20b3758aff9ab51c
-SHA1: 6950ee1849ef9050a2f32c6abd3a622a1305b831
-SHA256: 3d907a801810cb73e3ff859195bf27930e23723a8d287442bc513beba68415a1
+Size: 230358
+MD5sum: f436ece57d116323d8c7c17f3278faf2
+SHA1: bb862569f7436726f7942696aa9da2e5c06c4170
+SHA256: 2032754097b695b16b78607b90c8d405b5ac5a37bf2eab59a440c6723d2c644e
 Section: x11
 Priority: optional
 Homepage: https://askubuntu.com/a/1316210
@@ -908,8 +908,8 @@ Description: Eden remote for Unified Remote server
  that allows the user to do the following:
    - Wake the PC
    - Suspend the PC,
-   - Start Yuzu
-   - Close Yuzu
+   - Start Eden
+   - Close Eden
    - Stop Emulation
    - Press Y
    - Toggle Fullscreen
@@ -936,6 +936,35 @@ Description: PiInput remote for Unified Remote server
  Adds a remote control called PiInput to Unified Remote server
  that correctly works with the left- and right-click mouse on
  Ubuntu systems.
+
+Package: urserver-yuzu
+Version: 1.2-1
+Architecture: all
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Installed-Size: 196
+Depends: urserver, libfuse2, bash (>= 5.1)
+Filename: ./all/urserver-yuzu_1.2-1_all.deb
+Size: 59872
+MD5sum: 74bbbe4b479e4d9a793db6ae70719f74
+SHA1: 0d3897703d8f4317948464f4c0f7277627cf4108
+SHA256: 457d3bfa9ce604e53b0983ae8294d5838cdd2ce0639c1a29b9d46a7096646773
+Section: x11
+Priority: optional
+Homepage: https://askubuntu.com/a/1316210
+Description: Yuzu remote for Unified Remote server
+ Adds a remote control called Yuzu to Unified Remote server
+ that allows the user to do the following:
+   - Wake the PC
+   - Suspend the PC,
+   - Start Yuzu
+   - Close Yuzu
+   - Stop Emulation
+   - Press Y
+   - Toggle Fullscreen
+   - Sound to TV
+   - Sound to Speakers
+ Note that Linux-Yuzu-*.AppImage (NOT INCLUDED) must be
+ installed in the /usr/bin directory and made executable.
 
 Package: usign
 Version: 20160822-e1ccc2a

@@ -6,8 +6,8 @@
       <button text="Sleep" onTap="sleep" color="red" />
     </row>
     <row>
-      <button text="Start Yuzu" onTap="start" />
-      <button text="Close Yuzu" onTap="close" />
+      <button text="Start Eden" onTap="start" />
+      <button text="Close Eden" onTap="close" />
     </row>
     <row>
       <button text="Toggle Fullscreen" onTap="toggle" />

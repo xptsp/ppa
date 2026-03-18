@@ -12,8 +12,8 @@ Description: Eden remote for Unified Remote server
  that allows the user to do the following:
    - Wake the PC
    - Suspend the PC,
-   - Start Yuzu
-   - Close Yuzu
+   - Start Eden
+   - Close Eden
    - Stop Emulation
    - Press Y
    - Toggle Fullscreen
