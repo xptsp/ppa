@@ -817,17 +817,18 @@ Description: A free fully featured markdown editor.
  how you like.
 
 Package: scrcpy
-Version: 3.1-5689
+Source: scrcpy
+Version: 4.0
 Architecture: amd64
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 24052
-Depends: libavcodec58 (>= 7:4.4), libavdevice58 (>= 7:4.4), libavformat58 (>= 7:4.4), libavutil56 (>= 7:4.4), libc6 (>= 2.34), libsdl2-2.0-0 (>= 2.0.12), libusb-1.0-0 (>= 2:1.0.16), scrcpy-server
+Maintainer: jakbin4747@gmail.com
+Installed-Size: 203
+Depends: libc6 (>= 2.34), libsdl2-2.0-0 (>= 2.0.12), libusb-1.0-0 (>= 2:1.0.16)
 Recommends: adb
-Filename: ./amd64/scrcpy_3.1-5689_amd64.deb
-Size: 7466882
-MD5sum: 04fe69ccd229b41108538fde01c0649c
-SHA1: 4f2ec0ee4455ba3c099641d4e74d69147446f83e
-SHA256: 8113d851f4a5de5ad22cf612bed1ef8bdc5126e10decea482d71d06c14eb87ba
+Filename: ./amd64/scrcpy_4.0_amd64.deb
+Size: 839392
+MD5sum: cb15518354dda62b282854f83e28441d
+SHA1: 3c65deb6dd13594ea4e6c5a51b500a1c80156a49
+SHA256: 3c7d6d9a81b9089fa3ec17349bbabf7eabcd1c6a9f6b39bbc42bbea9bcc4c0f8
 Section: net
 Priority: optional
 Homepage: https://github.com/Genymobile/scrcpy
@@ -836,7 +837,6 @@ Description: Display and control your Android device
  USB (or over TCP/IP). It does not require any root access.
  .
  This package contains the client (desktop) binary.
-Original-Maintainer: Yangfl <mmyangfl@gmail.com>
 
 Package: scrcpy-server
 Source: scrcpy
